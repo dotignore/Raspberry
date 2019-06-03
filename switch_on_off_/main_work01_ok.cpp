@@ -23,20 +23,15 @@ int main(void)
 	//digitalWrite(LedPin, HIGH);
 
 	int aaa;
-	//aaa = 0;
 	int iii;
 
 	while (1)
 	{
 		printf("== (%o) ==\n", aaa);
-		/*
-		digitalWrite(LedPin, HIGH); // LED OFF
+		/* digitalWrite(LedPin, HIGH); // LED OFF
 
-		digitalRead(ButtonPin) == 0) //PIN ON
-		digitalWrite(LedPin, LOW);   //led ON
-		*/
-
-
+		digitalRead(ButtonPin) == 0) // PIN ON
+		digitalWrite(LedPin, LOW);   // led ON */
 
 		if (digitalRead(ButtonPin) == 0) //PIN ON
 		{			
@@ -45,22 +40,11 @@ int main(void)
 			if (aaa == 1)
 			{
 				aaa = 0;
-				for (int i=0; i<100; i++) 
-				{
-					iii = i;
-					printf("i(%d)\n", i);
-				}
 			}
 			else if (aaa == 0)
 			{
 				aaa = 1;
-				for (int i = 0; i < 100; i++)
-				{
-					iii = i;
-					printf("d(%d)\n", i);
-				}
 			}
-
 		}
 
 		if (aaa == 1)
@@ -68,7 +52,6 @@ int main(void)
 			digitalWrite(LedPin, LOW);   //led ON
 			//indicate that button has pressed up
 			//printf("ledpin_high\n");
-
 		}
 
 		if (aaa == 0)
@@ -77,7 +60,6 @@ int main(void)
 			//printf("key off\n");
 			//printf("ledpin_high\n");
 		}
-
 
 	}
 	return 0;
