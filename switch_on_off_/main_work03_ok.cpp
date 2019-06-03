@@ -14,7 +14,6 @@ int main(void)
 	}
 	
 	int stateLED = LOW;
-	int previous = LOW;
 
 	int stateButton;
 	long time = 0;
@@ -31,9 +30,7 @@ int main(void)
 	while (1)
 	{
 		stateButton = (digitalRead(ButtonPin) == 0);	// push pin botton
-		//printf("" stateButton);
 		if (stateButton == HIGH &&						// если кнопка нажата
-			previous == LOW &&							//  
 			millis() - time > debounce)					// убирает дребез кнопки
 		{
 			if (stateLED == HIGH)						// | change digitalWrite 
@@ -48,7 +45,9 @@ int main(void)
 		}											    // |
 		digitalWrite(LedPin, stateLED);					// | digitalWrite(LedPin, HIGH);  // led OFF
 														// | digitalWrite(LedPin, LOW);   // led ON	
-		previous == stateButton;						// зачем?
+
+		//printf("stateButton = %d\n", stateButton);		//int d
+		//printf("debounce = %ld\n\n", debounce);			//long l
 
 	}
 	return 0;
