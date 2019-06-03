@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <title>Логические выражения и ветвление [Амперка / Вики]</title>
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="keywords" content="программирование,логические-переменные-ветвление"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="Амперка / Вики"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5:%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5?do=index" title="Все страницы"/>
+<link rel="manifest" href="/lib/exe/manifest.php"/>
+<link rel="alternate" type="application/rss+xml" title="Недавние изменения" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="Текущее пространство имён" href="/feed.php?mode=list&amp;ns=программирование"/>
+<link rel="alternate" type="text/html" title="Простой HTML" href="/_export/xhtml/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5:%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5"/>
+<link rel="alternate" type="text/plain" title="вики-разметка" href="/_export/raw/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5:%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5"/>
+<link rel="canonical" href="http://wiki.amperka.ru/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5:%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5"/>
+<link rel="stylesheet" type="text/css" href="/lib/exe/css.php?t=amperka3&amp;tseed=99dfc81ae2581f6b36504d451f6a19dd"/>
+<!--[if gte IE 9]><!-->
+<script type="text/javascript">/*<![CDATA[*/var NS='программирование';var JSINFO = {"id":"\u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435:\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0435-\u043f\u0435\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0435-\u0432\u0435\u0442\u0432\u043b\u0435\u043d\u0438\u0435","namespace":"\u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435","ACT":"show","useHeadingNavigation":1,"useHeadingContent":1};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/jquery.php?tseed=23f888679b4f1dc26eef34902aca964f"></script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?t=amperka3&amp;tseed=99dfc81ae2581f6b36504d451f6a19dd"></script>
+<!--<![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="/lib/tpl/amperka3/images/favicon.ico" />
+<link rel="apple-touch-icon" href="/lib/tpl/amperka3/images/apple-touch-icon.png" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,500,700,400italic|Roboto+Condensed:300,400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!--[if lte IE 8 ]><div id="IE8"><![endif]-->
+    <div id="dokuwiki__site"><div id="dokuwiki__top" class="site dokuwiki mode_show tpl_amperka3     ">
+
+        
+<!-- ********** HEADER ********** -->
+<div id="toolbar-wrapper">
+    <div id="toolbar">
+        <ul>
+            <li><form action="/start" method="get" role="search" class="search doku_form" id="dw__search" accept-charset="utf-8"><input type="hidden" name="do" value="search" /><input type="hidden" name="id" value="программирование:логические-переменные-ветвление" /><div class="no"><input name="q" type="text" class="edit" title="[F]" accesskey="f" placeholder="Найти" autocomplete="on" id="qsearch__in" value="" /><button value="1" type="submit" title="Найти">Найти</button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form></li>
+        </ul>
+    </div>
+</div>
+
+<div id="dokuwiki__header"><div class="pad group">
+
+    <ul id="scope" class="head-menu">
+    <li><a href="http://wiki.amperka.ru" class="current">Вики</a></li>
+    <li><a href="http://youtube.com/AmperkaRu">Видео</a></li>
+    <li><a href="http://forum.amperka.ru">Форум</a></li>
+    <li><a href="http://blog.amperka.ru">Блог</a></li>
+</ul>
+
+    <div class="headings group">
+        <!--ul class="a11y skip">
+            <li><a href="#dokuwiki__content">Перейти к содержанию</a></li>
+        </ul-->
+
+        <a href="http://amperka.ru"  accesskey="h" title="[H]"><img src="/lib/tpl/amperka3/images/logo.png" width="200" height="54" alt="" /></a>            </div>
+
+
+    <!-- BREADCRUMBS -->
+    
+
+
+    <hr class="a11y" />
+</div></div><!-- /header -->
+
+        <div class="wrapper group">
+
+            
+            <!-- ********** CONTENT ********** -->
+            <div id="dokuwiki__content"><div class="pad group">
+                
+                <!--div class="pageId"><span>программирование:логические-переменные-ветвление</span></div-->
+
+                <div class="page group">
+                                                            <!-- wikipage start -->
+                    <!-- TOC START -->
+<div id="dw__toc" class="dw__toc">
+<h3 class="toggle">Содержание</h3>
+<div>
+
+<ul class="toc">
+<li class="level1"><div class="li"><a href="#логические_выражения_и_ветвление">Логические выражения и ветвление</a></div>
+<ul class="toc">
+<li class="level2"><div class="li"><a href="#логические_операции_в_c">Логические операции в C++</a></div>
+<ul class="toc">
+<li class="level3"><div class="li"><a href="#применение_на_практикеэкологичный_отель">Применение на практике: экологичный отель</a></div></li>
+<li class="level3"><div class="li"><a href="#о_краткости_записи">О краткости записи</a></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><a href="#а_если_свет_таки_нуженусловное_выражение_if">А если свет таки нужен: условное выражение if</a></div>
+<ul class="toc">
+<li class="level3"><div class="li"><a href="#краткая_версия_if">Краткая версия if</a></div></li>
+<li class="level3"><div class="li"><a href="#вложенные_выражения_if">Вложенные выражения if</a></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><a href="#клики_кнопок">Клики кнопок</a></div></li>
+<li class="level2"><div class="li"><a href="#цепочки_if">Цепочки if</a></div></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<!-- TOC END -->
+                    <article class="text with-toc">
+                      
+<h1 class="sectionedit1" id="логические_выражения_и_ветвление">Логические выражения и ветвление</h1>
+<div class="level1">
+
+<p>
+Для работы с целыми числами в C/C++ существует тип
+<a href="/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5:%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D1%8B-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B0%D1%80%D0%B8%D1%84%D0%BC%D0%B5%D1%82%D0%B8%D0%BA%D0%B0#переменные" class="wikilink1" title="программирование:константы-переменные-арифметика">переменных</a> <code>int</code>. Но
+операции над целыми числами — не единственный инструмент в арсенале
+разработчика. Одними из важнейших элементов в программировании являются
+<em>логические</em> операции, выражения и типы данных.
+</p>
+
+<p>
+В то время как переменные типа <code>int</code> могут хранить произвольные целые числа,
+а операции над ними подчиняются законам целочисленной арифметики; логические
+переменные могут хранить лишь одно из двух значений: <em>истину</em> или <em>ложь</em>,
+а операции над ними подчиняются законам алгебры логики.
+</p>
+
+<p>
+Алгебра логики — умное название для интуитивно понятных вещей: операций «и»,
+«или», «не» над высказываниями, которые либо справедливы, либо нет. Например,
+рассмотрим такое логическое выражение:
+«<code>в коридоре темно</code> <code>и</code> <code>по коридору идёт человек</code>». Оно состоит из
+двух логических значений (утверждения про темноту и человека) и одного
+оператора (союз «и»). Его итоговым значением также будет логическое значение,
+которое можно использовать, скажем, как сигнал для включения света в коридоре
+гостиницы.
+</p>
+
+<p>
+В программировании переменные, которые хранят логические значения называются
+<em>булевыми переменными</em>, а операторы, которые производят над ними действия
+называют <em>булевыми операторами</em> или просто <em>логическими операторами</em>.
+</p>
+
+</div>
+
+<h2 class="sectionedit2" id="логические_операции_в_c">Логические операции в C++</h2>
+<div class="level2">
+
+<p>
+В C++ для булевых переменных существует тип <code>bool</code>. Для обозначения истины в
+C++ используется слово <code>true</code>, а для обозначения лжи — слово <code>false</code>.
+Таким образом, если для объявления целочисленных переменных мы используем:
+</p>
+<pre class="code cpp"><span class="kw4">int</span> myValue <span class="sy1">=</span> <span class="nu0">42</span><span class="sy4">;</span></pre>
+
+<p>
+Для логических переменных, используется:
+</p>
+<pre class="code cpp"><span class="kw4">bool</span> tooDark <span class="sy1">=</span> <span class="kw2">false</span><span class="sy4">;</span>
+<span class="kw4">bool</span> humanDetected <span class="sy1">=</span> <span class="kw2">true</span><span class="sy4">;</span></pre>
+
+<p>
+Поскольку C++ для Arduino — это некоторая надстройка над голым C++, для
+обозначения логического типа наряду с <code>bool</code> существует ещё слово
+<code>boolean</code>. Это абсолютные синонимы. Можете использовать и то и другое.
+Просто из соображений единого стиля и повышения читаемости кода выберите один
+из терминов и используйте его всюду. Мы в статье будем использовать <code>bool</code>,
+просто потому что в нём меньше букв и он входит в стандарт языка.
+</p>
+
+</div>
+
+<h3 class="sectionedit3" id="применение_на_практикеэкологичный_отель">Применение на практике: экологичный отель</h3>
+<div class="level3">
+
+<p>
+Давайте разовьём тему с энергосберегающим освещением и сделаем на Arduino
+устройство, которое включает свет в коридоре только тогда, когда это
+действительно необходимо.
+</p>
+
+<p>
+Допустим, к Arduino подключён <a href="/%D1%81%D0%B5%D0%BD%D1%81%D0%BE%D1%80%D1%8B:%D0%B0%D0%BD%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D1%8B%D0%B5" class="wikilink1" title="сенсоры:аналоговые">аналоговый датчик</a>
+уровня освещённости, пироэлектрический <a href="/%D1%81%D0%B5%D0%BD%D1%81%D0%BE%D1%80%D1%8B:%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D1%8B%D0%B5" class="wikilink1" title="сенсоры:цифровые">цифровой датчик</a>
+движения тёплых объектов и экологичная светодиодная лампа.
+</p>
+
+<p>
+Тогда скетч будет выглядеть следующим образом:
+</p>
+<pre class="code cpp"><span class="co2">#define LIGHT_SENSOR_PIN    A0</span>
+<span class="co2">#define MOTION_SENSOR_PIN   2</span>
+<span class="co2">#define LED_LAMP_PIN        5</span>
+&nbsp;
+<span class="co2">#define LIGHT_LEVEL_THRESHOLD   600</span>
+&nbsp;
+<span class="kw4">void</span> setup<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    pinMode<span class="br0">&#40;</span>LIGHT_SENSOR_PIN, INPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+    pinMode<span class="br0">&#40;</span>MOTION_SENSOR_PIN, INPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+    pinMode<span class="br0">&#40;</span>LED_LAMP_PIN, OUTPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw4">void</span> loop<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw4">int</span> lightLevel <span class="sy1">=</span> analogRead<span class="br0">&#40;</span>LIGHT_SENSOR_PIN<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> motionDetected <span class="sy1">=</span> digitalRead<span class="br0">&#40;</span>MOTION_SENSOR_PIN<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> tooDark <span class="sy1">=</span> lightLevel <span class="sy1">&lt;</span> LIGHT_LEVEL_THRESHOLD<span class="sy4">;</span>
+    <span class="kw4">bool</span> lightningRequired <span class="sy1">=</span> tooDark <span class="sy3">&amp;&amp;</span> motionDetected<span class="sy4">;</span>
+    digitalWrite<span class="br0">&#40;</span>LED_LAMP_PIN, lightningRequired <span class="sy4">?</span> HIGH <span class="sy4">:</span> LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+
+<p>
+Взглянем на <code>loop</code> и поймём что здесь происходит. С первой строкой всё
+понятно: мы считываем значение освещённости с аналогового сенсора с помощью
+встроенной функции <code>analogRead</code> и присваиваем его переменной с именем
+<code>lightLevel</code>.
+</p>
+
+<p>
+Далее мы объявляем логическую переменную <code>motionDetected</code> в качестве
+значения которой присваиваем результат вызова встроенной функции
+<code>digitalRead</code>. Функция <code>digitalRead</code> похожа по своей сути на
+<code>analogRead</code>, но может
+<a href="/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5:%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D1%8B-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B0%D1%80%D0%B8%D1%84%D0%BC%D0%B5%D1%82%D0%B8%D0%BA%D0%B0#функции_с_возвращаемыми_параметрами" class="wikilink1" title="программирование:константы-переменные-арифметика">возвращать</a>
+лишь одно из двух значений: либо истину
+(<code>true</code>), либо ложь (<code>false</code>). То есть это функция, которая возвращает
+логическое значение. Она подходит для считывания показаний разнообразных
+бинарных цифровых датчиков. В нашем примере мы как раз использовали такой:
+пироэлектрический сенсор, который выдаёт 0 вольт, пока движения в его радиусе
+видимости нет и 5 вольт, когда замечено перемещение тёплого объекта: человека,
+кошки или кого-то ещё. Нулю вольт микроконтроллер ставит в соответствие
+значение <code>false</code>, а пяти вольтам — <code>true</code>.
+</p>
+
+<p>
+Итак, по итогам исполнения второй строки, в переменной <code>motionDetected</code>
+будет храниться либо истина, либо ложь в зависимости от того замечено ли
+движение в коридоре.
+</p>
+
+<p>
+Далее мы видим определение булевой переменной <code>tooDark</code>, которой в качестве
+значения присваивается значение выражения <code>lightLevel &lt; LIGHT_LEVEL_THRESHOLD</code>.
+Символ <code>&lt;</code>, как можно догадаться, в C++ означает <em>оператор «меньше, чем»</em>.
+Из двух численных операндов, этот оператор делает один логический результат.
+Значение всего выражения считается истинным, если то, что записано слева от
+знака (<code>lightLevel</code> в нашем случае) меньше, чем то, что записано справа от
+знака (<code>LIGHT_LEVEL_THRESHOLD</code>). Довольно логично и интуитивно понятно, не
+правда ли?!
+</p>
+
+<p>
+Таким образом в переменной <code>tooDark</code> окажется значение <code>true</code>, только если
+значение уровня освещённости <code>lightLevel</code>, полученное ранее, окажется меньше
+600. В противном случае, в переменной окажется <code>false</code>.
+</p>
+
+<p>
+Конкретное значение, вроде 600 в нашем случае, в подобных случаях часто получают
+экспериментально: в зависимости от используемого сенсора и конфигурации помещения,
+где стоит устройство.
+</p>
+
+<p>
+Идём дальше. Мы видим объявление булевой переменной <code>lightningRequired</code>, в
+качестве значения которой присваивается значение выражения
+<code>tooDark &amp;&amp; motionDetected</code>. Символ <code>&amp;&amp;</code> в C++ означает <em>оператор
+логического «и»</em>. Как можно догадаться, всё выражение считается истинным
+тогда и только тогда, когда и то, что справа, и то что слева от оператора
+истинно. Таким образом, переменная <code>lightningRequired</code> примет значение
+<code>true</code>, если в коридоре одновременно: и слишком темно, и замечено движение
+человека. Если не выполнено хоть одно из условий, результатом будет <code>false</code>.
+Как раз то, что нужно.
+</p>
+
+<p>
+И наконец, последним выражением идёт вызов функции <code>digitalWrite</code> для пина
+Arduino, к которому подключена лампа. Нам нужно включить лампу, если
+переменная <code>lightningRequired</code> содержит истинное значение и выключить, если
+в ней хранится ложь. Чтобы сделать это, мы используем тернарный условный
+оператор <code>? :</code>. Где в качестве условия используем просто значение переменной
+<code>lightningRequired</code>. Помните? В тернарном операторе условие считается
+выполненным, если его значение — не ноль; и не выполненным если его значение —
+ноль.
+</p>
+
+<p>
+На самом деле для процессора не существует понятия логических значений. Всё
+что он умеет — оперировать над целыми числами. Поэтому в C++ существует
+автоматическое преобразование типов. Там, где ожидается <code>int</code>, а мы
+используем <code>bool</code>, за кадром происходит автоматическое преобразование:
+<code>true</code> превращается в целое число <code>1</code>, а <code>false</code> — в целое число <code>0</code>.
+</p>
+
+<p>
+Так что, булевы выражения и переменные — ни что иное, как удобство для
+программистов, синтаксический сахар, который позволяет писать программы более
+понятно и выразительно.
+</p>
+
+<p>
+Возвращаясь к нашему примеру, в выражении:
+</p>
+<pre class="code cpp">digitalWrite<span class="br0">&#40;</span>LED_LAMP_PIN, lightningRequired <span class="sy4">?</span> HIGH <span class="sy4">:</span> LOW<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+
+<p>
+второй аргумент примет значение <code>HIGH</code>, если <code>lightningRequired</code> — это
+<code>true</code>; и <code>LOW</code>, если <code>lightningRequired</code> — это <code>false</code>. Таким
+образом, мы добились чего хотели: включения света, если он нужен и выключения,
+если он не уместен.
+</p>
+
+</div>
+
+<h3 class="sectionedit4" id="о_краткости_записи">О краткости записи</h3>
+<div class="level3">
+
+<p>
+Если вспомнить об автоматическом преобразовании переменных разных типов, а ещё
+о том, что <code>HIGH</code> — это ничто иное, как
+<a href="/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5:%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D1%8B-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B0%D1%80%D0%B8%D1%84%D0%BC%D0%B5%D1%82%D0%B8%D0%BA%D0%B0#макроопределения" class="wikilink1" title="программирование:константы-переменные-арифметика">макроопределение</a>
+числа <code>1</code>, а <code>LOW</code> — макроопределение числа <code>0</code>, последнюю строку в нашем примере
+можно сократить до лаконичного выражения:
+</p>
+<pre class="code cpp">digitalWrite<span class="br0">&#40;</span>LED_LAMP_PIN, lightningRequired<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+
+<p>
+Мы обошлись без тернарного оператора: ведь всё равно функция <code>digitalWrite</code>
+получит:
+</p>
+<ul>
+<li class="level1"><div class="li"> единицу: то же самое, что и <code>HIGH</code>, если <code>lightningRequired</code> будет <code>true</code></div>
+</li>
+<li class="level1"><div class="li"> ноль: то же самое, что и <code>LOW</code>, если <code>lightningRequired</code> будет <code>false</code></div>
+</li>
+</ul>
+
+<p>
+Кроме того, логические выражения — это самые обычные выражения в C++, к
+которым применяются <a href="/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5:%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D1%8B-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B0%D1%80%D0%B8%D1%84%D0%BC%D0%B5%D1%82%D0%B8%D0%BA%D0%B0#встраивание_выражений" class="wikilink1" title="программирование:константы-переменные-арифметика">общие правила встраивания</a>.
+Поэтому весь код <code>loop</code> в примере с экологичным освещением на самом деле мог бы быть записан в одну
+строку:
+</p>
+<pre class="code cpp"><span class="kw4">void</span> loop<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    digitalWrite<span class="br0">&#40;</span>LED_LAMP_PIN, analogRead<span class="br0">&#40;</span>LIGHT_SENSOR_PIN<span class="br0">&#41;</span> <span class="sy1">&lt;</span> LIGHT_LEVEL_THRESHOLD <span class="sy3">&amp;&amp;</span> digitalRead<span class="br0">&#40;</span>MOTION_SENSOR_PIN<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+
+<p>
+Да, код теперь находится на грани читаемости, но это всего лишь демонстрация
+возможностей. В реальной жизни лучше использовать пару промежуточных
+переменных:
+</p>
+<pre class="code cpp"><span class="kw4">void</span> loop<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw4">bool</span> tooDark <span class="sy1">=</span> analogRead<span class="br0">&#40;</span>LIGHT_SENSOR_PIN<span class="br0">&#41;</span> <span class="sy1">&lt;</span> LIGHT_LEVEL_THRESHOLD<span class="sy4">;</span>
+    <span class="kw4">bool</span> motionDetected <span class="sy1">=</span> digitalRead<span class="br0">&#40;</span>MOTION_SENSOR_PIN<span class="br0">&#41;</span><span class="sy4">;</span>
+    digitalWrite<span class="br0">&#40;</span>LED_LAMP_PIN, tooDark <span class="sy3">&amp;&amp;</span> motionDetected<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+
+<p>
+Или хотя бы использовать перенос строк для наглядности:
+</p>
+<pre class="code cpp"><span class="kw4">void</span> loop<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    digitalWrite<span class="br0">&#40;</span>LED_LAMP_PIN, 
+        analogRead<span class="br0">&#40;</span>LIGHT_SENSOR_PIN<span class="br0">&#41;</span> <span class="sy1">&lt;</span> LIGHT_LEVEL_THRESHOLD <span class="sy3">&amp;&amp;</span>
+        digitalRead<span class="br0">&#40;</span>MOTION_SENSOR_PIN<span class="br0">&#41;</span>
+    <span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+
+</div>
+
+<h2 class="sectionedit5" id="а_если_свет_таки_нуженусловное_выражение_if">А если свет таки нужен: условное выражение if</h2>
+<div class="level2">
+
+<p>
+Внимательный читатель мог заметить, что приведённый скетч едва ли может
+работать в реальных условиях. Если мы включим свет, когда слишком темно и
+зафиксировано движение, при следующем же прогоне <code>loop</code> датчик «увидит» свет
+от нашей же лампы, программа посчитает, что и так достаточно светло и выключит лампу.
+Процесс постоянного выключения и включения так и будет продолжаться пока
+пироэлектрический датчик будет фиксировать движение. В лучшем случае мы
+получим свечение лампы в пол силы, в худшем — раздражающее мерцание. Как быть?
+</p>
+
+<p>
+Можно после включения лампы усыплять программу на, скажем, 30 секунд. Вполне
+достаточно, чтобы дать постояльцу отеля пройти коридор и не так уж
+расточительно с точки зрения экономии электроэнергии.
+</p>
+
+<p>
+Как сделать так, чтобы задержка на 30 секунд производилась только после
+включения лампы, но не после выключения? Для этого в C++ существует <em>условное
+выражение «if»</em>. Используя его, скетч может выглядеть следующим образом:
+</p>
+<pre class="code cpp"><span class="co2">#define LIGHT_SENSOR_PIN    A0</span>
+<span class="co2">#define MOTION_SENSOR_PIN   2</span>
+<span class="co2">#define LED_LAMP_PIN        5</span>
+&nbsp;
+<span class="co2">#define LIGHT_LEVEL_THRESHOLD   600</span>
+&nbsp;
+<span class="kw4">void</span> setup<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    pinMode<span class="br0">&#40;</span>LIGHT_SENSOR_PIN, INPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+    pinMode<span class="br0">&#40;</span>MOTION_SENSOR_PIN, INPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+    pinMode<span class="br0">&#40;</span>LED_LAMP_PIN, OUTPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw4">void</span> loop<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw4">bool</span> tooDark <span class="sy1">=</span> analogRead<span class="br0">&#40;</span>LIGHT_SENSOR_PIN<span class="br0">&#41;</span> <span class="sy1">&lt;</span> LIGHT_LEVEL_THRESHOLD<span class="sy4">;</span>
+    <span class="kw4">bool</span> motionDetected <span class="sy1">=</span> digitalRead<span class="br0">&#40;</span>MOTION_SENSOR_PIN<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw1">if</span> <span class="br0">&#40;</span>tooDark <span class="sy3">&amp;&amp;</span> motionDetected<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        digitalWrite<span class="br0">&#40;</span>LED_LAMP_PIN, HIGH<span class="br0">&#41;</span><span class="sy4">;</span>
+        delay<span class="br0">&#40;</span><span class="nu0">30000</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// спать 30 секунд</span>
+    <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+        digitalWrite<span class="br0">&#40;</span>LED_LAMP_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre>
+
+<p>
+Начало программы прежнее, но в <code>loop</code> появляется новое составное выражение,
+обозначаемое словами <code>if</code>, <code>else</code> и фигурными скобками. Давайте поймём в
+чём его суть.
+</p>
+
+<p>
+Сразу после слова <code>if</code> компилятор C++ ожидает в круглых скобках увидеть
+логическое выражение, которое в этом случае называется <em>условием</em>. Оно имеет
+тот же смысл, что и для тернарного оператора. Если его значение — не ноль или
+истинно, выполняется <em>блок кода</em>, который следует сразу после условия в
+фигурных скобках. В нашем случае, если <code>tooDark</code> и <code>motionDetected</code>
+истины, будет выполнен блок кода из двух строк:
+</p>
+<pre class="code cpp">digitalWrite<span class="br0">&#40;</span>LED_LAMP_PIN, HIGH<span class="br0">&#41;</span><span class="sy4">;</span>
+delay<span class="br0">&#40;</span><span class="nu0">30000</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// спать 30 секунд</span></pre>
+
+<p>
+Если же условие было нулём, или что то же самое — ложно, блок кода следующий
+за условием пропускается и не выполняется вовсе. Зато, если после после этого
+пропущенного блока следует слово <code>else</code>, выполняется блок кода в фигурных
+скобках, следующий после этого слова. В нашем случае, если либо <code>tooDark</code>,
+либо <code>motionDetected</code> были <code>false</code>, выполнится блок кода из одной строки:
+</p>
+<pre class="code cpp">digitalWrite<span class="br0">&#40;</span>LED_LAMP_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+
+<p>
+Стоит отметить, что в случае выполнения условия, блок кода следующий после
+<code>else</code> не выполняется, а пропускается. То есть, на самом деле, выражение
+<code>if</code> — это отображение в языке программирования простого и понятного
+утверждения: «если что-то, делай то-то, а иначе делай сё-то».
+</p>
+
+<p>
+Возвращаясь к нашему примеру, код можно интерпретировать так: «если требуется
+освещение, включить свет и уснуть на 30 секунд, а если свет не нужен —
+выключить его». Довольно просто и логично.
+</p>
+
+<p>
+Использование выражений, которые меняют ход программы в зависимости от каких-то
+условий называется <em>ветвлением программы</em>, а блоки кода после <code>if</code> и
+<code>else</code> называются <em>ветками</em>.
+</p>
+
+</div>
+
+<h3 class="sectionedit6" id="краткая_версия_if">Краткая версия if</h3>
+<div class="level3">
+
+<p>
+При использовании выражения <code>if</code> совершенно не обязательно использовать
+ветку <code>else</code>. Если что-то должно произойти при выполнении условия, а при
+невыполнении не должно происходить ничего, ветку <code>else</code> можно просто
+опустить. Например, мы можем изменить <code>loop</code> нашей программы следующим образом:
+</p>
+<pre class="code cpp"><span class="kw4">void</span> loop<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw4">bool</span> tooDark <span class="sy1">=</span> analogRead<span class="br0">&#40;</span>LIGHT_SENSOR_PIN<span class="br0">&#41;</span> <span class="sy1">&lt;</span> LIGHT_LEVEL_THRESHOLD<span class="sy4">;</span>
+    <span class="kw4">bool</span> motionDetected <span class="sy1">=</span> digitalRead<span class="br0">&#40;</span>MOTION_SENSOR_PIN<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> lightningRequired <span class="sy1">=</span> tooDark <span class="sy3">&amp;&amp;</span> motionDetected<span class="sy4">;</span>
+&nbsp;
+    digitalWrite<span class="br0">&#40;</span>LED_LAMP_PIN, lightningRequired<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw1">if</span> <span class="br0">&#40;</span>lightningRequired<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        delay<span class="br0">&#40;</span><span class="nu0">30000</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// спать 30 секунд</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre>
+
+<p>
+Эта вариация кода делает абсолютно то же, что и раньше. Просто теперь код
+организован иначе. Мы в любом случае делаем указание лампе на включение или
+выключение, вызывая <code>digitalWrite</code> с булевым значением
+<code>lightningRequired</code>, но засыпаем на 30 секунд только если мы включаем свет,
+т.е. если переменная <code>lightningRequired</code> истинна. Если мы только что
+выключали свет, спать не нужно: нужно пропустить <code>delay</code> и сразу оказаться в
+конце функции <code>loop</code>. Поэтому мы не писали ветку <code>else</code> вовсе.
+</p>
+
+<p>
+Более того, если в блоке кода после <code>if</code> или <code>else</code> содержится всего одно
+выражение, фигурные скобки можно не писать:
+</p>
+<pre class="code cpp"><span class="kw1">if</span> <span class="br0">&#40;</span>lightningRequired<span class="br0">&#41;</span>
+    delay<span class="br0">&#40;</span><span class="nu0">30000</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// спать 30 секунд</span></pre>
+
+</div>
+
+<h3 class="sectionedit7" id="вложенные_выражения_if">Вложенные выражения if</h3>
+<div class="level3">
+
+<p>
+Блоки кода, используемые в условных выражениях — это самые обычные блоки,
+которые следуют общим правилам C++. Поэтому в ветку одного <code>if</code> можно запросто
+вкладывать другой <code>if</code>.
+</p>
+
+<p>
+Для примера рассмотрим скетч устройства, которое контролирует открывание двери
+холодильника, автомобиля или чего-то такого. Мы хотим, чтобы при открытии
+двери включалась подсветка, а если дверь остаётся открытой более 20 секунд,
+раздавался бы предупреждающий писк. При этом, хочется, чтобы писк можно было
+отключить переключателем, на случай когда производится длительная
+загрузка/разгрузка: так он не будет нервировать.
+</p>
+
+<p>
+Допустим на дверце установлен постоянный магнит, а на раме бинарный цифровой датчик
+магнитного поля. Если магнитное поле фиксируется — дверца закрыта; иначе магнит отходит от
+датчика слишком далеко, магнитного поля нет — можно понять, что дверца открыта.
+Также мы подключим к Arduino лампу подсветки, пьезо-пищалку (buzzer) и рокерный выключатель.
+</p>
+
+<p>
+В этом случае код работающего устройства может выглядеть так:
+</p>
+<pre class="code cpp"><span class="co2">#define DOOR_SENSOR_PIN    2</span>
+<span class="co2">#define BUZZER_PIN         3</span>
+<span class="co2">#define SWITCH_PIN         4</span>
+<span class="co2">#define LAMP_PIN           5</span>
+&nbsp;
+<span class="co2">#define BUZZ_TIMEOUT       20</span>
+<span class="co2">#define BUZZ_FREQUENCY     4000</span>
+&nbsp;
+<span class="kw4">void</span> setup<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    pinMode<span class="br0">&#40;</span>DOOR_SENSOR_PIN, INPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+    pinMode<span class="br0">&#40;</span>SWITCH_PIN, INPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+    pinMode<span class="br0">&#40;</span>BUZZER_PIN, OUTPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+    pinMode<span class="br0">&#40;</span>LAMP_PIN, OUTPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw4">void</span> loop<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw4">bool</span> doorOpened <span class="sy1">=</span> <span class="sy3">!</span>digitalRead<span class="br0">&#40;</span>DOOR_SENSOR_PIN<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw1">if</span> <span class="br0">&#40;</span>doorOpened<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        digitalWrite<span class="br0">&#40;</span>LAMP_PIN, HIGH<span class="br0">&#41;</span><span class="sy4">;</span>
+        delay<span class="br0">&#40;</span>BUZZ_TIMEOUT <span class="sy2">*</span> <span class="nu0">1000</span><span class="br0">&#41;</span><span class="sy4">;</span>
+        <span class="kw4">bool</span> buzzEnabled <span class="sy1">=</span> digitalRead<span class="br0">&#40;</span>SWITCH_PIN<span class="br0">&#41;</span><span class="sy4">;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span>buzzEnabled<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            tone<span class="br0">&#40;</span>BUZZER_PIN, BUZZ_FREQUENCY<span class="br0">&#41;</span><span class="sy4">;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+        digitalWrite<span class="br0">&#40;</span>LAMP_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+        noTone<span class="br0">&#40;</span>BUZZER_PIN<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre>
+
+<p>
+Давайте разберём происходящее в <code>loop</code>. Первым делом мы определяем
+переменную <code>doorOpened</code> и присваиваем ей значение выражения
+<code>!digitalRead(DOOR_SENSOR_PIN)</code>. Как уже говорилось, дверь стоит считать
+открытой, если магнитного поля нет, т.е. <code>digitalRead</code> для нашего сенсора
+возвращает <code>false</code>. Символ <code>!</code> перед логическим выражением в C++ означает
+<em>оператор логического «не»</em> или просто <em>оператор отрицания</em>. Он действует
+на значение, записанное после него, и из <code>true</code> делает <code>false</code>, а из
+<code>false</code> делает <code>true</code>. Как раз то, что нам нужно в этом случае.
+</p>
+
+<p>
+Далее следует выражение <code>if</code>, проверяющее открыта ли дверь. Если да,
+начинается исполнение блока кода, следующего непосредственно за условием. В
+нём мы первым делом включаем подсветку. Затем засыпаем на 20 секунд (20×1000
+мс).
+</p>
+
+<p>
+Далее мы должны включить пищалку если только она не была умышленно выключена.
+Для этого мы проверяем состояние переключателя, который за это отвечает. Мы
+объявляем переменную <code>buzzEnabled</code>, которой присваиваем логическое значение,
+считанное с выключателя.
+</p>
+
+<p>
+Обратите внимание, переменная <code>buzzEnabled</code> объявлена прямо внутри блока
+кода, следующего за <code>if</code>. Так делать можно и нужно: хорошей практикой
+является объявление переменных как можно ближе к тому месту, где они впервые
+используются.
+</p>
+
+<p>
+Напомним о понятии
+<a href="/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5:%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D1%8B-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B0%D1%80%D0%B8%D1%84%D0%BC%D0%B5%D1%82%D0%B8%D0%BA%D0%B0#о_компактной_записи_и_области_видимости" class="wikilink1" title="программирование:константы-переменные-арифметика">области
+видимости переменных</a>: переменные доступны для использования только внутри
+того блока, где они объявлены. В нашем случае <code>buzzEnabled</code> может быть
+использована в выражениях внутри блока кода, следующего за <code>if
+(doorOpened)</code>, но попытка обращения к ней откуда-то ещё: например, из блока
+кода ветки <code>else</code> или непосредственно в <code>loop</code> вне ветки <code>if</code>, приведёт
+к ошибке на этапе компиляции программы. И это хорошо: нам не стоит впутывать
+переменную, которая нужна сию секунду в другие происходящие процессы; это
+делает программу чище и нагляднее.
+</p>
+
+<p>
+Вслед за чтением переключателя следует <em>вложенное условное выражение</em>. Его
+суть абсолютно та же, что и ранее: в зависимости от условия выполнить или не
+выполнить код. Одно лишь отличие: оно расположено прямо в блоке кода ветки
+другого <code>if</code>. Это распространённая практика, которая встречается в
+программировании довольно часто. На самом деле, во вложенный <code>if</code> можно
+вкладывать другие <code>if</code>, в них ещё одни и т.д. до бесконечности: язык C++ вас
+в этом не ограничивает.
+</p>
+
+<p>
+Возвращаясь к примеру, если переключатель находится в положении «включён»,
+т.е. <code>buzzEnabled</code> содержит <code>true</code>, мы включаем писк. Это делается с
+помощью встроенной функции <code>tone</code>. Она принимает 2 аргумента: номер пина
+Arduino, куда подключён пьезоизлучатель и частоту писка. В данном случае, мы
+выбрали частоту 4000 Гц, т.е. 4 КГц.
+</p>
+
+<p>
+Наконец, если дверь была закрыта, т.е. <code>doorOpened</code> содержит ложь, мы
+убеждаемся, что подсветка и пищалка выключены. Это делается в ветке <code>else</code>
+первого условия <code>if</code>. Как выключить лампу вы понимаете, а функция
+<code>noTone</code>, как можно догадаться, отключает писк на указанном пине.
+</p>
+
+<p>
+Вспоминая о правилах короткой записи и встраивании выражений, мы можем чуть
+упростить код <code>loop</code>. Он может выглядеть так:
+</p>
+<pre class="code cpp"><span class="kw4">void</span> loop<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy3">!</span>digitalRead<span class="br0">&#40;</span>DOOR_SENSOR_PIN<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        digitalWrite<span class="br0">&#40;</span>LAMP_PIN, HIGH<span class="br0">&#41;</span><span class="sy4">;</span>
+        delay<span class="br0">&#40;</span>BUZZ_TIMEOUT <span class="sy2">*</span> <span class="nu0">1000</span><span class="br0">&#41;</span><span class="sy4">;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span>digitalRead<span class="br0">&#40;</span>SWITCH_PIN<span class="br0">&#41;</span><span class="br0">&#41;</span>
+            tone<span class="br0">&#40;</span>BUZZER_PIN, BUZZ_FREQUENCY<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+        digitalWrite<span class="br0">&#40;</span>LAMP_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+        noTone<span class="br0">&#40;</span>BUZZER_PIN<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre>
+
+<p>
+Мы убрали фигурные скобки для внутреннего <code>if</code> и встроили вызовы
+<code>digitalRead</code> прямо в условные выражения.
+</p>
+
+<p>
+Обратите внимание, как правильное использование отступов в блоках кода,
+помогает легко понять к какому <code>if</code> относится <code>else</code> и что за чем и при
+каких условиях следует. Никогда не пишите без отступов несмотря на то, что 
+компилятору всё равно. Это делает код не читаемым и для других людей, и для вас
+самих:
+</p>
+<pre class="code cpp"><span class="kw4">void</span> loop<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+<span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy3">!</span>digitalRead<span class="br0">&#40;</span>DOOR_SENSOR_PIN<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+digitalWrite<span class="br0">&#40;</span>LAMP_PIN, HIGH<span class="br0">&#41;</span><span class="sy4">;</span>
+delay<span class="br0">&#40;</span>BUZZ_TIMEOUT <span class="sy2">*</span> <span class="nu0">1000</span><span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="kw1">if</span> <span class="br0">&#40;</span>digitalRead<span class="br0">&#40;</span>SWITCH_PIN<span class="br0">&#41;</span><span class="br0">&#41;</span>
+tone<span class="br0">&#40;</span>BUZZER_PIN, BUZZ_FREQUENCY<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+digitalWrite<span class="br0">&#40;</span>LAMP_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+noTone<span class="br0">&#40;</span>BUZZER_PIN<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre>
+
+</div>
+
+<h2 class="sectionedit8" id="клики_кнопок">Клики кнопок</h2>
+<div class="level2">
+
+<p>
+Одной из типичных задач при создании устройств на микроконтроллерах является
+определение момента клика тактовой кнопки, чтобы на это можно было как-то
+отреагировать. Проблема в том, что кнопка, как сенсор, может лишь сообщить
+зажата ли она сейчас или отпущена. Она не может сообщить, что была «нажата
+только что».
+</p>
+
+<p>
+Но эта проблема легко решается с помощью небольшого приёма в программной части
+проекта. Давайте сделаем примитивное устройство с лампой и кнопкой, которое бы
+включало и выключало лампу, поочерёдно, при нажатии кнопки: клик — включили,
+клик — выключили:
+</p>
+<pre class="code cpp"><span class="co2">#define BUTTON_PIN    2</span>
+<span class="co2">#define LAMP_PIN      5</span>
+&nbsp;
+<span class="kw4">bool</span> lampState <span class="sy1">=</span> <span class="kw2">false</span><span class="sy4">;</span>
+<span class="kw4">bool</span> wasButtonDown <span class="sy1">=</span> <span class="kw2">false</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">void</span> setup<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    pinMode<span class="br0">&#40;</span>BUTTON_PIN, INPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+    pinMode<span class="br0">&#40;</span>LAMP_PIN, OUTPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw4">void</span> loop<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw4">bool</span> isButtonDown <span class="sy1">=</span> digitalRead<span class="br0">&#40;</span>BUTTON_PIN<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span>isButtonDown <span class="sy3">&amp;&amp;</span> <span class="sy3">!</span>wasButtonDown<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        lampState <span class="sy1">=</span> <span class="sy3">!</span>lampState<span class="sy4">;</span>
+        delay<span class="br0">&#40;</span><span class="nu0">10</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    wasButtonDown <span class="sy1">=</span> isButtonDown<span class="sy4">;</span>
+    digitalWrite<span class="br0">&#40;</span>LAMP_PIN, lampState<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+
+<p>
+В скетче мы можем видеть 2 булевы переменные:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>lampState</code> содержит <code>true</code>, если лампа должна быть сейчас включена и <code>false</code> в противном случае</div>
+</li>
+<li class="level1"><div class="li"> <code>wasButtonDown</code> хранит состояние кнопки на момент последнего прогона <code>loop</code>: если кнопка была зажата, значением будет <code>true</code></div>
+</li>
+</ul>
+
+<p>
+Теперь взглянем на сам <code>loop</code>. Первым делом мы считываем состояние кнопки в
+логическую переменную <code>isButtonDown</code>. Если кнопка зажата <code>isButtonDown</code>
+будет содержать <code>true</code>.
+</p>
+
+<p>
+Далее следует условное выражение <code>if</code> с проверкой условия, суть которого в
+том, чтобы понять была ли нажата кнопка только что, или она зажата уже давно.
+Для этого и используется значение <code>wasButtonDown</code>.
+</p>
+
+<p>
+Таким образом, условие стоит воспринимать как «<code>кнопка зажата сейчас</code> <code>и</code>
+<code>не</code> <code>была зажата ранее</code>». Это и есть условие сиемоментного «клика»
+кнопкой.
+</p>
+
+<p>
+Если условие клика выполнено — действуем. Переворачиваем значение
+<code>lampState</code> с ног на голову:
+</p>
+<pre class="code cpp">lampState <span class="sy1">=</span> <span class="sy3">!</span>lampState<span class="sy4">;</span></pre>
+
+<p>
+Далее, в ветке <code>if</code> следует <code>delay(10)</code>. Вызов <code>delay</code> здесь сделан исключительно
+из-за несовершенства механических
+кнопок. При нажатии, за микросекунды, когда соприкасаются пластины, кнопка может
+зафиксировать замыкание и размыкание десятки раз. Добавив <code>delay(10)</code> мы просто
+пережидаем шторм. Десять миллисекунд — более чем достаточно для успокоения
+кнопки, но достаточно мало, чтобы человек заметил это.
+</p>
+
+<p>
+Далее мы присваиваем переменной <code>wasButtonDown</code> недавно считанное значение
+<code>isButtonDown</code>, говорящее о том нажата ли кнопка сейчас. Если кнопка была
+зажата только что, произойдёт переключение состояния лампы <code>lampState</code>, а
+переменная <code>wasButtonDown</code> в итоге примет значение <code>true</code> и будет
+оставаться с ним пока кнопку не отпустят. Таким образом, при следующем вызове
+<code>loop</code> состояние не будет изменено снова.
+</p>
+
+<p>
+Если бы мы не прибегали к этому трюку, а использовали только текущее состояние
+кнопки без оглядки на предысторию, состояния бы менялись пока кнопка зажата,
+десятки тысяч раз в секунду. С точки зрения человека это выглядело бы как
+явная, назойливая проблема с устройством.
+</p>
+
+</div>
+
+<h2 class="sectionedit9" id="цепочки_if">Цепочки if</h2>
+<div class="level2">
+
+<p>
+Напоследок давайте запрограммируем устройство, которое является простым
+климат-контролем для, например, террариума. Допустим к Arduino подключён
+термистор, кондиционер, обогреватель и зелёный светодиод. Если
+получаемая температура слишком высокая, мы должны включать кондиционер, если
+слишком низкая — обогреватель, а если в пределах нормы — включать светодиод.
+</p>
+
+<p>
+Тогда программа может выглядеть так:
+</p>
+<pre class="code cpp"><span class="co2">#define CONDITIONER_PIN   4</span>
+<span class="co2">#define HEATER_PIN        5</span>
+<span class="co2">#define OK_LED_PIN        6</span>
+<span class="co2">#define THERMISTOR_PIN    A0</span>
+&nbsp;
+<span class="co2">#define TEMP_MIN  400</span>
+<span class="co2">#define TEMP_MAX  500</span>
+&nbsp;
+<span class="kw4">void</span> setup<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    pinMode<span class="br0">&#40;</span>CONDITIONER_PIN, OUTPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+    pinMode<span class="br0">&#40;</span>HEATER_PIN, OUTPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+    pinMode<span class="br0">&#40;</span>OK_LED_PIN, OUTPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw4">void</span> loop<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw4">int</span> temp <span class="sy1">=</span> analogRead<span class="br0">&#40;</span>THERMISTOR_PIN<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw1">if</span> <span class="br0">&#40;</span>temp <span class="sy1">&lt;</span> TEMP_MIN<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        digitalWrite<span class="br0">&#40;</span>CONDITIONER_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+        digitalWrite<span class="br0">&#40;</span>HEATER_PIN, HIGH<span class="br0">&#41;</span><span class="sy4">;</span>
+        digitalWrite<span class="br0">&#40;</span>OK_LED_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">&#40;</span>temp <span class="sy1">&gt;</span> TEMP_MAX<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        digitalWrite<span class="br0">&#40;</span>CONDITIONER_PIN, HIGH<span class="br0">&#41;</span><span class="sy4">;</span>
+        digitalWrite<span class="br0">&#40;</span>HEATER_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+        digitalWrite<span class="br0">&#40;</span>OK_LED_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+        digitalWrite<span class="br0">&#40;</span>CONDITIONER_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+        digitalWrite<span class="br0">&#40;</span>HEATER_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+        digitalWrite<span class="br0">&#40;</span>OK_LED_PIN, HIGH<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre>
+
+<p>
+В этой программе всё должно быть знакомым. Вопрос может вызвать лишь
+использование <code>else</code> и <code>if</code> рядом, на одной строке. На самом деле — это всего лишь иной
+способ записать несколько вложенных условных выражений. Мы могли бы написать
+то же самое таким образом:
+</p>
+<pre class="code cpp"><span class="kw1">if</span> <span class="br0">&#40;</span>temp <span class="sy1">&lt;</span> TEMP_MIN<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    digitalWrite<span class="br0">&#40;</span>CONDITIONER_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+    digitalWrite<span class="br0">&#40;</span>HEATER_PIN, HIGH<span class="br0">&#41;</span><span class="sy4">;</span>
+    digitalWrite<span class="br0">&#40;</span>OK_LED_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span>temp <span class="sy1">&gt;</span> TEMP_MAX<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        digitalWrite<span class="br0">&#40;</span>CONDITIONER_PIN, HIGH<span class="br0">&#41;</span><span class="sy4">;</span>
+        digitalWrite<span class="br0">&#40;</span>HEATER_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+        digitalWrite<span class="br0">&#40;</span>OK_LED_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+        digitalWrite<span class="br0">&#40;</span>CONDITIONER_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+        digitalWrite<span class="br0">&#40;</span>HEATER_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+        digitalWrite<span class="br0">&#40;</span>OK_LED_PIN, HIGH<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre>
+
+<p>
+Но вспомним, что условное выражение — это полноправное выражение в C++. В
+внешней ветке <code>else</code> оно одно, поэтому фигурные скобки можно опустить:
+</p>
+<pre class="code cpp"><span class="kw1">if</span> <span class="br0">&#40;</span>temp <span class="sy1">&lt;</span> TEMP_MIN<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    digitalWrite<span class="br0">&#40;</span>CONDITIONER_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+    digitalWrite<span class="br0">&#40;</span>HEATER_PIN, HIGH<span class="br0">&#41;</span><span class="sy4">;</span>
+    digitalWrite<span class="br0">&#40;</span>OK_LED_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span> <span class="kw1">else</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span>temp <span class="sy1">&gt;</span> TEMP_MAX<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        digitalWrite<span class="br0">&#40;</span>CONDITIONER_PIN, HIGH<span class="br0">&#41;</span><span class="sy4">;</span>
+        digitalWrite<span class="br0">&#40;</span>HEATER_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+        digitalWrite<span class="br0">&#40;</span>OK_LED_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+        digitalWrite<span class="br0">&#40;</span>CONDITIONER_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+        digitalWrite<span class="br0">&#40;</span>HEATER_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+        digitalWrite<span class="br0">&#40;</span>OK_LED_PIN, HIGH<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span></pre>
+
+<p>
+А вспомнив о том, что пустое пространство для компилятора ничего не значит,
+можем убрать несколько отступов и перенос строки, чтобы получить:
+</p>
+<pre class="code cpp"><span class="kw1">if</span> <span class="br0">&#40;</span>temp <span class="sy1">&lt;</span> TEMP_MIN<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    digitalWrite<span class="br0">&#40;</span>CONDITIONER_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+    digitalWrite<span class="br0">&#40;</span>HEATER_PIN, HIGH<span class="br0">&#41;</span><span class="sy4">;</span>
+    digitalWrite<span class="br0">&#40;</span>OK_LED_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span> <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">&#40;</span>temp <span class="sy1">&gt;</span> TEMP_MAX<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    digitalWrite<span class="br0">&#40;</span>CONDITIONER_PIN, HIGH<span class="br0">&#41;</span><span class="sy4">;</span>
+    digitalWrite<span class="br0">&#40;</span>HEATER_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+    digitalWrite<span class="br0">&#40;</span>OK_LED_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+    digitalWrite<span class="br0">&#40;</span>CONDITIONER_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+    digitalWrite<span class="br0">&#40;</span>HEATER_PIN, LOW<span class="br0">&#41;</span><span class="sy4">;</span>
+    digitalWrite<span class="br0">&#40;</span>OK_LED_PIN, HIGH<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+
+<p>
+Подобные цепочки из выражений <code>if</code> — довольно частое явление. Если бы
+вариантов было больше трёх, вложенные <code>if</code> смотрелись бы громоздко и
+уродливо, в то время как такая цепочка выглядела бы всё равно понятно и хорошо.
+</p>
+
+<p>
+На самом деле, программу климат-контроля можно написать компактнее. В этом
+виде она приведена просто для демонстрации <code>if - else if - else</code> цепочки.
+Для полноты картины приведём краткую версию:
+</p>
+<pre class="code cpp"><span class="co2">#define CONDITIONER_PIN   4</span>
+<span class="co2">#define HEATER_PIN        5</span>
+<span class="co2">#define OK_LED_PIN        6</span>
+<span class="co2">#define THERMISTOR_PIN    A0</span>
+&nbsp;
+<span class="co2">#define TEMP_MIN  400</span>
+<span class="co2">#define TEMP_MAX  500</span>
+&nbsp;
+<span class="kw4">void</span> setup<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    pinMode<span class="br0">&#40;</span>CONDITIONER_PIN, OUTPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+    pinMode<span class="br0">&#40;</span>HEATER_PIN, OUTPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+    pinMode<span class="br0">&#40;</span>OK_LED_PIN, OUTPUT<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw4">void</span> loop<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw4">int</span> temp <span class="sy1">=</span> analogRead<span class="br0">&#40;</span>THERMISTOR_PIN<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> tooCold <span class="sy1">=</span> temp <span class="sy1">&lt;</span> TEMP_MIN<span class="sy4">;</span>
+    <span class="kw4">bool</span> tooHot <span class="sy1">=</span> temp <span class="sy1">&gt;</span> TEMP_MAX<span class="sy4">;</span>
+&nbsp;
+    digitalWrite<span class="br0">&#40;</span>CONDITIONER_PIN, tooHot<span class="br0">&#41;</span><span class="sy4">;</span>
+    digitalWrite<span class="br0">&#40;</span>HEATER_PIN, tooCold<span class="br0">&#41;</span><span class="sy4">;</span>
+    digitalWrite<span class="br0">&#40;</span>OK_LED_PIN, <span class="sy3">!</span><span class="br0">&#40;</span>tooCold <span class="sy3">||</span> tooHot<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+
+<p>
+Опять же, всё знакомо за исключением, быть может значения выражения
+<code>!(tooCold || tooHot)</code>. Символ <code>||</code> в C++ — это <em>оператор логического
+«или»</em>. Значение выражения истинно если хотя бы одно из значений: слева или
+справа от оператора истинны.
+</p>
+
+<p>
+Логические выражения — ни что иное, как арифметические выражения. Здесь
+действуют всё те же правила: в одном выражении может быть сколько угодно
+операторов, а очерёдность их применения можно обозначить скобками. В данном
+случае, мы сначала вычисляем логическое значение <code>tooCold || tooHot</code>, а
+затем оператором логического «не» (<code>!</code>) инвертируем полученное значение.
+</p>
+
+<p>
+Итак, вы познакомились с логическими переменными, выражениями и сопутствующими
+операторами. Это уже позволяет делать устройства, которые выглядят умными.
+Включайте фантазию, дерзайте!
+</p>
+
+</div>
+
+                    </article>
+                    <!-- wikipage stop -->
+                                    </div>
+
+                            </div></div><!-- /content -->
+
+            <hr class="a11y" />
+
+        </div><!-- /wrapper -->
+
+        
+<!-- ********** FOOTER ********** -->
+<div id="dokuwiki__footer"><div class="pad">
+    <div id="license">
+      <div class="license">Если не указано иное, содержимое этой вики предоставляется на условиях следующей лицензии: <bdi><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license" class="urlextern">CC Attribution-Noncommercial-Share Alike 4.0 International</a></bdi></div>      Производные работы должны содержать
+      ссылку на http://wiki.amperka.ru, как на первоисточник, <i>непосредственно перед</i>
+      содержимым работы.<br/>
+      Вики работает на суперском движке <a href="http://www.dokuwiki.org/">DokuWiki</a>.
+    </div>
+
+    <div class="docInfo">
+      <bdi>программирование/логические-переменные-ветвление.txt</bdi> · Последние изменения: 2012/11/14 13:46  — <bdi>nailxx</bdi>
+      <!-- PAGE ACTIONS -->
+      <div id="pagetools">
+          <h3 class="a11y">Инструменты страницы</h3>
+          <div class="tools">
+              <ul>
+                  <li><a href="/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5:%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5?do=edit"  class="action source" accesskey="v" rel="nofollow" title="Показать исходный текст [V]"><span>Показать исходный текст</span></a></li><li><a href="/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5:%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5?do=revisions"  class="action revs" accesskey="o" rel="nofollow" title="История страницы [O]"><span>История страницы</span></a></li><li><a href="/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5:%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5?do=backlink"  class="action backlink" rel="nofollow" title="Ссылки сюда"><span>Ссылки сюда</span></a></li><li><a href="#dokuwiki__top"  class="action top" accesskey="t" rel="nofollow" title="Наверх [T]"><span>Наверх</span></a></li>              </ul>
+          </div>
+      </div>
+    </div>
+
+    <div id="wiki-toolset" class="tools group">
+        <!-- USER TOOLS -->
+                    <div id="usertools">
+                <h3 class="a11y">Инструменты пользователя</h3>
+                <ul>
+                    <li><a href="/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5:%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5?do=login&amp;sectok="  class="action login" rel="nofollow" title="Войти">Войти</a></li>                </ul>
+            </div>
+        
+        <!-- SITE TOOLS -->
+        <div id="sitetools">
+            <!--h3 class="a11y">Инструменты сайта</h3>
+            <div class="mobileTools">
+                <form action="/doku.php" method="get" accept-charset="utf-8"><div class="no"><input type="hidden" name="id" value="программирование:логические-переменные-ветвление" /><select name="do" class="edit quickselect" title="Инструменты"><option value="">Инструменты</option><optgroup label="Инструменты страницы"><option value="edit">Показать исходный текст</option><option value="revisions">История страницы</option><option value="backlink">Ссылки сюда</option></optgroup><optgroup label="Инструменты сайта"><option value="recent">Недавние изменения</option><option value="media">Управление медиафайлами</option><option value="index">Все страницы</option></optgroup><optgroup label="Инструменты пользователя"><option value="login">Войти</option></optgroup></select><button type="submit">&gt;</button></div></form>            </div-->
+            <ul>
+                <li><a href="/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5:%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5?do=recent"  class="action recent" accesskey="r" rel="nofollow" title="Недавние изменения [R]">Недавние изменения</a></li><li><a href="/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5:%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5?do=media&amp;ns=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5"  class="action media" rel="nofollow" title="Управление медиафайлами">Управление медиафайлами</a></li><li><a href="/%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5:%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5?do=index"  class="action index" accesskey="x" rel="nofollow" title="Все страницы [X]">Все страницы</a></li>            </ul>
+        </div>
+
+    </div>
+</div></div><!-- /footer -->
+
+<!-- Yandex.Metrika -->
+<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+<div style="display:none;"><script type="text/javascript">
+try { var yaCounter1777561 = new Ya.Metrika(1777561);
+yaCounter1777561.clickmap(true);
+yaCounter1777561.trackLinks(true);
+} catch(e){}
+</script></div>
+<noscript><div style="position:absolute"><img src="//mc.yandex.ru/watch/1777561" alt="" /></div></noscript>
+<!-- /Yandex.Metrika -->
+    </div></div><!-- /site -->
+
+    <div class="no"><img src="/lib/exe/indexer.php?id=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%3A%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5&amp;1559550590" width="2" height="1" alt="" /></div>
+    <div id="screen__mode" class="no"></div>    <!--[if lte IE 8 ]></div><![endif]-->
+</body>
+</html>

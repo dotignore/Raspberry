@@ -4,6 +4,8 @@
 #define LedPin    0								// int LED = 2;
 #define ButtonPin 1								// int pinButton = 8;
 
+// https://www.electroschematics.com/8964/turn-on-led-button-arduino/
+
 int main(void)
 
 {	//when initialize wiring failed,print messageto screen

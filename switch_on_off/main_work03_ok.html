@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<meta property="fb:admins" content="100000360226458" >
+
+		<title>Turn ON an LED with a Button and Arduino - Tutorial #4</title>
+		<link rel="stylesheet" href="/wp-content/themes/electroschematics-v2/js/magnific-popup/css/magnific-popup.css"/>
+		<link rel="stylesheet" href="/wp-content/themes/electroschematics-v2/css/jquery.mCustomScrollbar.css" />
+		<script async src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+		
+
+	  
+<!-- This site is optimized with the Yoast SEO plugin v11.0 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Did you know that you can use Arduino to turn on an LED when you press a button? Well, it is true, you can do this! Leaving the joke aside, let me show"/>
+<link rel="canonical" href="https://www.electroschematics.com/8964/turn-on-led-button-arduino/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Turn ON an LED with a Button and Arduino - Tutorial #4" />
+<meta property="og:description" content="Did you know that you can use Arduino to turn on an LED when you press a button? Well, it is true, you can do this! Leaving the joke aside, let me show" />
+<meta property="og:url" content="https://www.electroschematics.com/8964/turn-on-led-button-arduino/" />
+<meta property="og:site_name" content="ElectroSchematics.com" />
+<meta property="article:tag" content="arduino tutorial" />
+<meta property="article:section" content="Arduino" />
+<meta property="article:published_time" content="2013-07-10T12:31:50+00:00" />
+<meta property="article:modified_time" content="2016-09-21T09:31:48+00:00" />
+<meta property="og:updated_time" content="2016-09-21T09:31:48+00:00" />
+<meta property="og:image" content="https://www.electroschematics.com/wp-content/uploads/2013/07/turn-on-and-off-led-with-button.png" />
+<meta property="og:image:secure_url" content="https://www.electroschematics.com/wp-content/uploads/2013/07/turn-on-and-off-led-with-button.png" />
+<meta property="og:image:width" content="440" />
+<meta property="og:image:height" content="371" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Did you know that you can use Arduino to turn on an LED when you press a button? Well, it is true, you can do this! Leaving the joke aside, let me show" />
+<meta name="twitter:title" content="Turn ON an LED with a Button and Arduino - Tutorial #4" />
+<meta name="twitter:image" content="https://www.electroschematics.com/wp-content/uploads/2013/07/turn-on-and-off-led-with-button.png" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.electroschematics.com/#website","url":"https://www.electroschematics.com/","name":"ElectroSchematics.com","publisher":{"@id":"https://www.electroschematics.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://www.electroschematics.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://www.electroschematics.com/8964/turn-on-led-button-arduino/#webpage","url":"https://www.electroschematics.com/8964/turn-on-led-button-arduino/","inLanguage":"en-US","name":"Turn ON an LED with a Button and Arduino - Tutorial #4","isPartOf":{"@id":"https://www.electroschematics.com/#website"},"image":{"@type":"ImageObject","@id":"https://www.electroschematics.com/8964/turn-on-led-button-arduino/#primaryimage","url":"/wp-content/uploads/2013/07/turn-on-and-off-led-with-button.png","caption":""},"primaryImageOfPage":{"@id":"https://www.electroschematics.com/8964/turn-on-led-button-arduino/#primaryimage"},"datePublished":"2013-07-10T12:31:50+00:00","dateModified":"2016-09-21T09:31:48+00:00","description":"Did you know that you can use Arduino to turn on an LED when you press a button? Well, it is true, you can do this! Leaving the joke aside, let me show"},{"@type":"Article","@id":"https://www.electroschematics.com/8964/turn-on-led-button-arduino/#article","isPartOf":{"@id":"https://www.electroschematics.com/8964/turn-on-led-button-arduino/#webpage"},"author":{"@id":"https://www.electroschematics.com/author/admin/#author","name":"P. Marian"},"publisher":{"@id":"https://www.electroschematics.com/#organization"},"headline":"Turn ON an LED with a Button and Arduino &#8211; Tutorial #4","datePublished":"2013-07-10T12:31:50+00:00","dateModified":"2016-09-21T09:31:48+00:00","commentCount":"7","mainEntityOfPage":"https://www.electroschematics.com/8964/turn-on-led-button-arduino/#webpage","image":{"@id":"https://www.electroschematics.com/8964/turn-on-led-button-arduino/#primaryimage"},"keywords":"arduino tutorial","articleSection":"Arduino"},{"@type":"Person","@id":"https://www.electroschematics.com/author/admin/#author","name":"P. Marian","image":{"@type":"ImageObject","@id":"https://www.electroschematics.com/#personlogo","url":"https://secure.gravatar.com/avatar/c480acc907b0f57c4098595f8de2846b?s=96&d=identicon&r=g","caption":"P. Marian"},"description":"I love all about electronics, circuit diagrams and crazy projects that can help us achieve almost everything our mind can conceive. I created this website and I want to invite you to participate in our project and create the greatest electronic circuits database.","sameAs":[]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="ElectroSchematics.com &raquo; Turn ON an LED with a Button and Arduino &#8211; Tutorial #4 Comments Feed" href="https://www.electroschematics.com/8964/turn-on-led-button-arduino/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.electroschematics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='/wp-content/plugins/yet-another-related-posts-plugin/style/widget.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='etuts-style-css'  href='/wp-content/themes/electroschematics-v2/style.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='/wp-content/plugins/arconix-shortcodes/includes/css/font-awesome.min.css?ver=4.6.3' type='text/css' media='all' />
+<link rel='stylesheet' id='arconix-shortcodes-css'  href='/wp-content/plugins/arconix-shortcodes/includes/css/arconix-shortcodes.min.css?ver=2.1.6' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-css'  href='/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css?ver=1.7.6' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css'  href='/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css?ver=1.7.6' type='text/css' media='all' />
+<link rel='stylesheet' id='stcr-font-awesome-css'  href='/wp-content/plugins/subscribe-to-comments-reloaded/includes/css/font-awesome.min.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='wpProQuiz_front_style-css'  href='/wp-content/plugins/wp-pro-quiz/css/wpProQuiz_front.min.css?ver=0.37' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-q2a-style-css'  href='/wp-content/plugins/wp-q2a-pack/inc/style/style-q2a.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-lightbox-2.min.css-css'  href='/wp-content/plugins/wp-lightbox-2/styles/lightbox.min.css?ver=1.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wppb_stylesheet-css'  href='/wp-content/plugins/profile-builder-hobbyist/assets/css/style-front-end.css?ver=2.3.9' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.electroschematics.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.electroschematics.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='/wp-content/themes/electroschematics-v2/js/bootstrap.min.js?ver=4.9.8'></script>
+<script type='text/javascript' src='/wp-content/themes/electroschematics-v2/js/jquery.matchHeight.js?ver=4.9.8'></script>
+<script type='text/javascript' src='/wp-content/themes/electroschematics-v2/js/comments.js?ver=4.9.8'></script>
+<script type='text/javascript' src='/wp-content/themes/electroschematics-v2/js/singlepage.js?ver=4.9.8'></script>
+<script type='text/javascript' src='/wp-content/themes/electroschematics-v2/js/jquery.mCustomScrollbar.concat.min.js?ver=4.9.8'></script>
+<script type='text/javascript' src='/wp-content/themes/electroschematics-v2/js/main.js?ver=4.9.8'></script>
+<script type='text/javascript' src='/wp-content/themes/electroschematics-v2/js/magnific-popup/js/jquery.magnific-popup.js?ver=4.9.8'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[]};
+var log_object = {"ajax_url":"https:\/\/www.electroschematics.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/cookie-law-info/public/js/cookie-law-info-public.js?ver=1.7.6'></script>
+<link rel='https://api.w.org/' href='https://www.electroschematics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.electroschematics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.electroschematics.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.8" />
+<link rel='shortlink' href='https://www.electroschematics.com/?p=8964' />
+<link rel="alternate" type="application/json+oembed" href="https://www.electroschematics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.electroschematics.com%2F8964%2Fturn-on-led-button-arduino%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.electroschematics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.electroschematics.com%2F8964%2Fturn-on-led-button-arduino%2F&#038;format=xml" />
+<link rel="stylesheet" type="text/css" href="/wp-content/plugins/wp-code-highlight/css/desert.css" media="screen" />
+		<script type="text/javascript">
+			var cli_flush_cache=1;
+		</script>
+		<link rel="icon" href="/wp-content/uploads/2016/05/cropped-favicon-1-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="/wp-content/uploads/2016/05/cropped-favicon-1-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="/wp-content/uploads/2016/05/cropped-favicon-1-180x180.jpg" />
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2016/05/cropped-favicon-1-270x270.jpg" />
+
+		<!-- BEGIN Krux ControlTag for "AspenCore Generic" -->
+		<script class="kxct" data-id="sbnf4txm4" data-timing="async" data-version="3.0" type="text/javascript">
+		    window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+		    (function(){
+		        var k=document.createElement('script');k.type='text/javascript';k.async=true;
+		        k.src=(location.protocol==='https:'?'https:':'http:')+'//cdn.krxd.net/controltag/sbnf4txm4.js';
+		        var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+		    }());
+		</script>
+		<!-- END Krux ControlTag -->
+
+		<script class="kxint" data-namespace="aspencore" type="text/javascript">
+		    window.Krux||((Krux=function(){Krux.q.push(arguments);}).q=[]);
+		    (function(){
+		        function retrieve(n){
+		            var k= 'kx'+'aspencore_'+n, ls=(function(){
+		                try {
+		                    return window.localStorage;
+		                } catch(e) {
+		                    return null;
+		                }
+		            })();
+		            if (ls) {
+		                return ls[k] || '';
+		            } else if (navigator.cookieEnabled) {
+		                var m = document.cookie.match(k+'=([^;]*)');
+		                return (m && unescape(m[1])) || '';
+		            } else {
+		                return '';
+		            }
+		        }
+		        Krux.user = retrieve('user');
+		        Krux.segments = retrieve('segs') ? retrieve('segs').split(',') : [];
+		    })();
+		</script>
+
+		<link rel="pingback" href="https://www.electroschematics.com/xmlrpc.php" />
+
+		<script async src="https://apis.google.com/js/platform.js"></script>
+		<script type='text/javascript'>
+			(function() {
+				var useSSL = 'https:' == document.location.protocol;
+				var src = (useSSL ? 'https:' : 'http:') +
+					'//www.googletagservices.com/tag/js/gpt.js';
+				document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+			})();
+		</script>
+		
+		
+		<script type='text/javascript'>
+			var google_ads = [];
+			googletag.cmd.push(function() {
+
+				// modify the [800, 600] to set the max screen size to display the mobile ad size
+				var billboardMapping = googletag.sizeMapping().
+				addSize([800,375], [970, 250]).
+				addSize([0, 0], [320, 50]).
+				build();
+
+				var leaderMapping = googletag.sizeMapping().
+				addSize([800,300], [728, 90]).
+				addSize([0, 0], [320, 60]).
+				build();
+
+				var filmstripMapping = googletag.sizeMapping().
+				addSize([800,600], [300,  600]).
+				addSize([0, 0], [300, 300]).
+				build();
+
+				google_ads.push(googletag.defineSlot('/74317539/ElectroSchematics', [[970, 250], [320, 50]], 'div-gpt-ad-billboard-smartphonebanner').setTargeting('sec', ['arduino']).defineSizeMapping(billboardMapping).addService(googletag.pubads()));
+				googletag.defineSlot('/74317539/ElectroSchematics', [300, 250], 'div-gpt-ad-medium-rectangle').setTargeting('sec', ['arduino']).addService(googletag.pubads());
+				google_ads.push(googletag.defineSlot('/74317539/ElectroSchematics', [[300, 600], [300, 300]], 'div-gpt-ad-filmstrip').setTargeting('sec', ['arduino']).defineSizeMapping(filmstripMapping).addService(googletag.pubads()));
+				google_ads.push(googletag.defineSlot('/74317539/ElectroSchematics', [[728,  90], [320, 60]], 'div-gpt-ad-leader-smartphonebanner').setTargeting('sec', ['arduino']).defineSizeMapping(leaderMapping).addService(googletag.pubads()));
+				googletag.defineSlot('/74317539/ElectroSchematics', [[300, 450]], 'div-gpt-ad-ti-featured-design').setTargeting('sec', ['tidesigns']).addService(googletag.pubads());
+                                googletag.defineSlot('/74317539/ElectroSchematics',[4, 4],'div-gpt-ad-inread').addService(googletag.pubads());
+                /* Add fluid tags */
+					googletag.defineSlot('/74317539/ElectroSchematics', ['fluid'], 'div-gpt-ad-fluid').addService(googletag.pubads());
+				/* End of fluid tags */
+                                // googletag.pubads().enableSingleRequest();
+				// googletag.pubads().enableSyncRendering();
+				// googletag.enableServices();
+
+				googletag.pubads().enableSingleRequest();
+
+									googletag.pubads().setTargeting('kw',["arduino_tutorial","arduino"]);
+				
+	            	            googletag.pubads().setTargeting('aid', '8964');
+	            
+	            googletag.pubads().setTargeting("ksg", Krux.segments);
+	            googletag.pubads().setTargeting("kuid", Krux.user);
+
+				googletag.pubads().enableSyncRendering();
+				googletag.enableServices();
+			});
+		</script>
+	<script>bazadebezolkohpepadr="588369619"</script><script type="text/javascript" src="https://www.electroschematics.com/akam/11/2311cd0d" defer></script></head>
+	<body>
+
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KMPGTZ"
+					  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KMPGTZ');</script>
+	<!-- End Google Tag Manager -->
+
+			<!-- analytics -->
+		<script type="text/javascript">
+			window.google_analytics_uacct = "UA-4765780-3";
+		</script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-4765780-3', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<!-- analytics -->
+		
+				<script>
+		    dmpDataLayer = [{"title":"Turn ON an LED with a Button and Arduino - Tutorial #4","section":["Arduino"],"pageType":"Projects","keywords":["arduino tutorial","Arduino"]}];
+		</script>
+		
+	<!-- facebook -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&&appId=264778010376278&version=v2.0";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- facebook -->
+
+	<!-- Overlay Search -->
+	<div class="overlay-menu hidden-xs">
+		<div class="overlay-head clearfix">
+			<a href="/"><img src="/wp-content/themes/electroschematics-v2/img/logo-white.svg" alt=""></a>
+			<a href="#" class="close">X</a>
+		</div>
+		<div class="overlay-cont">
+			
+<div class="search-wrap">	
+	<div class="search-input-wrap">
+		<form method="get" id="searchform" action="https://www.electroschematics.com/" class="clearfix">
+			<input type="text" name="s" id="s" class="search-input"
+			value=""
+			/>
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</form>
+	</div>
+</div>			<div class="single-page content-wrap container">
+				<div class="row-cnt row">
+										<div class="col-md-12">
+						<div class="row">
+							<div class="page-section-title col-md-12">
+								<h1>Top 10 Articles</h1>
+							</div>
+							<div class="clearboth clearfix">
+																	<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="https://www.electroschematics.com/14544/secrets-of-car-reverse-parking-sensors/"><img width="800" height="600" src="/wp-content/uploads/2019/05/6-Sensor-Controller-PCB-Annotated.jpg" class="attachment-full size-full wp-post-image" alt="" srcset="/wp-content/uploads/2019/05/6-Sensor-Controller-PCB-Annotated.jpg 800w, /wp-content/uploads/2019/05/6-Sensor-Controller-PCB-Annotated-100x75.jpg 100w, /wp-content/uploads/2019/05/6-Sensor-Controller-PCB-Annotated-400x300.jpg 400w, /wp-content/uploads/2019/05/6-Sensor-Controller-PCB-Annotated-768x576.jpg 768w, /wp-content/uploads/2019/05/6-Sensor-Controller-PCB-Annotated-550x413.jpg 550w" sizes="(max-width: 800px) 100vw, 800px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="https://www.electroschematics.com/14544/secrets-of-car-reverse-parking-sensors/">Secrets of Car Reverse Parking Sensors</a></h2>
+												<h3 class="author">T.K. Hareendran -  05/21/19</h3>
+												<div class="content-desc">Naturally, one of the best ways to learn electronics is to see how someone more experienced designed something. <a href="https://www.electroschematics.com/14544/secrets-of-car-reverse-parking-sensors/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="https://www.electroschematics.com/14521/adaptive-neopixel-security-light/"><img width="800" height="600" src="/wp-content/uploads/2019/05/4-Experiment-Setup-1.jpg" class="attachment-full size-full wp-post-image" alt="" srcset="/wp-content/uploads/2019/05/4-Experiment-Setup-1.jpg 800w, /wp-content/uploads/2019/05/4-Experiment-Setup-1-100x75.jpg 100w, /wp-content/uploads/2019/05/4-Experiment-Setup-1-400x300.jpg 400w, /wp-content/uploads/2019/05/4-Experiment-Setup-1-768x576.jpg 768w, /wp-content/uploads/2019/05/4-Experiment-Setup-1-550x413.jpg 550w" sizes="(max-width: 800px) 100vw, 800px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="https://www.electroschematics.com/14521/adaptive-neopixel-security-light/">Adaptive NeoPixel Security Light</a></h2>
+												<h3 class="author">T.K. Hareendran -  05/15/19</h3>
+												<div class="content-desc">Here’s a simple but useful electronic circuit of an adaptive security light that you can build yourself. Because <a href="https://www.electroschematics.com/14521/adaptive-neopixel-security-light/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="https://www.electroschematics.com/14508/tft-car-monitor/"><img width="800" height="493" src="/wp-content/uploads/2019/05/1-My-Car-TFT-Monitor.jpg" class="attachment-full size-full wp-post-image" alt="" srcset="/wp-content/uploads/2019/05/1-My-Car-TFT-Monitor.jpg 800w, /wp-content/uploads/2019/05/1-My-Car-TFT-Monitor-100x62.jpg 100w, /wp-content/uploads/2019/05/1-My-Car-TFT-Monitor-400x247.jpg 400w, /wp-content/uploads/2019/05/1-My-Car-TFT-Monitor-768x473.jpg 768w, /wp-content/uploads/2019/05/1-My-Car-TFT-Monitor-550x339.jpg 550w" sizes="(max-width: 800px) 100vw, 800px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="https://www.electroschematics.com/14508/tft-car-monitor/">TFT Car Monitor: More Than Just A Little Teardown</a></h2>
+												<h3 class="author">T.K. Hareendran -  05/08/19</h3>
+												<div class="content-desc">I recently purchased a 4.3-inch TFT car monitor to use with my simple security eye project. This small <a href="https://www.electroschematics.com/14508/tft-car-monitor/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="https://www.electroschematics.com/14491/el-wire-experiments/"><img width="800" height="600" src="/wp-content/uploads/2019/05/1-Intro-1.jpg" class="attachment-full size-full wp-post-image" alt="" srcset="/wp-content/uploads/2019/05/1-Intro-1.jpg 800w, /wp-content/uploads/2019/05/1-Intro-1-100x75.jpg 100w, /wp-content/uploads/2019/05/1-Intro-1-400x300.jpg 400w, /wp-content/uploads/2019/05/1-Intro-1-768x576.jpg 768w, /wp-content/uploads/2019/05/1-Intro-1-550x413.jpg 550w" sizes="(max-width: 800px) 100vw, 800px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="https://www.electroschematics.com/14491/el-wire-experiments/">EL Wire Experiments &#038; A Minor Hack</a></h2>
+												<h3 class="author">T.K. Hareendran -  05/02/19</h3>
+												<div class="content-desc">Electroluminescent wire (EL wire), also called flexible neon wire, is a new attraction for electronics hobbyists and makers. <a href="https://www.electroschematics.com/14491/el-wire-experiments/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="https://www.electroschematics.com/14474/nfc-rfid-module-pn532/"><img width="800" height="800" src="/wp-content/uploads/2019/04/1-PN532-Module-V3.jpg" class="attachment-full size-full wp-post-image" alt="" srcset="/wp-content/uploads/2019/04/1-PN532-Module-V3.jpg 800w, /wp-content/uploads/2019/04/1-PN532-Module-V3-100x100.jpg 100w, /wp-content/uploads/2019/04/1-PN532-Module-V3-400x400.jpg 400w, /wp-content/uploads/2019/04/1-PN532-Module-V3-768x768.jpg 768w, /wp-content/uploads/2019/04/1-PN532-Module-V3-550x550.jpg 550w" sizes="(max-width: 800px) 100vw, 800px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="https://www.electroschematics.com/14474/nfc-rfid-module-pn532/">PN532 NFC RFID Module — A Quick Introduction</a></h2>
+												<h3 class="author">T.K. Hareendran -  04/24/19</h3>
+												<div class="content-desc">If you’re an active electronics hobbyist, you’re likely familiar with the terms “near-field communication” (NFC) and “radio frequency <a href="https://www.electroschematics.com/14474/nfc-rfid-module-pn532/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="https://www.electroschematics.com/14451/usb-sound-card-hack/"><img width="600" height="524" src="/wp-content/uploads/2019/04/2-USB-Sound-Card.jpg" class="attachment-full size-full wp-post-image" alt="" srcset="/wp-content/uploads/2019/04/2-USB-Sound-Card.jpg 600w, /wp-content/uploads/2019/04/2-USB-Sound-Card-100x87.jpg 100w, /wp-content/uploads/2019/04/2-USB-Sound-Card-400x349.jpg 400w, /wp-content/uploads/2019/04/2-USB-Sound-Card-550x480.jpg 550w" sizes="(max-width: 600px) 100vw, 600px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="https://www.electroschematics.com/14451/usb-sound-card-hack/">USB Sound Card Hack</a></h2>
+												<h3 class="author">T.K. Hareendran -  04/17/19</h3>
+												<div class="content-desc">&nbsp; Let’s begin with the above photo of a cheap electronics gizmo that made me curious. This $1 <a href="https://www.electroschematics.com/14451/usb-sound-card-hack/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="https://www.electroschematics.com/14437/sonoff-basic-wi-fi-switch/"><img width="1200" height="900" src="/wp-content/uploads/2019/04/1-Sonoff-Basic.jpg" class="attachment-full size-full wp-post-image" alt="" srcset="/wp-content/uploads/2019/04/1-Sonoff-Basic.jpg 1200w, /wp-content/uploads/2019/04/1-Sonoff-Basic-100x75.jpg 100w, /wp-content/uploads/2019/04/1-Sonoff-Basic-400x300.jpg 400w, /wp-content/uploads/2019/04/1-Sonoff-Basic-768x576.jpg 768w, /wp-content/uploads/2019/04/1-Sonoff-Basic-550x413.jpg 550w" sizes="(max-width: 1200px) 100vw, 1200px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="https://www.electroschematics.com/14437/sonoff-basic-wi-fi-switch/">Sonoff Basic Wi-Fi Smart Switch — Untangling the Ropes</a></h2>
+												<h3 class="author">T.K. Hareendran -  04/09/19</h3>
+												<div class="content-desc">In this article, you’re going to learn more about the $5 Wi-Fi smart switch to be used with <a href="https://www.electroschematics.com/14437/sonoff-basic-wi-fi-switch/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="https://www.electroschematics.com/14423/neo-6m-gps-module/"><img width="800" height="731" src="/wp-content/uploads/2019/04/5-Reverse-Geocoded-Address.png" class="attachment-full size-full wp-post-image" alt="" srcset="/wp-content/uploads/2019/04/5-Reverse-Geocoded-Address.png 800w, /wp-content/uploads/2019/04/5-Reverse-Geocoded-Address-100x91.png 100w, /wp-content/uploads/2019/04/5-Reverse-Geocoded-Address-400x366.png 400w, /wp-content/uploads/2019/04/5-Reverse-Geocoded-Address-768x702.png 768w, /wp-content/uploads/2019/04/5-Reverse-Geocoded-Address-550x503.png 550w" sizes="(max-width: 800px) 100vw, 800px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="https://www.electroschematics.com/14423/neo-6m-gps-module/">NEO-6M GPS Module — An Introduction</a></h2>
+												<h3 class="author">T.K. Hareendran -  04/04/19</h3>
+												<div class="content-desc">This article demonstrates how to play with the u-blox NEO-6M global positioning system (GPS) module, a very popular, <a href="https://www.electroschematics.com/14423/neo-6m-gps-module/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="https://www.electroschematics.com/14411/solar-shed-led-light/"><img width="800" height="600" src="/wp-content/uploads/2019/04/6-LED-Panel-x20.jpg" class="attachment-full size-full wp-post-image" alt="" srcset="/wp-content/uploads/2019/04/6-LED-Panel-x20.jpg 800w, /wp-content/uploads/2019/04/6-LED-Panel-x20-100x75.jpg 100w, /wp-content/uploads/2019/04/6-LED-Panel-x20-400x300.jpg 400w, /wp-content/uploads/2019/04/6-LED-Panel-x20-768x576.jpg 768w, /wp-content/uploads/2019/04/6-LED-Panel-x20-550x413.jpg 550w" sizes="(max-width: 800px) 100vw, 800px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="https://www.electroschematics.com/14411/solar-shed-led-light/">Solar Shed Light</a></h2>
+												<h3 class="author">T.K. Hareendran -  04/01/19</h3>
+												<div class="content-desc">If you found my recent Smart LED Streetlight useful, below is another solar light that is easy to <a href="https://www.electroschematics.com/14411/solar-shed-led-light/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																		<div class="post-wrap col-sm-6 col-md-4">
+										<div class="box">
+											<div class="thumb square-thumb">
+												<div class="square-box">
+																											<a class="the_thumb" href="https://www.electroschematics.com/14383/rf-radio-frequency/"><img width="1095" height="538" src="/wp-content/uploads/2019/03/1-Mini-LoRa-Module-1.jpg" class="attachment-full size-full wp-post-image" alt="" srcset="/wp-content/uploads/2019/03/1-Mini-LoRa-Module-1.jpg 1095w, /wp-content/uploads/2019/03/1-Mini-LoRa-Module-1-100x49.jpg 100w, /wp-content/uploads/2019/03/1-Mini-LoRa-Module-1-400x197.jpg 400w, /wp-content/uploads/2019/03/1-Mini-LoRa-Module-1-768x377.jpg 768w, /wp-content/uploads/2019/03/1-Mini-LoRa-Module-1-550x270.jpg 550w" sizes="(max-width: 1095px) 100vw, 1095px" /></a>
+																									</div>
+											</div>
+											<div class="desc">
+												<h2><a href="https://www.electroschematics.com/14383/rf-radio-frequency/">A Review of the Mini SX1278 LoRa Transceiver Module</a></h2>
+												<h3 class="author">T.K. Hareendran -  03/26/19</h3>
+												<div class="content-desc">While designing an internet of things (IoT) project that also required a long radio-frequency link, it occurred to <a href="https://www.electroschematics.com/14383/rf-radio-frequency/">[...]</a></div>
+											</div>
+										</div>
+									</div>
+																</div>
+						</div>
+					</div>
+				</div>
+			</div>
+						<div class="footer-wrap" style="clear: both;">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-2">
+						<h2>The Basics</h2>
+						<ul class="basics">
+							<li><a>About Us</a></li>
+							<li><a href="/contact-us">Contact Us</a></li>
+							<li><a href="/participate">Participate</a></li>
+							<li><a href="https://www.aspencore.com/privacy-policy" target="_blank">Privacy Policy</a></li>
+							<li><a href="https://www.aspencore.com/terms-of-use" target="_blank">Terms of Use</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-2">
+						<h2>For Advertisers</h2>
+						<ul class="advertisers">
+							<li><a href="http://go.aspencore.com/contactus" target="_blank">Contact Sales</a></li>
+							<li><a href=" http://go.aspencore.com/mediakit" target="_blank">Media Guide Request</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<h2>Aspencore Network</h2>
+						<ul class="network">
+							<li>ElectroSchematics</li>
+							<li><a href="https://www.electronics-tutorials.ws/" target="_blank">Electronics Tutorials</a></li>
+							<li><a href="https://www.electronicproducts.com/" target="_blank">Electronic Products</a></li>
+							<li><a href="http://www.21ic.com/" target="_blank">21IC</a></li>
+							<li><a href="http://embedded-control-europe.com/" target="_blank">Embedded Control Europe</a></li>
+							<li><a href="https://www.elektroda.pl/" target="_blank">Elektroda</a></li>
+							<li><a href="https://www.eeweb.com/" target="_blank">EEWeb</a></li>
+							<li><a href="http://www.engineersgarage.com/" target="_blank">Engineers Garage</a></li>
+							<li><a href="http://www.eem.com/" target="_blank">EEM</a></li>
+							<li><a href="http://www.embedded-know-how.com/" target="_blank">Embedded Know How</a></li>
+							<li><a href="https://iot.eetimes.com/" target="_blank">IoT Times</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<h2>Connect With Us</h2>
+						<ul class="social">
+							<li><a href="https://www.facebook.com/groups/electroschematics/" rel="nofollow" target="_blank"><span class="symbol">&#xe227;</span><span class="desc">Facebook</span></a></li>
+							<li><a href="https://www.youtube.com/user/ElectroSchematics"><span class="symbol">&#xe299;</span><span class="desc">YouTube</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bttm-most">
+				<div class="container">
+					<div class="row">
+						<div class="col-a col-sm-6 col-md-6">
+							All contents are Copyright &copy; 2019 by AspenCore, Inc. All Rights Reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		</div>
+	</div>
+	<!-- End -->
+
+	<!-- Overlay Mouser panel -->
+<div class="overlay-mouser">
+	<div class="overlay-mouser-cont">
+		<div class="container">
+			<div class="section-a">
+				 &nbsp;<a class="close-panel" href="#"><span>Close</span>&nbsp; <i class="fa fa-times-circle"></i></a>
+			</div>
+			<div class="section-b">
+				<a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http" target="_blank" class="mouser-site-click"><img src="https://www.ti.com/assets/images/ic-logo.svg" alt="" class="mouser-site-click"></a> <!--<span>Browse Products</span>-->
+			</div>
+			<div class="section-c">
+				<ul class="products-list">
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/amplifiersandlinears/amplifiersandlinears.page?HQS=hpa-null-null-elschemflyaway-bs-lp-amplifiers-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Amplifiers</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/interface/interface.page?HQS=hpa-null-null-elschemflyaway-bs-lp-interface-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Interface</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/non-isolated-dc-dc-switching-regulator-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-nonisolatedDCDC-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Non-Isolated DC/DC</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/voltage-reference-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-voltageref-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Voltage References</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/audio/overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-audio-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Audio</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/linear-regulators-ldo-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-linearregulator-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Linear Regulator (LDO)</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/powermanagement/power_portal.page?HQS=hpa-null-null-elschemflyaway-bs-lp-pwrmgmt-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Power Management</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/webench/overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-WEBENCH-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Webench</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/battery-management-products-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-battery-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Battery Management</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/logic/home_overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-logic-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Logic</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/power-management-multi-channel-ic-pmic-solutions-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-pmic-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Power Management IC (PMIC)</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/general/docs/refdesignsearchresults.tsp?HQS=hpa-null-null-elschemflyaway-bs-lp-TIDesigns-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">TI Designs</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/clockandtiming/clock_and_timing.page?HQS=hpa-null-null-elschemflyaway-bs-lp-clocks-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Clock and Timing</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/mosfet-and-igbt-gate-drivers-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-MOSFET-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">MOSFET and IGBT Gate Drivers</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/power-modules-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-powermodules-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Power Modules</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?https://store.ti.com?HQS=hpa-null-null-elschemflyaway-bs-store-store-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">TI Store</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/dataconverters/data_converter.page?HQS=hpa-null-null-elschemflyaway-bs-lp-dataconverters-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Data Converters</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/motordrivers/overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-motordrivers-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Motor Drivers</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/sensors/overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-sensors-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Sensors</a></li>
+					<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://my.ti.com?HQS=hpa-null-null-elschemflyaway-bs-myti-myti-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">MyTI Registration</a></li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="visit-ti">
+			<a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com?HQS=hpa-null-null-elschemflyaway-bs-lp-homepage-wwe&DCM=yes" target="_blank" class="mouser-product-click">visit ti.com<img src="/wp-content/themes/electroschematics-v2/img/right-arrow-white.png"></a>
+		</div>
+	</div>
+
+</div>
+<!-- End -->	<div id="topBar" class="top-bar-1-wrap mbile" style="position:fixed;top:0;width:100%;">
+		<div class="container">
+			<div class="row">
+				<div class="menu col-xs-3 col-sm-4 col-md-4">
+					<div id="show" class="orb"></div>
+				</div>
+				<div class="main-logo col-xs-6 col-sm-4 col-md-4">
+					<a href="/"><img src="/wp-content/themes/electroschematics-v2/img/main-logo.svg" alt=""></a>
+				</div>
+				<div class="col-xs-3 col-sm-4 col-md-4">
+					<div class="search mbile"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="top-bar-1-wrap dsktop">
+		<div class="topbar-most clearfix">
+			<div class="col-xs-3 col-sm-3 col-md-3">
+				<div class="user-login">
+											<a href="/log-in"><i class="fa fa-user"></i> &nbsp;&nbsp;Login</a>
+									</div>
+			</div>
+			<div class="main-logo col-xs-6 col-sm-6 col-md-6">
+				<a href="/"><img src="/wp-content/themes/electroschematics-v2/img/main-logo.svg" alt=""></a>
+			</div>
+			<div class="for-overlay col-xs-3 col-sm-3 col-md-3" data-mode="search">
+				<div class="search"></div>
+			</div>
+		</div>
+		<div class="sub-top-bar">
+			<div class="hidden-xs clearfix">
+
+				<div class="col-b">
+
+				</div>
+
+				<div class="col-a">
+					<ul id="main-menu" class="menu clearfix"><li id="menu-item-12664" class="menu-item-has-children"><a href="https://www.electroschematics.com/category/various/">Projects</a>
+<ul class="sub-menu">
+	<li id="menu-item-12650" class="current-post-ancestor current-menu-parent current-post-parent"><a href="https://www.electroschematics.com/category/arduino/">Arduino</a></li>
+	<li id="menu-item-12656"><a href="https://www.electroschematics.com/category/lights/">Lights</a></li>
+	<li id="menu-item-12665"><a href="https://www.electroschematics.com/category/various/datasheet/">Datasheets</a></li>
+	<li id="menu-item-12648"><a href="https://www.electroschematics.com/category/555-circuits/">555</a></li>
+	<li id="menu-item-12658"><a href="https://www.electroschematics.com/category/power-supply/">Power supply</a></li>
+	<li id="menu-item-12654"><a href="https://www.electroschematics.com/category/ece-projects/">ECE projects</a></li>
+	<li id="menu-item-12649"><a href="https://www.electroschematics.com/category/alarm/">Alarms</a></li>
+	<li id="menu-item-12659"><a href="https://www.electroschematics.com/category/radio/">Radio</a></li>
+	<li id="menu-item-12657"><a href="https://www.electroschematics.com/category/measurement/">Measure</a></li>
+	<li id="menu-item-12651"><a href="https://www.electroschematics.com/category/audio/">Audio</a></li>
+	<li id="menu-item-12661"><a href="https://www.electroschematics.com/category/solar-projects/">Solar</a></li>
+	<li id="menu-item-12670"><a href="https://www.electroschematics.com/category/various/useful/">Useful</a></li>
+	<li id="menu-item-12653"><a href="https://www.electroschematics.com/category/diy/">DIY</a></li>
+	<li id="menu-item-12662"><a href="https://www.electroschematics.com/category/tested/">Tested</a></li>
+	<li id="menu-item-12663"><a href="https://www.electroschematics.com/category/theory/">Theory</a></li>
+	<li id="menu-item-12655"><a href="https://www.electroschematics.com/category/hobby/">Hobby</a></li>
+	<li id="menu-item-12652"><a href="https://www.electroschematics.com/category/basic-electronics/">Basic</a></li>
+</ul>
+</li>
+<li id="menu-item-12672"><a href="https://www.electroschematics.com/tools/">Tools</a></li>
+<li id="menu-item-12673" class="menu-item-has-children tutorials-cont"><a href="#">Tutorials</a>
+<ul class="sub-menu">
+	<li id="menu-item-12675"><a href="/tag/arduino-tutorial/">Arduino Tutorial</a></li>
+	<li id="menu-item-12676"><a href="/tag/avr-tutorial/">AVR Tutorial</a></li>
+	<li id="menu-item-12677"><a href="/tag/pic-tutorial/">PIC Tutorial</a></li>
+</ul>
+</li>
+<li id="menu-item-10563"><a title="electronics labs" href="https://www.electroschematics.com/labs/">Labs</a></li>
+<li id="menu-item-14011"><a href="https://www.electroschematics.com/further-education/">Further Education</a></li>
+<li id="menu-item-8571"><a title="electronics engineering Q&#038;A" href="/qa/">Q&#038;A</a></li>
+<li id="menu-item-12679"><a href="https://www.electroschematics.com/electronics-quizzes/">Quizzes</a></li>
+<li id="menu-item-12846"><a href="https://ti-content-syndication.electroschematics.com">Reference Designs</a></li>
+<li id="menu-item-8572"><a title="contact page" rel="nofollow" href="https://www.electroschematics.com/contact-us/">Contact</a></li>
+</ul>				</div>
+
+			</div>
+		</div>
+	</div>
+	<div id="main">
+
+<div class="body-frame body-single">
+			<div class="side-menu mbile">
+			<div id="side-menu-head" class="side-menu-head clearfix">
+				<a href="/"><img class="logo" src="/wp-content/themes/electroschematics-v2/img/lg-white-mbl.svg" alt=""></a>
+				<a href="#" class="close">X</a>
+			</div>
+			<div class="the-list">
+
+				
+<div class="search-wrap">	
+	<div class="search-input-wrap">
+		<form method="get" id="searchform" action="https://www.electroschematics.com/" class="clearfix">
+			<input type="text" name="s" id="s" class="search-input"
+			value=""
+			/>
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</form>
+	</div>
+</div>
+				  <ul id="sm-main-menu" class="sm-menu"><li class="menu-item-has-children"><a href="https://www.electroschematics.com/category/various/">Projects</a>
+<ul class="sub-menu">
+	<li class="current-post-ancestor current-menu-parent current-post-parent"><a href="https://www.electroschematics.com/category/arduino/">Arduino</a></li>
+	<li><a href="https://www.electroschematics.com/category/lights/">Lights</a></li>
+	<li><a href="https://www.electroschematics.com/category/various/datasheet/">Datasheets</a></li>
+	<li><a href="https://www.electroschematics.com/category/555-circuits/">555</a></li>
+	<li><a href="https://www.electroschematics.com/category/power-supply/">Power supply</a></li>
+	<li><a href="https://www.electroschematics.com/category/ece-projects/">ECE projects</a></li>
+	<li><a href="https://www.electroschematics.com/category/alarm/">Alarms</a></li>
+	<li><a href="https://www.electroschematics.com/category/radio/">Radio</a></li>
+	<li><a href="https://www.electroschematics.com/category/measurement/">Measure</a></li>
+	<li><a href="https://www.electroschematics.com/category/audio/">Audio</a></li>
+	<li><a href="https://www.electroschematics.com/category/solar-projects/">Solar</a></li>
+	<li><a href="https://www.electroschematics.com/category/various/useful/">Useful</a></li>
+	<li><a href="https://www.electroschematics.com/category/diy/">DIY</a></li>
+	<li><a href="https://www.electroschematics.com/category/tested/">Tested</a></li>
+	<li><a href="https://www.electroschematics.com/category/theory/">Theory</a></li>
+	<li><a href="https://www.electroschematics.com/category/hobby/">Hobby</a></li>
+	<li><a href="https://www.electroschematics.com/category/basic-electronics/">Basic</a></li>
+</ul>
+</li>
+<li><a href="https://www.electroschematics.com/tools/">Tools</a></li>
+<li class="menu-item-has-children tutorials-cont"><a href="#">Tutorials</a>
+<ul class="sub-menu">
+	<li><a href="/tag/arduino-tutorial/">Arduino Tutorial</a></li>
+	<li><a href="/tag/avr-tutorial/">AVR Tutorial</a></li>
+	<li><a href="/tag/pic-tutorial/">PIC Tutorial</a></li>
+</ul>
+</li>
+<li><a title="electronics labs" href="https://www.electroschematics.com/labs/">Labs</a></li>
+<li><a href="https://www.electroschematics.com/further-education/">Further Education</a></li>
+<li><a title="electronics engineering Q&#038;A" href="/qa/">Q&#038;A</a></li>
+<li><a href="https://www.electroschematics.com/electronics-quizzes/">Quizzes</a></li>
+<li><a href="https://ti-content-syndication.electroschematics.com">Reference Designs</a></li>
+<li><a title="contact page" rel="nofollow" href="https://www.electroschematics.com/contact-us/">Contact</a></li>
+</ul>				<div class="footer-wrap" style="clear: both;">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-2">
+						<h2>The Basics</h2>
+						<ul class="basics">
+							<li><a>About Us</a></li>
+							<li><a href="/contact-us">Contact Us</a></li>
+							<li><a href="/participate">Participate</a></li>
+							<li><a href="https://www.aspencore.com/privacy-policy" target="_blank">Privacy Policy</a></li>
+							<li><a href="https://www.aspencore.com/terms-of-use" target="_blank">Terms of Use</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-2">
+						<h2>For Advertisers</h2>
+						<ul class="advertisers">
+							<li><a href="http://go.aspencore.com/contactus" target="_blank">Contact Sales</a></li>
+							<li><a href=" http://go.aspencore.com/mediakit" target="_blank">Media Guide Request</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<h2>Aspencore Network</h2>
+						<ul class="network">
+							<li>ElectroSchematics</li>
+							<li><a href="https://www.electronics-tutorials.ws/" target="_blank">Electronics Tutorials</a></li>
+							<li><a href="https://www.electronicproducts.com/" target="_blank">Electronic Products</a></li>
+							<li><a href="http://www.21ic.com/" target="_blank">21IC</a></li>
+							<li><a href="http://embedded-control-europe.com/" target="_blank">Embedded Control Europe</a></li>
+							<li><a href="https://www.elektroda.pl/" target="_blank">Elektroda</a></li>
+							<li><a href="https://www.eeweb.com/" target="_blank">EEWeb</a></li>
+							<li><a href="http://www.engineersgarage.com/" target="_blank">Engineers Garage</a></li>
+							<li><a href="http://www.eem.com/" target="_blank">EEM</a></li>
+							<li><a href="http://www.embedded-know-how.com/" target="_blank">Embedded Know How</a></li>
+							<li><a href="https://iot.eetimes.com/" target="_blank">IoT Times</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<h2>Connect With Us</h2>
+						<ul class="social">
+							<li><a href="https://www.facebook.com/groups/electroschematics/" rel="nofollow" target="_blank"><span class="symbol">&#xe227;</span><span class="desc">Facebook</span></a></li>
+							<li><a href="https://www.youtube.com/user/ElectroSchematics"><span class="symbol">&#xe299;</span><span class="desc">YouTube</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bttm-most">
+				<div class="container">
+					<div class="row">
+						<div class="col-a col-sm-6 col-md-6">
+							All contents are Copyright &copy; 2019 by AspenCore, Inc. All Rights Reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>				
+			</div>
+		</div>	<div class="body-cont">
+		<div class="mask-cont clearfix">
+			<div class="single-page content-wrap container">
+				<div class="row-cnt row">
+
+											<div class="home-top-ads">
+							<div id="text-8" class="widgets widget_text">			<div class="textwidget"><div class="billboard-wrapper">
+<div id='div-gpt-ad-billboard-smartphonebanner'><script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-billboard-smartphonebanner'); });
+</script>
+</div>
+<div class="ads_title_home">
+Advertisement
+</div>
+</div>
+</div>
+		</div>						</div>
+					
+					<div class="col-sm-12 col-md-12">
+						<div class="breadcrumb">
+							<!-- Breadcrumb NavXT 6.2.1 -->
+<a title="Back Home" href="https://www.electroschematics.com" class="home">Home</a><span class="separator">&nbsp;/&nbsp;</span><span property="itemListElement" typeof="ListItem"><span property="name">Turn ON an LED with a Button and Arduino &#8211; Tutorial #4</span><meta property="position" content="2"></span>						</div>
+					</div>
+					<div class="col-md-8 clearboth">
+											<div class="section row">
+							<div class="single-wrap col-md-12">
+								<div class="content-cont">
+
+									<div class="col-sm-6 col-md-6 no-padd">
+										<div class="thumb-feat">
+																																	   <a class="the_thumb" data-card="false" href="/wp-content/uploads/2013/07/turn-on-and-off-led-with-button.png" rel="lightbox"><img width="440" height="371" src="/wp-content/uploads/2013/07/turn-on-and-off-led-with-button.png" class="attachment-full size-full wp-post-image" alt="arduino turn on and off led with button" srcset="/wp-content/uploads/2013/07/turn-on-and-off-led-with-button.png 440w, /wp-content/uploads/2013/07/turn-on-and-off-led-with-button-100x84.png 100w, /wp-content/uploads/2013/07/turn-on-and-off-led-with-button-400x337.png 400w" sizes="(max-width: 440px) 100vw, 440px" /></a>
+																					</div>
+									</div>
+									<div class="desc col-sm-6 col-md-6">
+										<h1>Turn ON an LED with a Button and Arduino &#8211; Tutorial #4</h1>										<div class="author">
+											<a href="https://www.electroschematics.com/author/admin/">P. Marian</a>
+										</div>
+
+										<!-- Social Buttons -->
+										<div id="social_buttons" style="margin: 15px 0;">
+																						<span class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.electroschematics.com/8964/turn-on-led-button-arduino/" target="_blank"><img src="/wp-content/themes/electroschematics-v2/img/fb-dark.png" width="25px" alt="Share"/></a></span>
+											<span class="twitter">
+												<a target="_blank" rel="nofollow" href="https://twitter.com/share" data-via="electrocircuits">
+													<img src="/wp-content/themes/electroschematics-v2/img/tw-dark.png" width="25px" alt="Tweet"/>
+												</a>
+												<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+											</span>
+											<span class="ask_qa"><a href="/qa/" target="_blank" title="ask a question"><img src="/wp-content/themes/electroschematics-v2/img/icn-question-orb.png" width="25px" alt=""/></a></span>
+										</div>
+										<div class="col-md-12 no-padd">
+											<div class='posts-tags'><ul><li><a href='/tag/arduino-tutorial'>arduino tutorial</a></li></ul></div>										</div>
+
+									</div>
+									<div class="clear-b"></div>
+									<div class="main-wrap">
+									<p>Did you know that you can use Arduino to turn on an LED when you press a button?<br />
+Well, it is true, you can do this! Leaving the joke aside, let me show how you can achieve this. You will need the Arduino Board, a 560Ω resistor, and LED and the code example below.</p>
+<p>Related products: <span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Electromechanical Switches&quot;}" data-sheets-userformat="{&quot;2&quot;:1,&quot;3&quot;:{&quot;1&quot;:0}}" data-sheets-formula="=HYPERLINK(&quot;https://www.arrow.com/en/products/electromechanical-switches&quot;,&quot;Electromechanical Switches&quot;)"><a class="in-cell-link" href="https://www.arrow.com/en/products/electromechanical-switches" target="_blank">Electromechanical Switches</a> | <span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Switch Indicators (111)&quot;}" data-sheets-userformat="{&quot;2&quot;:1,&quot;3&quot;:{&quot;1&quot;:0}}"><a class="in-cell-link" href="https://www.arrow.com/en/products/electromechanical-switches/switch-indicators" target="_blank">Switch Indicators </a>| <span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Switch Rocker (2,397)&quot;}" data-sheets-userformat="{&quot;2&quot;:1,&quot;3&quot;:{&quot;1&quot;:0}}"><a class="in-cell-link" href="https://www.arrow.com/en/products/electromechanical-switches/switch-rocker" target="_blank">Switch Rocker </a></span></span></span><br />
+<span id="more-8964"></span></p>
+<p><strong>The schematic</strong></p>
+<p><a href="https://www.electroschematics.com/wp-content/uploads/2013/07/turn-on-and-off-led-with-button.png" target="_blank" rel="lightbox[8964]"><img class="alignnone size-full wp-image-8966" title="" src="https://www.electroschematics.com/wp-content/uploads/2013/07/turn-on-and-off-led-with-button.png" alt="arduino turn on and off led with button" width="440" height="371" srcset="/wp-content/uploads/2013/07/turn-on-and-off-led-with-button.png 440w, /wp-content/uploads/2013/07/turn-on-and-off-led-with-button-100x84.png 100w, /wp-content/uploads/2013/07/turn-on-and-off-led-with-button-400x337.png 400w" sizes="(max-width: 440px) 100vw, 440px" /></a></p>
+<pre class="wp-code-highlight prettyprint">/* sketch 1 
+turn on a LED when the button is pressed
+turn it off when the button is not pressed (or released)
+*/
+int pinButton = 8; //the pin where we connect the button
+int LED = 2; //the pin we connect the LED
+
+void setup() {
+  pinMode(pinButton, INPUT); //set the button pin as INPUT
+  pinMode(LED, OUTPUT); //set the LED pin as OUTPUT
+}
+
+void loop() {
+  int stateButton = digitalRead(pinButton); //read the state of the button
+  if(stateButton == 1) { //if is pressed
+     digitalWrite(LED, HIGH); //write 1 or HIGH to led pin
+  } else { //if not pressed
+     digitalWrite(LED, LOW);  //write 0 or low to led pin
+  }
+}
+</pre>
+<p><iframe src="//www.youtube.com/embed/OyDsp85ORds" width="550" height="309" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>What does the code do?<br />
+We set the pinButton variable as integer 8 and we connect the button at pin 8 on the Board. Then the LED is connected to pin 2 using the resistor in series with it.</p>
+<p>Related Products: <span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Switch Slide (1,047)&quot;}" data-sheets-userformat="{&quot;2&quot;:1,&quot;3&quot;:{&quot;1&quot;:0}}"><a class="in-cell-link" href="https://www.arrow.com/en/products/electromechanical-switches/switch-slide" target="_blank">Switch Slide </a>| <span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Switch Snap Action (4,813)&quot;}" data-sheets-userformat="{&quot;2&quot;:1,&quot;3&quot;:{&quot;1&quot;:0}}"><a class="in-cell-link" href="https://www.arrow.com/en/products/electromechanical-switches/switch-snap-action" target="_blank">Switch Snap Action </a>| <span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Switch Tactile (1,840)&quot;}" data-sheets-userformat="{&quot;2&quot;:1,&quot;3&quot;:{&quot;1&quot;:0}}"><a class="in-cell-link" href="https://www.arrow.com/en/products/electromechanical-switches/switch-tactile" target="_blank">Switch Tactile</a></span></span></span></p>
+<p>In the setup() function we set the pin 8 as INPUT and pin 2 as OUTPUT. In the loop() function we read the value of the pin 8 and store it in the variable stateButton. Using a if() function the Arduino makes some decisions: if the button is pressed (stateButton == 1) then give voltage to pin 2 (HIGH), else, if stateButton is not 1 (not pressed) do not output voltage on pin 2.</p>
+<p>If you want to turn on the LED then let it remain ON at the button release you just need to get rid of the else statement (as you can see in sketch 2, but you won&#8217;t be able to turn it OFF without using the third sketch. Actually you can disconnect the board from the power supply or USB.</p>
+<pre class="wp-code-highlight prettyprint">/* sketch 2 
+turn on a LED when the button is pressed and let it on when the button is released
+*/
+int pinButton = 8; //the pin where we connect the button
+int LED = 2; //the pin we connect the LED
+
+void setup() {
+  pinMode(pinButton, INPUT); //set the button pin as INPUT
+  pinMode(LED, OUTPUT); //set the LED pin as OUTPUT
+}
+
+void loop() {
+  int stateButton = digitalRead(pinButton); //read the state of the button
+  if(stateButton == 1) { //if is pressed
+     digitalWrite(LED, HIGH); //write 1 or HIGH to led pin
+  }
+}
+</pre>
+<p>In this code I will show how you can turn on the LED when you press the button then turn it off when you press the button again. The initial state of the LED is off but if you want to be on you have to change int stateLED = HIGH;</p>
+<pre class="wp-code-highlight prettyprint">/* sketch 3 
+turn on a LED when the button is pressed and let it on 
+until the button is pressed again
+*/
+int pinButton = 8;
+int LED = 2;
+int stateLED = LOW;
+int stateButton;
+int previous = LOW;
+long time = 0;
+long debounce = 200;
+
+void setup() {
+  pinMode(pinButton, INPUT);
+  pinMode(LED, OUTPUT);
+}
+
+void loop() {
+  stateButton = digitalRead(pinButton);  
+  if(stateButton == HIGH &amp;&amp; previous == LOW &amp;&amp; millis() - time &gt; debounce) {
+    if(stateLED == HIGH){
+      stateLED = LOW; 
+    } else {
+       stateLED = HIGH; 
+    }
+    time = millis();
+  }
+  digitalWrite(LED, stateLED);
+  previous == stateButton;
+}
+</pre>
+<div class="download-archive"><a href="https://www.electroschematics.com/wp-content/uploads/2013/07/sketch_3.rar" target="_blank">download sketch 3</a></div>
+<p><iframe src="//www.youtube.com/embed/nFzmv5Pikb4" width="550" height="309" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>I had some problems initially with the code because the LED was not turning ON or OFF as I desired and discovered that there was a problem with <a href="http://arduino.cc/en/Tutorial/Debounce" target="_blank">debounce</a>.</p>
+<div class='yarpp-related yarpp-related-none'>
+<p>No related posts.</p>
+</div>
+																			<div id='div-gpt-ad-fluid'>
+											<script type='text/javascript'>
+											googletag.cmd.push(function() { googletag.display('div-gpt-ad-fluid'); });
+											</script>
+										</div>
+																		</div>
+									
+
+																		<div class="clearfix content-nav">
+										<div class="prev_next">
+																							<div class="pn-holder col-md-6 col-sm-6"><div class="prev"><a href="https://www.electroschematics.com/8961/read-state-button-arduino-serial/" rel="prev"><img src="/wp-content/themes/electroschematics-v2/img/arrow_alt_left_inv.png" alt="previous"><div><span>Previous</span><br />Read the State of a Button with Arduino &#8211; Tutorial #3</div></a></div></div>
+																																		<div class="pn-holder col-md-6 col-sm-6"><div class="next"><a href="https://www.electroschematics.com/8968/reasons-studying-electronic-engineering/" rel="next"><div><span>Next</span><br />9 Reasons for Studying Electronic Engineering</div><img src="/wp-content/themes/electroschematics-v2/img/arrow_alt_right_inv.png" alt="next"></a></div></div>
+																					</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="single-page-content">
+							
+<div id="widgets_for_shortcodes" class="amr-widget-area"><div id="yarpp_widget-2" class="widgets widget_yarpp_widget clearfix"><h2>Related Tutorials</h2><div class='yarpp-related-widget yarpp-related-none'>
+<p><em>No related posts.</em></p>
+</div>
+</div><div id="q2a_recent_questions-6" class="widgets widget_q2a_recent_questions clearfix"><h2> </h2><ul class="qa-question-widget"><li><a href="/qa/10916/" >Can NE/SA575 chan 1 be used as ALC?</a><span> </span></li><li><a href="/qa/10904/" >Multiple RTL 2832U dongles in one radio</a><span> </span></li><li><a href="/qa/10888/" >ripple voltage</a><span> </span></li><li><a href="/qa/10887/" >i need to interface r c circuit with the internal ADC pin of pic controller</a><span> </span></li><li><a href="/qa/10886/" >systematic diagram is needed</a><span> </span></li></ul></div>		<div id="recent-posts-38" class="widgets widget_recent_entries clearfix">		<h2>Recent Posts</h2>		<ul>
+											<li>
+					<a href="https://www.electroschematics.com/14544/secrets-of-car-reverse-parking-sensors/">Secrets of Car Reverse Parking Sensors</a>
+									</li>
+											<li>
+					<a href="https://www.electroschematics.com/14521/adaptive-neopixel-security-light/">Adaptive NeoPixel Security Light</a>
+									</li>
+											<li>
+					<a href="https://www.electroschematics.com/14508/tft-car-monitor/">TFT Car Monitor: More Than Just A Little Teardown</a>
+									</li>
+											<li>
+					<a href="https://www.electroschematics.com/14491/el-wire-experiments/">EL Wire Experiments &#038; A Minor Hack</a>
+									</li>
+											<li>
+					<a href="https://www.electroschematics.com/14474/nfc-rfid-module-pn532/">PN532 NFC RFID Module — A Quick Introduction</a>
+									</li>
+					</ul>
+		</div></div>
+						</div>
+						
+<div id="comments" class="comments-wrap clearfix">
+
+	<input type="hidden" name="has_view_more" id="has_view_more" value="0">
+	<input type="hidden" name="first_comment_page" id="first_comment_page" value="">
+	<input type="hidden" name="recent_comment_page" id="recent_comment_page" value="">
+	<h2 class="comments-count">7 Comments		<div class="toggle-close"></div>
+		<div class="toggle-open"></div>
+	</h2>
+	<div class="comment-content">
+		<div class="comment-form-cont">
+				<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><h2>Join the conversation!</h2> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/8964/turn-on-led-button-arduino/#respond" style="display:none;">Cancel reply</a></small><div class="notice_error">Error! Please fill all fields.</div><p class="must-log-in">You must be <a href="https://www.electroschematics.com/log-in/">logged in</a> to post a comment.</p>	</div><!-- #respond -->
+			</div>
+
+		<div class="comment-list-cont">
+			
+				<ul class="comment-list">
+										
+<li class="comment even thread-even depth-1" id="li-comment-1853426">
+    <div id="comment-1853426" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='https://secure.gravatar.com/avatar/2810f4b5cea58497d4bcfbe233ef174c?s=50&#038;d=identicon&#038;r=g' srcset='https://secure.gravatar.com/avatar/2810f4b5cea58497d4bcfbe233ef174c?s=100&#038;d=identicon&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">Jim</cite>            </div>
+            
+            <div class="comment-text">
+                <p>Thank you for this article, I am new to microprocessors. I am attempting to create a quiz game and all the other tutorials I have seen, on led with a button, have not been this simple.</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="https://www.electroschematics.com/8964/turn-on-led-button-arduino/#comment-1853426">October 27th 2015 | 6:43 pm</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span> <a rel="nofollow" class="comment-reply-login" href="https://www.electroschematics.com/wp-login.php?redirect_to=https%3A%2F%2Fwww.electroschematics.com%2F8964%2Fturn-on-led-button-arduino%2F">Log in to Reply</a>                </div>
+            </div>
+        </div>
+            </div>
+
+</li><!-- #comment-## -->
+
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1791704">
+    <div id="comment-1791704" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='https://secure.gravatar.com/avatar/3d728d3e776ea3de9bb76d122f810fb1?s=50&#038;d=identicon&#038;r=g' srcset='https://secure.gravatar.com/avatar/3d728d3e776ea3de9bb76d122f810fb1?s=100&#038;d=identicon&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">Chris Harris</cite>            </div>
+            
+            <div class="comment-text">
+                <p>Bloody good stuff but if I may point a tiny little grammatical inexactitude:</p>
+<p>One does not turn an LED on, one turns a led on.</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="https://www.electroschematics.com/8964/turn-on-led-button-arduino/#comment-1791704">September 10th 2015 | 5:44 am</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span> <a rel="nofollow" class="comment-reply-login" href="https://www.electroschematics.com/wp-login.php?redirect_to=https%3A%2F%2Fwww.electroschematics.com%2F8964%2Fturn-on-led-button-arduino%2F">Log in to Reply</a>                </div>
+            </div>
+        </div>
+            </div>
+
+<ul class="children">
+
+<li class="comment even depth-2" id="li-comment-1826955">
+    <div id="comment-1826955" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='https://secure.gravatar.com/avatar/f6e9169902769e4da77e86ad04edc676?s=50&#038;d=identicon&#038;r=g' srcset='https://secure.gravatar.com/avatar/f6e9169902769e4da77e86ad04edc676?s=100&#038;d=identicon&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">Howie</cite>            </div>
+            
+            <div class="comment-text">
+                <p>One does not give an toss.</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="https://www.electroschematics.com/8964/turn-on-led-button-arduino/#comment-1826955">October 09th 2015 | 1:11 pm</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span>                 </div>
+            </div>
+        </div>
+            </div>
+
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li class="comment odd alt thread-even depth-1" id="li-comment-1772975">
+    <div id="comment-1772975" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='https://secure.gravatar.com/avatar/cddd61b3b561ef9009755a65929a23e8?s=50&#038;d=identicon&#038;r=g' srcset='https://secure.gravatar.com/avatar/cddd61b3b561ef9009755a65929a23e8?s=100&#038;d=identicon&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">The same with 4 led's or relay's</cite>            </div>
+            
+            <div class="comment-text">
+                <p>/*<br />
+Greatings J.Hermans<br />
+*/</p>
+<p>int pinButton1 = 2;<br />
+int pinButton2 = 3;<br />
+int pinButton3 = 4;<br />
+int pinButton4 = 5;</p>
+<p>int LED1 = 10;<br />
+int LED2 = 11;<br />
+int LED3 = 12;<br />
+int LED4 = 13;</p>
+<p>int stateLED1 = LOW;<br />
+int stateButton1;<br />
+int stateLED2 = LOW;<br />
+int stateButton2;<br />
+int stateLED3 = LOW;<br />
+int stateButton3;<br />
+int stateLED4 = LOW;<br />
+int stateButton4;<br />
+int previous = LOW;</p>
+<p>long time = 0;<br />
+long debounce = 200;</p>
+<p>void setup() {<br />
+  pinMode(pinButton1, INPUT);<br />
+  pinMode(LED1, OUTPUT);<br />
+  pinMode(pinButton2, INPUT);<br />
+  pinMode(LED2, OUTPUT);<br />
+  pinMode(pinButton3, INPUT);<br />
+  pinMode(LED3, OUTPUT);<br />
+  pinMode(pinButton4, INPUT);<br />
+  pinMode(LED4, OUTPUT);<br />
+}</p>
+<p>void loop() {</p>
+<p>  stateButton1 = digitalRead(pinButton1);<br />
+  if (stateButton1 == HIGH &amp;&amp; previous == LOW &amp;&amp; millis() &#8211; time &gt; debounce) {<br />
+    if (stateLED1 == HIGH) {<br />
+      stateLED1 = LOW;<br />
+    } else {<br />
+      stateLED1 = HIGH;<br />
+    }<br />
+    time = millis();<br />
+  }<br />
+  digitalWrite(LED1, stateLED1);<br />
+  previous == stateButton1;</p>
+<p>  stateButton2 = digitalRead(pinButton2);<br />
+  if (stateButton2 == HIGH &amp;&amp; previous == LOW &amp;&amp; millis() &#8211; time &gt; debounce) {<br />
+    if (stateLED2 == HIGH) {<br />
+      stateLED2 = LOW;<br />
+    } else {<br />
+      stateLED2 = HIGH;<br />
+    }<br />
+    time = millis();<br />
+  }<br />
+  digitalWrite(LED2, stateLED2);<br />
+  previous == stateButton2;</p>
+<p>  stateButton3 = digitalRead(pinButton3);<br />
+  if (stateButton3 == HIGH &amp;&amp; previous == LOW &amp;&amp; millis() &#8211; time &gt; debounce) {<br />
+    if (stateLED3 == HIGH) {<br />
+      stateLED3 = LOW;<br />
+    } else {<br />
+      stateLED3 = HIGH;<br />
+    }<br />
+    time = millis();<br />
+  }<br />
+  digitalWrite(LED3, stateLED3);<br />
+  previous == stateButton3;</p>
+<p>  stateButton4 = digitalRead(pinButton4);<br />
+  if (stateButton4 == HIGH &amp;&amp; previous == LOW &amp;&amp; millis() &#8211; time &gt; debounce) {<br />
+    if (stateLED4 == HIGH) {<br />
+      stateLED4 = LOW;<br />
+    } else {<br />
+      stateLED4 = HIGH;<br />
+    }<br />
+    time = millis();<br />
+  }<br />
+  digitalWrite(LED4, stateLED4);<br />
+  previous == stateButton4;<br />
+}</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="https://www.electroschematics.com/8964/turn-on-led-button-arduino/#comment-1772975">August 25th 2015 | 1:05 am</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span> <a rel="nofollow" class="comment-reply-login" href="https://www.electroschematics.com/wp-login.php?redirect_to=https%3A%2F%2Fwww.electroschematics.com%2F8964%2Fturn-on-led-button-arduino%2F">Log in to Reply</a>                </div>
+            </div>
+        </div>
+            </div>
+
+<ul class="children">
+
+<li class="comment byuser comment-author-nhari even depth-2" id="li-comment-1902752">
+    <div id="comment-1902752" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='https://secure.gravatar.com/avatar/b1f0411d624ec84dbeaa85bbc5dbfc55?s=50&#038;d=identicon&#038;r=g' srcset='https://secure.gravatar.com/avatar/b1f0411d624ec84dbeaa85bbc5dbfc55?s=100&#038;d=identicon&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">nhari</cite>            </div>
+            
+            <div class="comment-text">
+                <p>i want a program related to turn off led when the tactile switch is pressed for 5 seconds</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="https://www.electroschematics.com/8964/turn-on-led-button-arduino/#comment-1902752">June 25th 2017 | 10:36 pm</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span>                 </div>
+            </div>
+        </div>
+            </div>
+
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1629453">
+    <div id="comment-1629453" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='https://secure.gravatar.com/avatar/777614ab5ae6ec30b94881f46ef3c754?s=50&#038;d=identicon&#038;r=g' srcset='https://secure.gravatar.com/avatar/777614ab5ae6ec30b94881f46ef3c754?s=100&#038;d=identicon&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">Haydn</cite>            </div>
+            
+            <div class="comment-text">
+                <p>Hi, I have been looking for information for how to wire up 7 LEDs.  I would like to have a power switch which turns on the LEDs.  I would like the LEDs to light up only one at a time.  I would like to be able to press a button and make each LED light up in turn, in other words pressing the button changes which LED is powered.</p>
+<p>I have only just started with Arduino so not sure how to go about something like that yet.  This tutorial is good as it shows how to press a button and get a single LED to turn on and stay on.</p>
+<p>Have you ever come across something like that?</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="https://www.electroschematics.com/8964/turn-on-led-button-arduino/#comment-1629453">April 03rd 2015 | 4:34 am</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span> <a rel="nofollow" class="comment-reply-login" href="https://www.electroschematics.com/wp-login.php?redirect_to=https%3A%2F%2Fwww.electroschematics.com%2F8964%2Fturn-on-led-button-arduino%2F">Log in to Reply</a>                </div>
+            </div>
+        </div>
+            </div>
+
+</li><!-- #comment-## -->
+
+<li class="comment even thread-even depth-1" id="li-comment-702426">
+    <div id="comment-702426" class="clearfix">
+        <div class="col-a">
+            <img alt='' src='https://secure.gravatar.com/avatar/9e18bd7deb92cbb56b33d2df30dbadac?s=50&#038;d=identicon&#038;r=g' srcset='https://secure.gravatar.com/avatar/9e18bd7deb92cbb56b33d2df30dbadac?s=100&#038;d=identicon&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />        </div>
+        <div class="col-b">
+            <div class="comment-author vcard">
+                                <cite class="fn">Kinda</cite>            </div>
+            
+            <div class="comment-text">
+                <p>Hello Marian, </p>
+<p>Thank you for this nice debounced push-button tutorial. I was looking for something similar like in the arduino &#8220;Debounce&#8221; example but dind&#8217;t understood how I could move a servo in that way.<br />
+Thanks of your last example here, I was able to do it. Thanks!</p>
+            </div>
+
+            <div class="comment-meta commentmetadata clearfix">
+                <div class="date-time col-sm-6 col-md-6 no-padd">
+                    Posted on <a href="https://www.electroschematics.com/8964/turn-on-led-button-arduino/#comment-702426">August 24th 2014 | 2:05 pm</a>
+                </div>
+                <div class="reply col-sm-6 col-md-6 no-padd">
+                    <span class="glyphicon glyphicon-share-alt"></span> <a rel="nofollow" class="comment-reply-login" href="https://www.electroschematics.com/wp-login.php?redirect_to=https%3A%2F%2Fwww.electroschematics.com%2F8964%2Fturn-on-led-button-arduino%2F">Log in to Reply</a>                </div>
+            </div>
+        </div>
+            </div>
+
+</li><!-- #comment-## -->
+				</ul>
+
+				
+									</div>
+	</div>
+</div>
+											</div>
+
+										<div class="sidebar col-md-4">
+						<div id="trigger-point"></div>
+						<div id="wppb-login-widget-2" class="widgets login clearfix"><h2>Login</h2><div id="wppb-login-wrap" class="wppb-user-forms">
+		<form name="loginform" id="loginform" action="https://www.electroschematics.com/wp-login.php" method="post">
+			
+			<p class="login-username">
+				<label for="user_login">Email</label>
+				<input type="text" name="log" id="user_login" class="input" value="" size="20" />
+			</p>
+			<p class="login-password">
+				<label for="user_pass">Password</label>
+				<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" />
+			</p>
+			
+			<p class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label></p>
+			<p class="login-submit">
+				<input type="submit" name="wp-submit" id="wppb-submit" class="button button-primary" value="Log In" />
+				<input type="hidden" name="redirect_to" value="https://www.electroschematics.com/" />
+			</p>
+			<input type="hidden" name="wppb_login" value="true"/><input type="hidden" name="wppb_form_location" value="widget"/><input type="hidden" name="wppb_request_url" value="https://www.electroschematics.com/8964/turn-on-led-button-arduino/"/><input type="hidden" name="wppb_lostpassword_url" value="https://www.electroschematics.com/lostpassword"/><input type="hidden" name="wppb_redirect_priority" value="top"/><input type="hidden" name="wppb_referer_url" value="https://www.google.com/"/>
+		</form><p class="login-register-lost-password"><a href="https://www.electroschematics.com/register">Register</a> | <a href="https://www.electroschematics.com/lostpassword">Lost your password?</a></p></div></div>
+        <div class="latest-comments wrapper clearfix">
+            <div class="widgets">
+                <div class="l-comments box">
+                    <h2>Latest Article Comments</h2>
+                    <div class="clearfix">
+                        
+                        
+                            
+
+                            
+                                
+                                
+                                <div class="comment-content show-comment">
+                                
+                                    <a href="https://www.electroschematics.com/14372/build-your-own-smart-led-street-lamp/#li-comment-1903297">Build Your Own Smart LED Street...</a>
+                                    <div>"For this particular project , you need an LED driver with the following (or near) specs:
+Input: AC"</div>
+                                </div>
+                            
+                        
+                            
+
+                            
+                                
+                                
+                                <div class="comment-content show-comment">
+                                
+                                    <a href="https://www.electroschematics.com/13246/get-started-microwave-radar-motion-sensor/#li-comment-1903296">How to Get Started with a Microwave Radar Motion...</a>
+                                    <div>"FINELY ! ! !    Someone providing a VALUE for C-TM !   THANK YOU ! !"</div>
+                                </div>
+                            
+                        
+                            
+
+                            
+                                
+                                
+                                <div class="comment-content show-comment">
+                                
+                                    <a href="https://www.electroschematics.com/14491/el-wire-experiments/#li-comment-1903295">EL Wire Experiments & A Minor...</a>
+                                    <div>"Here you can find the official datasheet of HV857 EL Lamp Driver"</div>
+                                </div>
+                            
+                        
+                            
+
+                            
+                                
+                                
+                                <div class="comment-content show-comment">
+                                
+                                    <a href="https://www.electroschematics.com/5873/bike-guard/#li-comment-1903294">Bike Guard Alarm...</a>
+                                    <div>"very nice info provide by author, explain via diagram is a addition way to engage your reader."</div>
+                                </div>
+                            
+                        
+                            
+
+                            
+                                
+                                
+                                <div class="comment-content show-comment">
+                                
+                                    <a href="https://www.electroschematics.com/4820/um3561-siren-generator-design-2/#li-comment-1903293">UM3561 Siren Generator...</a>
+                                    <div>"It is used to set the oscillating frequency of the"</div>
+                                </div>
+                            
+                        
+                            
+
+                            
+                                
+                                
+                                <div class="comment-content hide-comment">
+                                
+                                    <a href="https://www.electroschematics.com/4820/um3561-siren-generator-design-2/#li-comment-1903292">UM3561 Siren Generator...</a>
+                                    <div>"8 ohm and 4 ohm speaker will also"</div>
+                                </div>
+                            
+                        
+                            
+
+                            
+                                
+                                
+                                <div class="comment-content hide-comment">
+                                
+                                    <a href="https://www.electroschematics.com/9718/solar-boost-converter-mppt-charge-controller/#li-comment-1903291">DIY Solar Boost Converter with MPPT Charge...</a>
+                                    <div>"Hello there. Teach me making my own 12 V/15.6 V solar boost converter with a 12 V 10 W panel"</div>
+                                </div>
+                            
+                        
+                            
+
+                            
+                                
+                                
+                                <div class="comment-content hide-comment">
+                                
+                                    <a href="https://www.electroschematics.com/13871/solar-usb-led/#li-comment-1903290">Solar / USB LED Lantern...</a>
+                                    <div>"Refer this -"</div>
+                                </div>
+                            
+                        
+                            
+
+                            
+                                
+                                
+                                <div class="comment-content hide-comment">
+                                
+                                    <a href="https://www.electroschematics.com/13871/solar-usb-led/#li-comment-1903289">Solar / USB LED Lantern...</a>
+                                    <div>"sorry 
+hello I am looking for a booster circuit for a solar kit of  3.7v li-ion batteries and a"</div>
+                                </div>
+                            
+                        
+                            
+
+                            
+                                
+                                
+                                <div class="comment-content hide-comment">
+                                
+                                    <a href="https://www.electroschematics.com/13871/solar-usb-led/#li-comment-1903288">Solar / USB LED Lantern...</a>
+                                    <div>"hello I am looking for a booster circuit for a solar kit of 3.7v and a solar panel of 5v
+
+thank"</div>
+                                </div>
+                            
+                        
+                    </div>
+                        <div class="vm-com">
+                            <a href="" class="view-more-comments">View More</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="text-2" class="widgets widget_text clearfix">			<div class="textwidget"><div class="responsive-tabs">
+<h2 class="tabtitle">New Projects</h2>
+<div class="tabcontent">
+<div id="recent-posts-38" class="widgets widget_recent_entries amr_widget clearfix">
+<h2>Recent Posts</h2>
+<ul>
+<li>
+					<a href="https://www.electroschematics.com/14544/secrets-of-car-reverse-parking-sensors/">Secrets of Car Reverse Parking Sensors</a>
+									</li>
+<li>
+					<a href="https://www.electroschematics.com/14521/adaptive-neopixel-security-light/">Adaptive NeoPixel Security Light</a>
+									</li>
+<li>
+					<a href="https://www.electroschematics.com/14508/tft-car-monitor/">TFT Car Monitor: More Than Just A Little Teardown</a>
+									</li>
+<li>
+					<a href="https://www.electroschematics.com/14491/el-wire-experiments/">EL Wire Experiments &#038; A Minor Hack</a>
+									</li>
+<li>
+					<a href="https://www.electroschematics.com/14474/nfc-rfid-module-pn532/">PN532 NFC RFID Module — A Quick Introduction</a>
+									</li>
+</ul></div>
+</div>
+<h2 class="tabtitle">Recent Q&amp;A</h2>
+<div class="tabcontent">
+<div id="q2a_recent_questions-6" class="widgets widget_q2a_recent_questions amr_widget clearfix">
+<h2> </h2>
+<ul class="qa-question-widget">
+<li><a href="/qa/10916/" >Can NE/SA575 chan 1 be used as ALC?</a><span> </span></li>
+<li><a href="/qa/10904/" >Multiple RTL 2832U dongles in one radio</a><span> </span></li>
+<li><a href="/qa/10888/" >ripple voltage</a><span> </span></li>
+<li><a href="/qa/10887/" >i need to interface r c circuit with the internal ADC pin of pic controller</a><span> </span></li>
+<li><a href="/qa/10886/" >systematic diagram is needed</a><span> </span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+		</div><div id="custom_html-2" class="widget_text widgets widget_custom_html clearfix"><div class="textwidget custom-html-widget"><!-- SE Widget Hook -->
+<div id="se_widget_hook"></div></div></div><div id="text-3" class="widgets widget_text clearfix">			<div class="textwidget"><p><!-- /74317539/ElectroSchematics --></p>
+<div class='rec-ads'>
+<div id='div-gpt-ad-medium-rectangle' style='width:300px; height:250px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-medium-rectangle'); });
+</script>
+</div>
+</div>
+</div>
+		</div><div id="text-4" class="widgets widget_text clearfix">			<div class="textwidget"><div class="featured-design">
+<div id='div-gpt-ad-ti-featured-design'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-ti-featured-design'); });
+</script>
+</div>
+</div>
+</div>
+		</div><div id="text-5" class="widgets widget_text clearfix">			<div class="textwidget"><div class='filmstrip'>
+<div id='div-gpt-ad-filmstrip'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-filmstrip'); });
+</script>
+</div>
+</div>
+</div>
+		</div><div id="mostpopulartags-2" class="widgets widget_most_popular_tags clearfix"><h2>Popular Tags</h2><ul class='wp-tag-cloud' role='list'>
+	<li><a href="https://www.electroschematics.com/tag/ic-datasheet-circuits/" class="tag-cloud-link tag-link-50 tag-link-position-1" style="font-size: 14px;">IC datasheet</a></li>
+	<li><a href="https://www.electroschematics.com/tag/led-circuits/" class="tag-cloud-link tag-link-194 tag-link-position-2" style="font-size: 14px;">LED</a></li>
+	<li><a href="https://www.electroschematics.com/tag/audio-amplifier-circuits/" class="tag-cloud-link tag-link-86 tag-link-position-3" style="font-size: 14px;">audio amplifier</a></li>
+	<li><a href="https://www.electroschematics.com/tag/battery-charger-circuits/" class="tag-cloud-link tag-link-94 tag-link-position-4" style="font-size: 14px;">battery chargers</a></li>
+	<li><a href="https://www.electroschematics.com/tag/741-circuits/" class="tag-cloud-link tag-link-337 tag-link-position-5" style="font-size: 14px;">741</a></li>
+	<li><a href="https://www.electroschematics.com/tag/fm-transmitter-circuits/" class="tag-cloud-link tag-link-185 tag-link-position-6" style="font-size: 14px;">fm transmitters</a></li>
+	<li><a href="https://www.electroschematics.com/tag/solar-charger-circuits/" class="tag-cloud-link tag-link-736 tag-link-position-7" style="font-size: 14px;">solar chargers</a></li>
+	<li><a href="https://www.electroschematics.com/tag/avr-tutorial/" class="tag-cloud-link tag-link-1290 tag-link-position-8" style="font-size: 14px;">AVR tutorial</a></li>
+	<li><a href="https://www.electroschematics.com/tag/arduino/" class="tag-cloud-link tag-link-1342 tag-link-position-9" style="font-size: 14px;">Arduino</a></li>
+	<li><a href="https://www.electroschematics.com/tag/arduino-tutorial/" class="tag-cloud-link tag-link-1273 tag-link-position-10" style="font-size: 14px;">arduino tutorial</a></li>
+</ul>
+</div><div id="text-7" class="widgets widget_text clearfix">			<div class="textwidget"><div class="join-fb"><a href="https://www.facebook.com/groups/electroschematics/" target="_blank" rel="nofollow noopener"><img src="https://www.electroschematics.com/wp-content/uploads/2016/05/fb-side-bnn.png" alt="electroschematics group on facebook" /></a></div>
+</div>
+		</div>					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<!--WP Code Highlight_start-->
+	<script type="text/javascript">
+		window.onload = function(){prettyPrint();};
+	</script>
+	<script type="text/javascript" src="/wp-content/plugins/wp-code-highlight/js/wp-code-highlight.js"></script>
+	<!--WP Code Highlight_end-->
+</div>
+	<div class="ads-footer-container">
+		<div class="ads-full">
+			<div id="text-10" class="widgets widget_text">			<div class="textwidget"><div id='div-gpt-ad-leader-smartphonebanner'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-leader-smartphonebanner'); });
+</script>
+</div>
+</div>
+		</div>		</div>
+	</div>
+
+
+	<div class="footer-wrap">
+		<div class="container">
+			<div class="row">
+				<div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-13068" class="basics col-md-2 col-sm-6 col-xs-12 menu-item-has-children"><a>The Basics</a>
+<ul class="sub-menu">
+	<li id="menu-item-13069"><a>About Us</a></li>
+	<li id="menu-item-13070"><a href="https://www.electroschematics.com/contact-us/">Contact Us</a></li>
+	<li id="menu-item-13071"><a href="https://www.electroschematics.com/participate/">Participate</a></li>
+	<li id="menu-item-13072"><a href="https://www.electroschematics.com/privacy-policy/">Privacy Policy</a></li>
+	<li id="menu-item-13073"><a href="https://www.electroschematics.com/terms/">Terms of Use</a></li>
+	<li id="menu-item-13074"><a target="_blank" href="https://www.surveymonkey.com/r/2SMMN52">Feedback</a></li>
+</ul>
+</li>
+<li id="menu-item-13075" class="advertisers col-md-2 col-sm-6 col-xs-12 menu-item-has-children"><a href="#">For Advertisers</a>
+<ul class="sub-menu">
+	<li id="menu-item-13076"><a target="_blank" href="http://mac.aspencore.com/AspenCore_Contact-Us.html">Contact Sales</a></li>
+	<li id="menu-item-13077"><a target="_blank" href="http://mac.aspencore.com/AspenCore_Media-Guide.html">Media Guide Request</a></li>
+</ul>
+</li>
+<li id="menu-item-13078" class="aspencore-network col-md-3 col-sm-12 col-xs-12 menu-item-has-children"><a>Aspencore Network</a>
+<ul class="sub-menu">
+	<li id="menu-item-13079"><a target="_blank" href="https://www.ebnonline.com/">EBN</a></li>
+	<li id="menu-item-13080"><a target="_blank" href="https://www.edn.com/">EDN</a></li>
+	<li id="menu-item-13081"><a target="_blank" href="https://www.eetimes.com/">EE Times</a></li>
+	<li id="menu-item-13082"><a target="_blank" href="https://www.eeweb.com/">EEWeb</a></li>
+	<li id="menu-item-13083"><a target="_blank" href="https://www.electronicproducts.com/">Electronic Products</a></li>
+	<li id="menu-item-13084"><a target="_blank" href="https://www.electronics-tutorials.ws/">Electronics-Tutorials</a></li>
+	<li id="menu-item-13085"><a target="_blank" href="https://www.embedded.com/">Embedded</a></li>
+	<li id="menu-item-13086"><a target="_blank" href="https://www.planetanalog.com/">Planet Analog</a></li>
+	<li id="menu-item-13087"><a target="_blank" href="https://www.powerelectronicsnews.com/">Power Electronics News</a></li>
+	<li id="menu-item-13088"><a target="_blank" href="https://www.techonline.com/">TechOnline</a></li>
+	<li id="menu-item-13089"><a target="_blank" href="https://www.datasheets.com/">Datasheets.com</a></li>
+	<li id="menu-item-13090"><a target="_blank" href="http://www.embedded-control-europe.com/">Embedded Know How</a></li>
+	<li id="menu-item-13091"><a target="_blank" href="http://www.embedded-know-how.com/">Embedded Know How</a></li>
+	<li id="menu-item-13092"><a target="_blank" href="http://embedded-news.tv/">Embedded News</a></li>
+	<li id="menu-item-13093"><a target="_blank" href="http://iot-design-zone.com/">IOT Design Zone</a></li>
+	<li id="menu-item-13094"><a target="_blank" href="http://motor-control-design.com/">Motor Control Design</a></li>
+	<li id="menu-item-13095"><a target="_blank" href="http://electronics-know-how.com/">Electronics Know How</a></li>
+	<li id="menu-item-13664"><a target="_blank" href="https://iot.eetimes.com/">IoT Times</a></li>
+</ul>
+</li>
+<li id="menu-item-13096" class="global-network col-md-3 col-sm-12 col-xs-12 menu-item-has-children"><a>Global Network</a>
+<ul class="sub-menu">
+	<li id="menu-item-13097"><a target="_blank" href="https://www.eetasia.com/">EE Times Asia</a></li>
+	<li id="menu-item-13098"><a target="_blank" href="http://www.eet-china.com/">EE Times China</a></li>
+	<li id="menu-item-13100"><a target="_blank" href="https://www.eetindia.co.in/">EE Times India</a></li>
+	<li id="menu-item-13101"><a target="_blank" href="http://eetimes.jp/">EE Times Japan</a></li>
+	<li id="menu-item-13102"><a target="_blank" href="https://www.eettaiwan.com/">EE Times Taiwan</a></li>
+	<li id="menu-item-13103"><a target="_blank" href="https://www.ednasia.com/">EDN Asia</a></li>
+	<li id="menu-item-13104"><a target="_blank" href="http://www.ednchina.com/">EDN China</a></li>
+	<li id="menu-item-13105"><a target="_blank" href="https://www.edntaiwan.com/">EDN Taiwan</a></li>
+	<li id="menu-item-13106"><a target="_blank" href="http://ednjapan.com/">EDN Japan</a></li>
+	<li id="menu-item-13107"><a target="_blank" href="http://www.esmchina.com/">ESM China</a></li>
+</ul>
+</li>
+<li id="menu-item-13108" class="connect col-md-2 col-sm-12 col-xs-12 menu-item-has-children"><a>Connect with Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-13109"><a href="https://www.facebook.com/groups/electroschematics/"><span class="symbol"></span>Facebook</a></li>
+	<li id="menu-item-13110"><a href="https://www.youtube.com/user/ElectroSchematics"><span class="symbol"></span>Youtube</a></li>
+</ul>
+</li>
+</ul></div>				<div class="footer-logo">
+					<img src="/wp-content/themes/electroschematics-v2/img/AspenCore_logo_general-@2x.png">
+				</div>
+			</div>
+		</div>
+		<div class="bttm-most">
+			<div class="container">
+				<div class="row">
+					<div class="col-a col-sm-12 col-md-12">
+						All contents are Copyright &copy; 2019 by AspenCore, Inc. All Rights Reserved.
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+<!-- Mouser Panel -->
+<div class="flyover-btm-overlay">
+	<div class="mouser-menu">
+		<div class="visible-sec">
+			<img src="/wp-content/themes/electroschematics-v2/img/ic-logo.png" alt="" height="34">
+			<span>Looking for the latest from TI?</span>
+		</div>
+	<div class="browse-list-wrap">
+		<ul class="products-list">
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/amplifiersandlinears/amplifiersandlinears.page?HQS=hpa-null-null-elschemflyaway-bs-lp-amplifiers-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Amplifiers</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/non-isolated-dc-dc-switching-regulator-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-nonisolatedDCDC-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Non-Isolated DC/DC</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/audio/overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-audio-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Audio</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/powermanagement/power_portal.page?HQS=hpa-null-null-elschemflyaway-bs-lp-pwrmgmt-wwe&DCM=yes" target="_blank"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Power Management</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/battery-management-products-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-battery-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Battery Management</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/power-management-multi-channel-ic-pmic-solutions-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-pmic-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Power Management IC (PMIC)</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/clockandtiming/clock_and_timing.page?HQS=hpa-null-null-elschemflyaway-bs-lp-clocks-wwe&DCM=yes"  class="mouser-product-click"target="_blank"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Clock and Timing</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/power-modules-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-powermodules-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Power Modules</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/dataconverters/data_converter.page?HQS=hpa-null-null-elschemflyaway-bs-lp-dataconverters-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Data Converters</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/sensors/overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-sensors-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Sensors</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/interface/interface.page?HQS=hpa-null-null-elschemflyaway-bs-lp-interface-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Interface</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/voltage-reference-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-voltageref-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Voltage References</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/linear-regulators-ldo-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-linearregulator-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Linear Regulator (LDO)</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/webench/overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-WEBENCH-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Webench</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/logic/home_overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-logic-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Logic</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/general/docs/refdesignsearchresults.tsp?HQS=hpa-null-null-elschemflyaway-bs-lp-TIDesigns-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">TI Designs</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/power-management/mosfet-and-igbt-gate-drivers-overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-MOSFET-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">MOSFET and IGBT Gate Drivers</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?https://store.ti.com?HQS=hpa-null-null-elschemflyaway-bs-store-store-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">TI Store</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com/lsds/ti/analog/motordrivers/overview.page?HQS=hpa-null-null-elschemflyaway-bs-lp-motordrivers-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">Motor Drivers</a></li>
+			<li><a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://my.ti.com?HQS=hpa-null-null-elschemflyaway-bs-myti-myti-wwe&DCM=yes" target="_blank" class="mouser-product-click"><img src="/wp-content/themes/electroschematics-v2/img/right-arrow.png">MyTI Registration</a></li>
+
+		</ul>
+	</div>
+		<div class="visit-ti-footer">
+			<a href="https://ad.doubleclick.net/ddm/clk/309962084;137629245;p?http://www.ti.com?HQS=hpa-null-null-elschemflyaway-bs-lp-homepage-wwe&DCM=yes " target="_blank" class="mouser-product-click">visit ti.com <img src="/wp-content/themes/electroschematics-v2/img/right-arrow-white.png"></a>
+		</div>
+	</div>
+</div>
+<!-- End Mouser Panel -->
+<style>
+	iframe[src*="siliconexpert.com"] {
+		position: absolute;
+		z-index : 2;
+		bottom: 0;
+	}
+</style>
+
+<script type="text/javascript">
+	(function() {
+		var cid="electroschematics", arp = document.createElement('script');
+		arp.type = 'text/javascript'; arp.async = true;
+		arp.src = "//reach-cdn.siliconexpert.com/tag/"+cid+".js";
+		var s0 = document.getElementsByTagName('script')[0];
+		s0.parentNode.insertBefore(arp, s0);
+	})();
+</script>
+<div id="cookie-law-info-bar"><span>This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish.<a  data-cli_action="accept" id="cookie_action_close_header"  class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" style="display:inline-block; ">Accept</a> <a href='/policy/' id="CONSTANT_OPEN_URL" target="_blank"  class="cli-plugin-main-link"  style="display:inline-block;" >Read More</a></span></div><div id="cookie-law-info-again" style="display:none;"><span id="cookie_hdr_showagain">Privacy & Cookies Policy</span></div><div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<script type="text/javascript">
+  /* <![CDATA[ */
+  cli_cookiebar_settings='{"animate_speed_hide":"500","animate_speed_show":"500","background":"#fff","border":"#444","border_on":false,"button_1_button_colour":"#000","button_1_button_hover":"#000000","button_1_link_colour":"#fff","button_1_as_button":true,"button_1_new_win":false,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":false,"button_2_hidebar":false,"button_3_button_colour":"#000","button_3_button_hover":"#000000","button_3_link_colour":"#fff","button_3_as_button":true,"button_3_new_win":false,"button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#fff","button_4_as_button":"fffffff","font_family":"inherit","header_fix":false,"notify_animate_hide":true,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"accept_close_reload":false,"reject_close_reload":"fffffff","showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":false,"show_once":"10000","logging_on":false,"as_popup":"fffffff","popup_overlay":"fffffff","bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"}';
+  /* ]]> */
+</script><script type="text/javascript">
+<!--
+piCId = '66478';
+piAId = '115242';
+
+piHostname = 'pi.pardot.com';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+-->
+</script><script type="text/javascript">
+
+(function($){
+     $('a > img').closest('a').addClass('image-cont');
+})(jQuery);
+
+</script>
+<link rel='stylesheet' id='yarppRelatedCss-css'  href='/wp-content/plugins/yet-another-related-posts-plugin/style/related.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='tabby-css'  href='/wp-content/plugins/tabby-responsive-tabs/css/tabby.css?ver=1.2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='tabby-print-css'  href='/wp-content/plugins/tabby-responsive-tabs/css/tabby-print.css?ver=1.2.3' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/www.electroschematics.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/wp-q2a-pack/inc/js/script-q2a.js?ver=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var JQLBSettings = {"fitToScreen":"1","resizeSpeed":"400","displayDownloadLink":"1","navbarOnTop":"0","loopImages":"","resizeCenter":"","marginSize":"0","linkTarget":"","help":"","prevLinkTitle":"previous image","nextLinkTitle":"next image","prevLinkText":"\u00ab Previous","nextLinkText":"Next \u00bb","closeTitle":"close image gallery","image":"Image ","of":" of ","download":"Download","jqlb_overlay_opacity":"80","jqlb_overlay_color":"#000000","jqlb_overlay_close":"1","jqlb_border_width":"10","jqlb_border_color":"#ffffff","jqlb_border_radius":"0","jqlb_image_info_background_transparency":"100","jqlb_image_info_bg_color":"#ffffff","jqlb_image_info_text_color":"#000000","jqlb_image_info_text_fontsize":"10","jqlb_show_text_for_image":"1","jqlb_next_image_title":"next image","jqlb_previous_image_title":"previous image","jqlb_next_button_image":"\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/next.gif","jqlb_previous_button_image":"\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/prev.gif","jqlb_maximum_width":"","jqlb_maximum_height":"","jqlb_show_close_button":"1","jqlb_close_image_title":"close image gallery","jqlb_close_image_max_heght":"22","jqlb_image_for_close_lightbox":"\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/closelabel.gif","jqlb_keyboard_navigation":"1","jqlb_popup_size_fix":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/wp-lightbox-2/wp-lightbox-2.min.js?ver=1.3.4.1'></script>
+<script type='text/javascript' src='https://www.electroschematics.com/wp-includes/js/comment-reply.min.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://www.electroschematics.com/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
+<script type='text/javascript' src='/wp-content/plugins/tabby-responsive-tabs/js/tabby.js?ver=1.2.3'></script>
+
+<script>jQuery(document).ready(function($) { RESPONSIVEUI.responsiveTabs(); })</script>
+    <div id='div-gpt-ad-inread'>
+        <script type='text/javascript'>
+            googletag.cmd.push(function () {
+                googletag.display('div-gpt-ad-inread');
+            });
+        </script>
+    </div>
+<noscript><img src="https://www.electroschematics.com/akam/11/pixel_2311cd0d?a=dD00NWQ3YjdmMWU1NzBjMTk2YzkxM2I0MjdiOTU3OGJlNjU1ZjEwNDA3JmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+</html>
