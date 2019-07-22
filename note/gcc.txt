@@ -1,0 +1,8 @@
+gcc --version
+g++ --version
+
+sudo apr-get install gcc-4.8 g++-4.8
+sudo rm -rf /usr/bin/gcc
+sudo rm -rf /usr/bin/g++
+sudo ln -s /usr/bin/gcc-4.8 /usr/bin/gcc
+sudo ln -s /usr/bin/g++-4.8 /usr/bin/g++

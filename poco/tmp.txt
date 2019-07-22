@@ -1,0 +1,8 @@
+https://biicode-docs.readthedocs.io/raspberrypi.html
+
+https://cadovvl.wordpress.com/2015/02/26/poco-http-server/
+https://github.com/aurusov/poco-http-server/tree/master/src
+https://www.codeproject.com/Articles/252827/Learning-Poco-A-Simple-HTTP-Server
+https://stackoverflow.com/questions/7611416/how-do-i-run-poco-c-server-pages
+https://pocoproject.org/download.html
+https://www.youtube.com/watch?v=WDn-htpBlnU
