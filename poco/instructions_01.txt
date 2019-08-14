@@ -54,6 +54,23 @@ $ ./PoCoWebSocketTest
 http://localhost:9980/
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
 cd ~/PoCoWebSocketTest/build/
 ./PoCoWebSocketTest
 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+curl localhost:9980/ping -v
+
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 5849 (#0)
+> GET /ping HTTP/1.1
+> Host: localhost:5849
+> User-Agent: curl/7.47.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 18 Sep 2016 14:08:12 GMT
+< Connection: Close
+< 
+* Closing connection 0
