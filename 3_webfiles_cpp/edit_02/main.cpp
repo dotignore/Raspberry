@@ -28,9 +28,12 @@
 #include "Poco/Util/HelpFormatter.h"
 #include "Poco/Format.h"
 #include <sstream>
-#include <iostream>
-#include <string>
-#include "my_http_middle_ware.h"
+
+#include <iostream>										// add
+#include <string>										// add
+//#include "my_http_middle_ware.h"	off lib class		// add
+//#include "/home/pi/wiringPi/wiringPi/wiringPi.h"		// add
+#include <wiringPi.h>									// add
 
 using Poco::Net::ServerSocket;
 using Poco::Net::WebSocket;
@@ -50,7 +53,60 @@ using Poco::Util::Option;
 using Poco::Util::OptionSet;
 using Poco::Util::HelpFormatter;
 
-using namespace std;
+using namespace std;										// add
+
+//#include <drogon/wiringpi/wiringpi/wiringpi.h>
+
+//----------------------------------------------------------
+
+class Led {
+	public:
+		Led(); //default constuctor
+		virtual ~Led(); //default virtual destructor
+		void on();
+		void off();
+	private:
+		int pin;
+};
+
+//----------------------------------------------------------
+
+Led::Led() {
+	pin = 0;
+	wiringPiSetup();
+	pinMode(pin, OUTPUT);
+}
+
+Led::~Led() {
+}
+
+void Led::on() {
+	digitalWrite(pin, HIGH);
+}
+
+void Led::off() {
+	digitalWrite(pin, LOW);
+}
+
+//----------------------------------------------------------
+
+// #pragma once
+new MyHttpMiddleware;
+
+class MyHttpMiddleware : public HTTPRequestHandler
+{
+	public:
+		MyHttpMiddleware() : HTTPRequestHandler(NULL) {
+		}
+		MyHttpMiddleware(HTTPRequestHandler* other_middleware) : HTTPRequestHandler(other_middleware) {
+		}
+		virtual ~MyHttpMiddleware();
+		virtual void call(Request&, Response&);
+	private:
+		Led myLed;
+};
+
+//----------------------------------------------------------
 
 class PageRequestHandler: public HTTPRequestHandler
     /// Return a HTML document with some JavaScript creating
@@ -64,8 +120,8 @@ public:
         response.setContentType("text/html");
         std::ostream& ostr = response.send();
 
-        //string checkedOn "", string checkedOff "";
-	string checkedOn = "", checkedOff = "";        
+        //string checkedOn "", string checkedOff "";		// add
+		string checkedOn = "", checkedOff = "";        		// add
           
         ostr << "<html>";
         ostr << "<head>";
@@ -99,9 +155,9 @@ public:
         ostr << "</script>";
         ostr << "</head>";
         ostr << "<body>";             
-	ostr << "  <h1>WebSocket Server1</h1>";
+		ostr << "  <h1>WebSocket Server1</h1>";
         ostr << "  <p><a href=\"javascript:WebSocketTest()\">Run WebSocket Script</a></p>";
-        ostr << "  <h1>-=-=-=-=-=-=-=-=-=-=-=-=-</h1>";
+        ostr << "  <h1>-=-=-=-=-=-=-=-=-=-=-=-=-</h1>";				// add
 
         //ostr << "<!DOCTYPE html>\n<html>\n<body>\n";
 
@@ -110,17 +166,12 @@ public:
     		
     	//Build the html form
 
-    	if(request.get("mode") == "on")
-			{
-				myLed.on(); 
-				checkedOn = "checked";
-			}
-
-    	if(request.get("mode") == "off")
-			{ 
-				myLed.off(); 
-				checkedOff = "checked";
-			}
+	if(request.get("mode") == "on"){ 
+		myLed.on(); checkedOn = "checked";
+		}
+	if(request.get("mode") == "off"){ 
+		myLed.off(); checkedOff = "checked";
+		}
 
     	string  form;
     	form  =  " <form name='formulary' action='/hello' method='POST'>\n\
@@ -130,10 +181,9 @@ public:
     			<input type='submit''/>\n\
     		   </form>";
 
-    	ostr <<  form;         
+    	ostr <<  form;       
 
-
-	ostr << "  <h1>-=-=-=-=-=-=-=-=-=-=-=-=-</h1>";
+		ostr << "  <h1>-=-=-=-=-=-=-=-=-=-=-=-=-</h1>";				// add
         ostr << "</body>";
         ostr << "</html>";
     }
