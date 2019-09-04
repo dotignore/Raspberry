@@ -1,0 +1,25 @@
+https://hwwong168.wordpress.com/2015/10/04/run-bash-shell-cgi-on-raspberry-pi-apache-2-4/
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+sudo apt-get install Apache2
+sudo a2enmod cgi 
+sudo service apache2 restart
+sudo nano /usr/lib/cgi-bin/test.cgi 
+
+sudo chmod +x /usr/lib/cgi/test.cgi 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+http://10.10.1.70/cgi-bin/getLED.cgi
+http://10.10.1.70/cgi-bin/gpiopinstate.cgi
+http://10.10.1.70/cgi-bin/postLED.cgi
+http://10.10.1.70/cgi-bin/hello.cgi
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+ g++ getLED.cpp LED.cpp -o getLED.cgi -lcgicc
+g++ Hello.cpp -o hello.cgi

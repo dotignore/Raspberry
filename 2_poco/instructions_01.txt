@@ -1,0 +1,76 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Reaspberry Pi 2b+ (debian Description:	Raspbian GNU/Linux 9.9 (stretch))
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+$ sudo apt-get update
+$ sudo apt-get install gedit
+$ sudo apt-get install mc
+$ sudo apt-get install cmake
+$ sudo apt-get install wiringpi
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+http://osdevlab.blogspot.com/2016/02/how-to-install-websocket-poco-c-library.html
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+$ cd ~
+$ mkdir PocoFiles
+$ cd PocoFiles
+
+URL https://pocoproject.org/releases/poco-1.9.2/
+
+# first load
+$ wget https://pocoproject.org/releases/poco-1.7.7/poco-1.7.7.tar.gz
+$ gunzip poco-1.7.7.tar.gz
+$ tar -xf poco-1.7.7.tar
+$ cd poco-1.7.7
+
+# if you need last version -> download final version
+$ wget https://pocoproject.org/releases/poco-1.9.2/poco-1.9.2.tar.gz
+$ gunzip poco-1.9.2.tar.gz
+$ tar -xf poco-1.9.2.tar
+$ cd poco-1.9.2
+
+$ ./configure --no-tests --no-samples
+$ make -j4
+$ sudo make install
+
+$ cd /usr/local/lib
+$ ls
+
+$ cd ~
+$ mkdir PoCoWebSocketTest
+$ cd PoCoWebSocketTest
+
+$ gedit main.cpp
+
+$ gedit CMakeLists.txt
+
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+$ ./PoCoWebSocketTest
+
+http://localhost:9980/
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+cd ~/PoCoWebSocketTest/build/
+./PoCoWebSocketTest
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+curl localhost:9980/ping -v
+
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 5849 (#0)
+> GET /ping HTTP/1.1
+> Host: localhost:5849
+> User-Agent: curl/7.47.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 18 Sep 2016 14:08:12 GMT
+< Connection: Close
+< 
+* Closing connection 0
