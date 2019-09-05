@@ -91,24 +91,33 @@ void Led::off() {
 //----------------------------------------------------------
 
 // #pragma once
-new MyHttpMiddleware;
+// return new MyHttpMiddleware;
 
-class MyHttpMiddleware : public HTTPRequestHandler
-{
+class MyHttpMiddleware : public HttpMiddleware {
+
 	public:
-		MyHttpMiddleware() : HTTPRequestHandler(NULL) {
+		
+		MyHttpMiddleware() : HttpMiddleware(NULL) 
+		{
 		}
-		MyHttpMiddleware(HTTPRequestHandler* other_middleware) : HTTPRequestHandler(other_middleware) {
+		
+		MyHttpMiddleware(HttpMiddleware* other_middleware) : HttpMiddleware(other_middleware) 
+		{
 		}
+
 		virtual ~MyHttpMiddleware();
+		
 		virtual void call(Request&, Response&);
+
 	private:
 		Led myLed;
+
+	return MyHttpMiddleware;
 };
 
 //----------------------------------------------------------
 
-class PageRequestHandler: public HTTPRequestHandler
+class PageRequestHandler: public HTTPRequestHandler, public MyHttpMiddleware //:: call(Request& request, Response& response)
     /// Return a HTML document with some JavaScript creating
     /// a WebSocket connection.
 {
