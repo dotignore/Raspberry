@@ -93,27 +93,19 @@ void Led::off() {
 // #pragma once
 // return new MyHttpMiddleware;
 
-class MyHttpMiddleware : public HttpMiddleware {
-
-	public:
-		
-		MyHttpMiddleware() : HttpMiddleware(NULL) 
-		{
-		}
-		
-		MyHttpMiddleware(HttpMiddleware* other_middleware) : HttpMiddleware(other_middleware) 
-		{
-		}
-
-		virtual ~MyHttpMiddleware();
-		
-		virtual void call(Request&, Response&);
-
-	private:
-		Led myLed;
-
-	return MyHttpMiddleware;
-};
+class MyHttpMiddleware //: public HttpMiddleware
+{
+public:
+	MyHttpMiddleware() //: HttpMiddleware(NULL)
+	{
+	}
+	//MyHttpMiddleware(HttpMiddleware* other_middleware) //: HttpMiddleware(other_middleware)
+	//{
+	//}
+	virtual ~MyHttpMiddleware();
+	virtual void call(request&, response&);
+private:
+	Led myLed;
 
 //----------------------------------------------------------
 
