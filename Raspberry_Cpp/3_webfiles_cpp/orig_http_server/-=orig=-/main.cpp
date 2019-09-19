@@ -27,13 +27,8 @@
 #include "Poco/Util/OptionSet.h"
 #include "Poco/Util/HelpFormatter.h"
 #include "Poco/Format.h"
-#include <sstream>
+#include <iostream>
 
-#include <iostream>										// add
-#include <string>										// add
-//#include "my_http_middle_ware.h"	off lib class		// add
-//#include "/home/pi/wiringPi/wiringPi/wiringPi.h"		// add
-#include <wiringPi.h>									// add
 
 using Poco::Net::ServerSocket;
 using Poco::Net::WebSocket;
@@ -53,67 +48,17 @@ using Poco::Util::Option;
 using Poco::Util::OptionSet;
 using Poco::Util::HelpFormatter;
 
-using namespace std;										// add
 
-//#include <drogon/wiringpi/wiringpi/wiringpi.h>
-
-//----------------------------------------------------------
-
-class Led {
-	public:
-		Led(); //default constuctor
-		virtual ~Led(); //default virtual destructor
-		void on();
-		void off();
-	private:
-		int pin;
-};
-
-//----------------------------------------------------------
-
-Led::Led() {
-	pin = 0;
-	wiringPiSetup();
-	pinMode(pin, OUTPUT);
-}
-
-Led::~Led() {
-}
-
-void Led::on() {
-	digitalWrite(pin, HIGH);
-}
-
-void Led::off() {
-	digitalWrite(pin, LOW);
-}
-
-//----------------------------------------------------------
-class MyLEDoNoFF {
-public:
-	void on;
-	void off;
-};
-
-	//Led myLed;
-
-//----------------------------------------------------------
-
-class PageRequestHandler: public HTTPRequestHandler, public MyLEDoNoFF //:: call(Request& request, Response& response)
+class PageRequestHandler: public HTTPRequestHandler
     /// Return a HTML document with some JavaScript creating
     /// a WebSocket connection.
 {
 public:
     void handleRequest(HTTPServerRequest& request, HTTPServerResponse& response)
     {
-
         response.setChunkedTransferEncoding(true);
         response.setContentType("text/html");
-		std::ostream& ostr = response.send();
-
-        //string checkedOn "", string checkedOff "";		// add
-		string checkedOn = "", checkedOff = "";        		// add
-          
+        std::ostream& ostr = response.send();
         ostr << "<html>";
         ostr << "<head>";
         ostr << "<title>WebSocketServer</title>";
@@ -145,40 +90,9 @@ public:
         ostr << "}";
         ostr << "</script>";
         ostr << "</head>";
-        ostr << "<body>";             
-		ostr << "  <h1>WebSocket Server1</h1>";
+        ostr << "<body>";
+        ostr << "  <h1>WebSocket Server</h1>";
         ostr << "  <p><a href=\"javascript:WebSocketTest()\">Run WebSocket Script</a></p>";
-        ostr << "  <h1>-=-=-=-=-=-=-=-=-=-=-=-=-</h1>";				// add
-
-        // ostr << "<!DOCTYPE html>\n<html>\n<body>\n";
-
-    	// if(request.get("mode") == "on"){ myLed.on(); checkedOn = "checked";}
-    	// if(request.get("mode") == "off"){ myLed.off(); checkedOff = "checked";}
-    		
-    	// Build the html form
-
-		MyLEDoNoFF myLed;
-
-	if(request.get("mode") == "on"){
-		myLed.on();
-		checkedOn = "checked";
-		}
-	if(request.get("mode") == "off"){
-		myLed.off();
-		checkedOff = "checked";
-		}
-
-    	string  form;
-    	form  =  " <form name='formulary' action='/hello' method='POST'>\n\
-    			Led Mode (on/off): <br>\n\
-    			<input type='radio' name='mode' value='on' " + checkedOn + "> On<br>\n\
-    			<input type='radio' name='mode' value='off' " + checkedOff + "> Off<br>\n\
-    			<input type='submit''/>\n\
-    		   </form>";
-
-    	ostr <<  form;       
-
-		ostr << "  <h1>-=-=-=-=-=-=-=-=-=-=-=-=-</h1>";				// add
         ostr << "</body>";
         ostr << "</html>";
     }
