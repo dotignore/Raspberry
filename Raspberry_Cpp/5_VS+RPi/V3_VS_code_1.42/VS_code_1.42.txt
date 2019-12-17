@@ -1,0 +1,5 @@
+install
+2019-09-26-raspbian-buster-full.iso
+
+after install
+apt-get install code-oss=1.42.0-1575969827
