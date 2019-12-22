@@ -1,0 +1,46 @@
+rommon 88 > IP_ADDRESS=x.x.x.x
+rommon 89 > IP_SUBNET_MASK=x.x.x.x
+rommon 90 > DEFAULT_GATEWAY=x.x.x.x
+rommon 91 > TFTP_SERVER=x.x.x.x
+rommon 92 > TFTP_FILE=c2801-adventerprisek9-mz.124-24.T8.bin
+rommon 93 > tftpdnld
+
+          IP_ADDRESS: x.x.x.x
+      IP_SUBNET_MASK: x.x.x.x
+     DEFAULT_GATEWAY: x.x.x.x
+         TFTP_SERVER: x.x.x.x
+           TFTP_FILE: c2801-adventerprisek9-mz.124-24.T8.bin
+        TFTP_MACADDR: 00:1f:ca:24:0b:7e
+        TFTP_VERBOSE: Progress
+    TFTP_RETRY_COUNT: 18
+        TFTP_TIMEOUT: 7200
+       TFTP_CHECKSUM: Yes
+             FE_PORT: 0
+       FE_SPEED_MODE: Auto Detect
+
+Invoke this command for disaster recovery only.
+WARNING: all existing data in all partitions on flash: will be lost!
+Do you wish to continue? y/n:  [n]:  y
+
+Receiving c2801-adventerprisek9-mz.124-24.T8.bin from x.x.x.x !!!!!!!!!!!!!.......................
+.......................
+.......................!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+File reception completed.
+Validating checksum.
+Copying file c2801-adventerprisek9-mz.124-24.T8.bin to flash:.
+program load complete, entry point: 0x8000f000, size: 0xcb80
+
+Format: Drive communication & 1st Sector Write OK...
+Writing Monlib sectors.
+.......................................................................................................
+Monlib write complete
+
+Format: All system sectors written. OK...
+Format: Operation completed successfully.
+
+Format of flash: complete
+program load complete, entry point: 0x8000f000, size: 0xcb80
+
+rommon 94 > boot
+program load complete, entry point: 0x8000f000, size: 0xcb80
+program load complete, entry point: 0x8000f000, size: 0xcb80
