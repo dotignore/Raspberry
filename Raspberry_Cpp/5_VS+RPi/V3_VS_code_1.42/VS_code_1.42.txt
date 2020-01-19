@@ -15,7 +15,8 @@ Preparing to unpack .../code-oss_1.42.0-1575969827_armhf.deb ...
 Unpacking code-oss (1.42.0-1575969827) ...
 
 apt-get install code-oss=1.42.0-1575969827
-
+	or
+	apt-get install code-oss=1.29.0-1539702286
 5)
 #apt-mark hold code-oss
 #apt-mark unhold code-oss
