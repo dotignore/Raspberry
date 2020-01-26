@@ -1,0 +1,67 @@
+https://github.com/arendst/Tasmota/wiki
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+1 pl2303 install drive
+2 test RX TX RS232
+3 run 1_ESPEasy_mega-20191208/FlashESP8266.exe
+  or  1_ESPEasy_mega-20180723/FlashESP8266.exe
+	choose tasmota.bin
+	download other versions firmware http://thehackbox.org/tasmota/
+4 power on + push reset
+5 flash
+6 run termit 
+7 configurations IP MASK and other parametr
+8 restart 1
+9 go to smartphone to sonoff on wifi 
+10 configirations wifi name  and password
+11 your wifi must support TYPE:B (G N dont support)
+12 after that connections go to web page x.x.x.240 in brouser
+
+if you dont understand wath the video
+How To Change Firmware on Sonoff Devices for use in Home Automation Projects.mp4
+Sonoff Basic Configuration Flashing with Tasmota Firmware.mp4
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+termit comand
+
+ssid1 NAME			name wifi
+password 1234567890		pass
+ipaddress1 x.x.x.240 		IP 0.0.0.0 = use dynamic IP address (DHCP)
+ipaddress2 x.x.x.1		default gatevay
+ipaddress3 255.255.255.0 	mask
+IPAddress4			set DNS server IP address
+restart 1			restart
+
+status0
+Reset 1				reset sonoff
+
+or other comands 
+https://github.com/arendst/Tasmota/wiki/Commands
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+wiki
+
+espurna
+https://github.com/xoseperez/espurna
+https://github.com/xoseperez/espurna/releases/
+https://www.youtube.com/watch?v=EYeOX4J4yEk
+
+ESPEasy
+https://github.com/letscontrolit/ESPEasy/releases/tag/mega-20191208
+
+
+https://tasmota.github.io/docs/#/Home
+
+
+
+
+
+
+
+
+
+
+
