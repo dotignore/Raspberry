@@ -1,0 +1,335 @@
+I cant run Debug in VSCode on Raspberry Pi **What I do wrong?**
+
+
+----------
+
+
+press F5
+--------
+
+Error message
+
+    Debug adapter process has terminated unexpectedly (read ECONNRESET)
+
+or 
+
+Run Task -> debag
+-----------------
+
+empty massage
+
+    > Executing task:  g++ -g outAsciiCode.cpp -o outAsciiCode.out <
+    
+    Terminal will be reused by tasks, press any key to close it.
+
+
+**I used this Instructions**  
+
+    http://my-web-site.iobb.net/~yuki/2018/03/24/
+    https://askubuntu.com/questions/1032647/how-can-i-compile-c-files-through-visual-studio-code
+    https://training-1.tistory.com/227
+    https://ducmanhphan.github.io/2018-10-17-Debug-in-C++-with-VS-Code/
+
+
+----------
+
+
+**PICTURE**
+
+[01 Code Oss About][1] 
+
+[02 Terminal -> Run Task -> debug][2]
+
+[03 Terminal -> Run Task -> Compile and run][3]
+
+[04 Debag -> Start Debug][4]
+
+  [1]: https://i.stack.imgur.com/V91PH.png
+  [2]: https://i.stack.imgur.com/MqJeS.png
+  [3]: https://i.stack.imgur.com/HPH4M.png
+  [4]: https://i.stack.imgur.com/0s0ax.png
+
+**PICTURE**
+
+----------
+
+install OS Raspbian
+
+    2019-09-26-raspbian-buster-full.iso
+
+Next
+
+    sudo apt update
+    sudo apt full-upgrade
+
+install Code - OSS
+
+    1)
+    # wget https://packagecloud.io/headmelted/codebuilds/gpgkey sudo apt-key add gpgkey
+    2)
+    # sudo -s
+    3)
+    # . <( wget -O - https://code.headmelted.com/installers/apt.sh )
+    4)
+    # apt-get install code-oss=1.29.0-1539702286
+    5)
+    # apt-mark hold code-oss
+    # apt-mark unhold code-oss
+
+Code - OSS
+
+    Version: 1.29.0 (user setup)
+    Commit: f74c7914490b68xxxxxxxxxxxxxxxx
+    Date: 2018-10-16T15:00:48.287Z
+    Electron: 2.0.11
+    Chrome: 61.0.3163.100
+    Node.js: 8.9.3
+    V8: 6.1.534.41
+    Architecture: arm
+
+$lsb_release -a
+
+        No LSB modules are available.
+        Distributor ID:	Raspbian
+        Description:	Raspbian GNU/Linux 10 (buster)
+        Release:	10
+        Codename:	buster
+    
+    =-=-=-=-=-=-=-=-=-=-=- NEXT  ---->>> -=-=-=-=-=-=-=-=-=-=-=
+    
+    $ sudo apt-get install lsb-release
+    
+        Reading package lists... Done
+        Building dependency tree       
+        Reading state information... Done
+        lsb-release is already the newest version (10.2019051400+rpi1).
+        0 upgraded, 0 newly installed, 0 to remove and 23 not upgraded.
+    
+    $ lsb_release -a
+    
+        No LSB modules are available.
+        Distributor ID:	Raspbian
+        Description:	Raspbian GNU/Linux 10 (buster)
+        Release:	10
+        Codename:	buster
+
+
+$cat /etc/os-release
+
+    PRETTY_NAME="Raspbian GNU/Linux 10 (buster)"
+    NAME="Raspbian GNU/Linux"
+    VERSION_ID="10"
+    VERSION="10 (buster)"
+    VERSION_CODENAME=buster
+    ID=raspbian
+    ID_LIKE=debian
+    HOME_URL="http://www.raspbian.org/"
+    SUPPORT_URL="http://www.raspbian.org/RaspbianForums"
+    BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
+
+$gcc --version
+
+    gcc (Raspbian 8.3.0-6+rpi1) 8.3.0
+    Copyright (C) 2018 Free Software Foundation, Inc.
+    This is free software; see the source for copying conditions.  There is NO
+    warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+$g++ --version
+
+    g++ (Raspbian 8.3.0-6+rpi1) 8.3.0
+    Copyright (C) 2018 Free Software Foundation, Inc.
+    This is free software; see the source for copying conditions.  There is NO
+    warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+$gdb --version
+
+    GNU gdb (Raspbian 8.2.1-2) 8.2.1
+    Copyright (C) 2018 Free Software Foundation, Inc.
+    License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+    This is free software: you are free to change and redistribute it.
+    There is NO WARRANTY, to the extent permitted by law.
+
+$make --version
+
+    GNU Make 4.2.1
+    Built for arm-unknown-linux-gnueabihf
+    Copyright (C) 1988-2016 Free Software Foundation, Inc.
+    License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+    This is free software: you are free to change and redistribute it.
+    There is NO WARRANTY, to the extent permitted by law.
+
+makefile
+
+    # Makefile 
+    #
+    #     make clean
+    #     make
+    #     make exec
+    #
+    #-----------------------------------------  
+     
+    #####
+    TARGET = outAscii 
+     
+    OBJ     = 
+    OBJ    += outAsciiCode.o
+     
+     
+    # Optimaze Option
+    # 
+    CFLAGOPT  = 
+    CFLAGOPT += -O0
+     
+    #
+    #
+    # cc options:
+    CFLAGS =
+    CFLAGS += -Wall 
+    CFLAGS += -g 
+    CFLAGS += $(CFLAGOPT)
+     
+     
+    #
+    # Link-time cc options:
+    LDFLAGS =
+     
+    CC  = gcc
+    CPP = g++
+     
+    #----------------------------- Command
+    #                                       file deletion command
+    RM= rm -f
+    #                                       linker
+    LN= $(CC)
+     
+    #----------------------------------------------
+    all: $(TARGET)
+     
+    .c.o:
+    	#----------------------------------------------------- [$<]
+    	$(CC)  $(CFLAGS)  -c $*.c
+     
+    .cpp.o:
+    	#----------------------------------------------------- [$<]
+    	$(CPP) $(CFLAGS)  -c $*.cpp
+     
+    $(TARGET) : $(OBJ) 
+    	#------------------------------------------------------ LINK
+    	$(LN) -o $(TARGET) $(OBJ)  $(LDFLAGS)  
+     
+     
+    clean:
+    	$(RM) *.o $(TARGET)
+     
+    exec:
+    	./$(TARGET)
+
+c_cpp_properties.json
+
+    N/A
+
+launch.json
+
+    {
+        "version": "0.2.0",
+        "configurations": [
+    
+            {
+                "name": "(gdb) Launch",
+                "type": "cppdbg",
+                "request": "launch",
+                "program": "/home/pi/myHome/outAsciiCode.out",
+                "args": [],
+                "stopAtEntry": false,
+                "cwd": "${workspaceFolder}",
+                "environment": [],
+                "externalConsole": true,
+                "MIMode": "gdb",
+                "setupCommands": [
+                    {
+                        "description": "Enable pretty-printing for gdb",
+                        "text": "-enable-pretty-printing",
+                        "ignoreFailures": true
+                    }
+                ]
+            }
+        ]
+    }
+
+tasks.json
+
+    {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "debug",
+                "type": "shell",
+                "command": "",
+                "args": [
+                    "g++",
+                    "-g",
+                    "${relativeFile}",
+                    "-o",
+                    "${fileBasenameNoExtension}.out"
+                ],
+                "problemMatcher": [
+                    "$gcc"
+                ]
+            },
+            {
+                "label": "Compile and run",
+                "type": "shell",
+                "command": "",
+                "args": [
+                    "g++",
+                    "-g",
+                    "${relativeFile}",
+                    "-o",
+                    "${fileBasenameNoExtension}.out",
+                    "&&",
+                    "clear",
+                    "&&",
+                    "./${fileBasenameNoExtension}.out"
+                ],
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                },
+                "problemMatcher": {
+                    "owner": "cpp",
+                    "fileLocation": [
+                        "relative",
+                        "${workspaceRoot}"
+                    ],
+                "pattern": {
+                        "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                        "file": 1,
+                        "line": 2,
+                        "column": 3,
+                        "severity": 4,
+                        "message": 5
+                    }
+                }
+            }
+        ]
+    }
+
+
+
+
+raspberry
+pi
+code
+oss
+json
+debug
+c++
+error
+message
+adapter
+process
+has
+terminated
+unexpectedly
+read
+econnreset

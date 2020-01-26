@@ -8,6 +8,7 @@ command 'C_Cpp.BuildAndDebugActiveFile' not found
 
 work tasks.json
 
+// tasks.json
 {
     "version": "2.0.0",
     "tasks": [
