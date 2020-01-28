@@ -76,6 +76,14 @@ install Code - OSS
     # apt-mark hold code-oss
     # apt-mark unhold code-oss
 
+Dont work (code-oss=1.42.0-1575969827 + C/C++ language)
+Need install for C/C++ language plugin only code-oss=1.29.0-1539702286 
+
+Unable to start the C/C++ language server. 
+IntelliSense features will be disabled. 
+Error: Missing binary at 
+/home/pi/.vscode-oss/extensions/ms-vscode.cpptools-0.21.0/bin/Microsoft.VSCode.CPP.Extension.linux
+
 Code - OSS
 
     Version: 1.29.0 (user setup)
