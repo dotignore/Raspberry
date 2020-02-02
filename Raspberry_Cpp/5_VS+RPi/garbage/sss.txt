@@ -17,6 +17,15 @@ apt-get install code-oss=1.29.0-1539702286
 #apt-mark hold code-oss
 #apt-mark unhold code-oss
 
+Code - OSS
+Version: 1.29.0 (user setup)
+Commit: f74c7914490b68xxxxxxxxxxxxxxxx
+Date: 2018-10-16T15:00:48.287Z
+Electron: 2.0.11
+Chrome: 61.0.3163.100
+Node.js: 8.9.3
+V8: 6.1.534.41
+Architecture: arm
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 
@@ -129,12 +138,12 @@ launch.json
 {
     "version": "0.2.0",
     "configurations": [
-
         {
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "/home/pi/myHome/outAsciiCode.out",
+            //"program": "/home/pi/myHome/outAsciiCode.out",
+	    "program": "${fileBasenameNoExtension}.out",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
