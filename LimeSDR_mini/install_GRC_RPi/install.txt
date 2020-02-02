@@ -1,0 +1,17 @@
+source
+https://wiki.myriadrf.org/ScratchRadio_Installation
+
+git clone https://github.com/myriadrf/ScratchRadio
+cd ScratchRadio
+sudo apt-get update
+sudo apt-get upgrade
+sudo  ./scripts/install_deps.sh
+make LimeSuite
+make GnuRadio
+make ScratchRadio
+make clean
+LimeUtil --update
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+https://www.crowdsupply.com/lime-micro/limesdr-mini/updates/raspberry-pi-3-and-scratch-demo
+https://player.vimeo.com/video/239830860
