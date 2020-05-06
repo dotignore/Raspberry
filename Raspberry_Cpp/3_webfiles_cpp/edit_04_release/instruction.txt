@@ -1,0 +1,44 @@
+run
+rpi_inst.sh
+
+run
+poco_1_10_1.sh
+
+----------
+# test lib list
+$ cd /usr/local/lib
+$ ls
+
+$ cd ~
+$ mkdir PoCoWebSocketTest
+$ cd PoCoWebSocketTest
+
+  sudo apt-get install gedit
+$ gedit main.cpp
+$ gedit CMakeLists.txt
+
+---------
+run
+z_cmake.sh
+
+
+connect to
+http://localhost:9980/
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+or test
+curl localhost:9980/ping -v
+
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 5849 (#0)
+> GET /ping HTTP/1.1
+> Host: localhost:5849
+> User-Agent: curl/7.47.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 18 Sep 2016 14:08:12 GMT
+< Connection: Close
+< 
+* Closing connection 0
