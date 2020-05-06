@@ -1,0 +1,6 @@
+
+http://www.codeblocks.org/
+
+Code::Blocks IDE
+
+sudo apt-get install codeblocks

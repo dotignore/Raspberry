@@ -1,3 +1,8 @@
+// http://www.staroceans.org/myprojects/poco-1.47/Net/samples/WebSocketServer/src/WebSocketServer.cpp
+// https://github.com/pocoproject/poco/blob/master/Net/samples/WebSocketServer/src/WebSocketServer.cpp
+// DOC
+// https://vovkos.github.io/doxyrest-showcase/poco/sphinx_rtd_theme/namespace_Poco_Net.html
+
 //
 // WebSocketServer.cpp
 //

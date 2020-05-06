@@ -1,4 +1,6 @@
 #Ref http://stackoverflow.com/questions/30114662/clion-cmake-and-poco
+#Ref https://stackoverrun.com/ru/q/8282962
+
 cmake_minimum_required(VERSION 3.3)
 
 project(PoCoWebSocketTest)

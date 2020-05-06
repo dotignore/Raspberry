@@ -3,6 +3,8 @@ sudo apt full-upgrade
 
 sudo apt-get install eclipse
 sudo apt-get install eclipse-jdt
+apt list eclipse*		// test
+sudo apt-get install eclipse-cpp
 
 sudo apt-get update
 sudo apt-get install gdebi-core
