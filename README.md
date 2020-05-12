@@ -15,7 +15,7 @@
                                                                      
 ```
 
-# Instruction: How run Poco Web server run on Raspberry Pi
+# How run Poco Web server run on Raspberry Pi
 
 #### Feature:
 :white_check_mark:	QT Creator
@@ -26,7 +26,7 @@
 
 https://github.com/dotignore/Raspberry/tree/master/Raspberry_Cpp/3_webfiles_cpp/edit_05_Qt%2BDebag_release
 
-# Instruction: How CrossCompil/Debag Poco Web server in Windows
+# How in Windows 10 CrossCompil/Debag Poco Web server on Raspberry Pi
 
 #### Feature:
 :white_check_mark:	CLion
