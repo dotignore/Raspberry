@@ -25,3 +25,14 @@
 :white_check_mark:	Poco Web Server
 
 https://github.com/dotignore/Raspberry/tree/master/Raspberry_Cpp/3_webfiles_cpp/edit_05_Qt%2BDebag_release
+
+# Instruction: How CrossCompil/Debag Poco Web server in Windows
+
+#### Feature:
+:white_check_mark:	CLion
+:white_check_mark:	Compile
+:white_check_mark:	Debug
+:white_check_mark:	CMake
+:white_check_mark:	Poco Web Server
+
+https://github.com/dotignore/Raspberry/tree/master/Raspberry_Cpp/3_webfiles_cpp/edit_06_Win_CLion_RPi
