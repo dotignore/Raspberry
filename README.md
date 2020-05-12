@@ -36,3 +36,15 @@ https://github.com/dotignore/Raspberry/tree/master/Raspberry_Cpp/3_webfiles_cpp/
 :white_check_mark:	Poco Web Server
 
 https://github.com/dotignore/Raspberry/tree/master/Raspberry_Cpp/3_webfiles_cpp/edit_06_Win_CLion_RPi
+
+# How Flash firmware to Sonoff-Tasmota ESP8266
+
+```
+  _____ ____  ____
+ | ____/ ___||  _ \ ___  __ _ ___ _   _
+ |  _| \___ \| |_) / _ \/ _` / __| | | |
+ | |___ ___) |  __/  __/ (_| \__ \ |_| |
+ |_____|____/|_|   \___|\__,_|___/\__, |
+                                  |___/
+```
+https://github.com/dotignore/Raspberry/tree/master/sonoff
