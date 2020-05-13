@@ -1,0 +1,37 @@
+install
+2019-09-26-raspbian-buster-full.iso
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+1)
+wget https://packagecloud.io/headmelted/codebuilds/gpgkey sudo apt-key add gpgkey
+2)
+sudo -s
+3)
+. <( wget -O - https://code.headmelted.com/installers/apt.sh )
+4)
+###apt-get install code-oss=1.29.0-1539702286
+Preparing to unpack .../code-oss_1.42.0-1575969827_armhf.deb ...
+Unpacking code-oss (1.42.0-1575969827) ...
+
+apt-get install code-oss=1.42.0-1575969827
+	or
+	apt-get install code-oss=1.29.0-1539702286
+5)
+#apt-mark hold code-oss
+#apt-mark unhold code-oss
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+Preparing to unpack .../code-oss_1.42.0-1575969827_armhf.deb ...
+Unpacking code-oss (1.42.0-1575969827) ...
+
+
+
+
+
+
+
+after install
+apt-get install code-oss=1.42.0-1575969827

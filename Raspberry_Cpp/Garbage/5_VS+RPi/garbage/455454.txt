@@ -1,0 +1,13 @@
+sudo apt update
+sudo apt full-upgrade
+
+gdbserver --version
+apt-get install gdbserver
+
+
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//garbage 
+sudo apt-get install openssh-server g++ gdb gdbserver

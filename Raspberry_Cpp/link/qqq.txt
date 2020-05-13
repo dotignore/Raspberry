@@ -1,8 +1,0 @@
-balena-raspberrypi
-
-https://biicode-docs.readthedocs.io/raspberrypi/examples/httpserver.html#how-can-i-use-it
-
-https://www.instructables.com/id/Raspberry-Pi-GPIO-Web-Dashboard/
-https://www.balena.io/docs/learn/getting-started/raspberrypi3/cpp/
-
-https://iotdesignpro.com/projects/control-led-with-raspberry-pi-webserver-using-apache

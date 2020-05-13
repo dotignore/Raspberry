@@ -1,0 +1,13 @@
+http://my-web-site.iobb.net/~yuki/2018/03/24/ 
+
+https://tom2rd.sakura.ne.jp/wp/2018/08/17/post-7989/
+
+https://qiita.com/sanbongazin/items/3a87d3393fd94169e600  
+
+https://medium.com/@tarangnpatel/visual-studio-code-c-programming-on-linux-c990b9705314  
+
+https://askubuntu.com/questions/1203213/how-to-build-multiple-files-on-visual-studio-code-c  
+
+https://dev.to/azure/net-core-iot-raspberry-pi-linux-and-azure-iot-hub-learn-how-to-build-deploy-and-debug-d1f  
+
+https://techcommunity.microsoft.com/t5/internet-of-things/build-azure-iot-apps-with-net-core-iot-targeting-raspberry-pi/ba-p/776767  

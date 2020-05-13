@@ -1,0 +1,18 @@
+sudo apt update
+sudo apt full-upgrade
+
+sudo apt-get install eclipse
+sudo apt-get install eclipse-jdt
+apt list eclipse*		// test
+sudo apt-get install eclipse-cpp
+
+sudo apt-get update
+sudo apt-get install gdebi-core
+java -version
+sudo apt-get install openjdk-8-jre-headless
+
+java - auto mode
+   link best version is /usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/bin/java
+sudo update-alternatives --config java
+
+https://linuxize.com/post/install-java-on-raspberry-pi/
