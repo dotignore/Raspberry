@@ -16,7 +16,7 @@ class HelloRequestHandler: public HTTPRequestHandler                            
     void handleRequest(HTTPServerRequest& request, HTTPServerResponse& response)
     {
         Application& app = Application::instance();
-        app.logger().information("Request from %s", request.clientAddress().toString());
+        app.logger().information("Request from %s", request.clientAddress().toString());                            // message to concole --> Request from 10.10.1.136:51290
 
         response.setChunkedTransferEncoding(true);
         response.setContentType("text/html");
@@ -54,14 +54,14 @@ class WebServerApp: public ServerApplication
     // Разработчики языка рекомендуют в использовать именно vector вместо ручного выделения памяти для массива. Это позволяет избежать утечек памяти и облегчает работу программисту.
     int main(const std::vector<std::string>&)
     {
-        UInt16 port = static_cast<UInt16>(config().getUInt("port", 80));
+        UInt16 port = static_cast<UInt16>(config().getUInt("port", 8080));
 
         HTTPServer srv(new HelloRequestHandlerFactory, port);                                                   // HTTPServer.h    class HelloRequestHandlerFactory
-        srv.start();
-        logger().information("HTTP Server started on port %hu.", port);
-        waitForTerminationRequest();
+        srv.start();                                                                                                    // start
+        logger().information("HTTP Server started on port %hu.", port);                                             // HTTP Server started on port 8080.
+        waitForTerminationRequest();                                                                                    //
         logger().information("Stopping HTTP Server...");
-        srv.stop();
+        srv.stop();                                                                                                     // stop
 
         return Application::EXIT_OK;
     }
