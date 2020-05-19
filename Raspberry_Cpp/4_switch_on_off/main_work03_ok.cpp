@@ -1,8 +1,8 @@
 ﻿#include <wiringPi.h>
 #include <stdio.h>
 
-#define LedPin    0								// int LED = 2;
-#define ButtonPin 1								// int pinButton = 8;
+#define LedPin    0			// Wpi 0, GPIO 17 (P17), Phys 11 + GND
+#define ButtonPin 1			// Wpi 1, GPIO 18 (P18), Phys 12 + GND
 
 // https://www.electroschematics.com/8964/turn-on-led-button-arduino/
 

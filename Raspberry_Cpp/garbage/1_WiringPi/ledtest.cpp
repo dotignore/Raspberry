@@ -6,7 +6,7 @@ led_test.cpp
 #include <stdio.h>
 #include <wiringPi.h>
 
-#define LED     0	// GPIO 11
+#define LED     0	// Wpi 0, GPIO 17 (P17), Phys 11 + GND
 
 int main (void)
 {
