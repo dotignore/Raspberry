@@ -1,0 +1,549 @@
+openapi: 3.0.0
+
+info:
+  description: "A totally functional RESTful API built using the free version of Poco C++ Libraries."
+  version: "0.1"
+  title: "Poco Restful Webservice"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+
+servers:
+  - url: https://api.stating.com
+    description: "I want to see an online version of the application."
+  - url: http://localhost
+    description: "I want to play with the application in my machine."
+    variables:
+      port:
+        enum:
+          - '80'
+          - '8080'
+          - '9090'
+        default: '8080'
+
+tags:
+  - name: "questions"
+  - name: "options"
+
+paths:
+
+  /.:
+    get:
+      summary: "API root resource."
+      description: ""
+      responses:
+        200:
+          description: "All resource made available for the API."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/JsonAPIRootResourceHttpResponse"
+
+  /questions:
+
+    post:
+      tags:
+        - "questions"
+      summary: "Add a new question to the store."
+      description: ""
+      responses:
+        201:
+          description: "Question was successfully created."
+        400:
+          description: "Bad request --  Question ID parameter was rejected. Likely its format is incorrect."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+        415:
+          description: "The request media type is not supported."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+      requestBody:
+        content:
+          application/vnd.api+json:
+            schema:
+              $ref: "#/components/schemas/JsonAPIQuestionHttpRequest"
+        description: "A question object to be added to the store."
+        required: true
+
+    get:
+      tags:
+        - "questions"
+      summary: "Return a share of all questions available."
+      description: ""
+      parameters:
+        - name: "question_id"
+          in: path
+          schema:
+            type: string
+            format: "uuid"
+            minimum: 1
+          required: true
+          description: "The unique ID of the question."
+      responses:
+        200:
+          description: "Question successfully retrieved."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/JsonAPIQuestionHttpResponse"
+        400:
+          description: "Bad request --  ID parameter was rejected. Likely, its format is incorrect."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+        404:
+          description: "Question Not Found -- This question wasn't found."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+
+    put:
+      tags:
+        - "questions"
+      summary: "Change a question in the store."
+      description: ""
+      parameters:
+        - name: "question_id"
+          in: path
+          schema:
+            type: string
+            format: "uuid"
+            minimum: 1
+          required: true
+          description: "The unique ID of the question."
+      responses:
+        204:
+          description: "Question was successfully updated."
+        400:
+          description: "Bad request --  Question ID parameter was rejected. Likely, its format is incorrect."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+        404:
+          description: "Question Not Found -- The question wasn't found to be updated."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+        415:
+          description: "The request media type is not supported."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+      requestBody:
+        content:
+          application/vnd.api+json:
+            schema:
+              $ref: "#/components/schemas/JsonAPIQuestionHttpRequest"
+
+    delete:
+      tags:
+        - "questions"
+      summary: "Delete a question from the store."
+      description: ""
+      parameters:
+        - name: "question_id"
+          in: path
+          schema:
+            type: string
+            format: "uuid"
+            minimum: 1
+          required: true
+          description: "The unique ID of the question."
+
+      responses:
+        204:
+          description: "Question was successfully deleted."
+        400:
+          description: "Bad request --  Question ID parameter was rejected. Likely, its format is incorrect."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+        404:
+          description: "Question Not Found -- The question wasn't found to be deleted."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+
+  /options:
+
+    post:
+      tags:
+        - "options"
+      summary: "Add a new set of options to a question."
+      description: ""
+      responses:
+        201:
+          description: "Options were successfully created."
+        400:
+          description: "Bad request --  Something is wrong with your request data."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+        415:
+          description: "The request media type is not supported."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+      requestBody:
+        content:
+          application/vnd.api+json:
+            schema:
+              $ref: "#/components/schemas/JsonAPIOptionsCollectionHttpRequest"
+        description: "A collection of options objects to be added to the store."
+        required: true
+
+    get:
+      tags:
+        - "options"
+      summary: "Return a share of all optoins available for a question."
+      description: ""
+      parameters:
+        - name: "question_id"
+          in: path
+          schema:
+            type: string
+            format: "uuid"
+            minimum: 1
+          required: true
+          description: "The ID of the question that owns the options."
+      responses:
+        200:
+          description: "Options successfully retrieved."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/JsonAPIOptionsCollectionHttpResponse"
+        400:
+          description: "Bad request --  ID parameter was rejected. Likely its format is incorrect."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+        404:
+          description: "Question Not Found -- This question wasn't found."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+
+    put:
+      tags:
+        - "options"
+      summary: "Change options of a question in the store."
+      description: ""
+      parameters:
+        - name: "question_id"
+          in: path
+          schema:
+            type: string
+            format: "uuid"
+            minimum: 1
+          required: true
+          description: "The unique ID of the question."
+      responses:
+        204:
+          description: "Options were successfully updated."
+        400:
+          description: "Bad request --  Something wrong with your request data."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+        404:
+          description: "Question or Option Not Found -- The question or Option weren't found to be updated."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+        415:
+          description: "The request media type is not supported."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+      requestBody:
+        content:
+          application/vnd.api+json:
+            schema:
+              $ref: "#/components/schemas/JsonAPIOptionsCollectionHttpRequest"
+
+    delete:
+      tags:
+        - "options"
+      summary: "Delete one option from the store."
+      description: ""
+      parameters:
+        - name: "option_id"
+          in: path
+          schema:
+            type: string
+            format: "uuid"
+            minimum: 1
+          required: true
+          description: "The unique ID of the question."
+
+      responses:
+        204:
+          description: "Option was successfully deleted."
+        400:
+          description: "Bad request --  Option ID parameter was rejected. Likely, its format is incorrect."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+        404:
+          description: "Option Not Found -- The option wasn't found to be deleted."
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: "#/components/schemas/ErrorsCollection"
+
+components:
+  schemas:
+    JsonAPIRootResourceHttpResponse:
+      type: object
+      properties:
+        links:
+          type: object
+          properties:
+            self:
+              description: ''
+              type: string
+            questions:
+              description: ''
+              type: string
+            options:
+              description: ''
+              type: string
+            voting:
+              description: ''
+              type: string
+        meta:
+          $ref: "#/components/schemas/Meta"
+
+    JsonAPIQuestionHttpResponse:
+      type: object
+      required: ["data"]
+      properties:
+        data:
+          type: array
+          items:
+            title: Question
+            type: object
+            required: ["id", "type"]
+            properties:
+              id:
+                type: string
+                format: "uuid"
+              type:
+                type: string
+                format: "question"
+              attributes:
+                type: object
+                properties:
+                  text:
+                    type: string
+                  label:
+                    type: string
+                  details:
+                    type: string
+                  created_at:
+                    type: string
+                    format: "date-time"
+                  last_updated_at:
+                    type: string
+                    format: "date-time"
+                  starts_at:
+                    type: string
+                    format: "date-time"
+                  ends_at:
+                    type: string
+                    format: "date-time"
+                  options:
+                    type: array
+                    items:
+                      type: object
+                      minItems: 2
+                      required: ["data"]
+                      properties:
+                        text:
+                          type: string
+                        position:
+                          type: integer
+                        created_at:
+                          type: string
+                          format: "date-time"
+                        last_updated_at:
+                          type: string
+                          format: "date-time"
+        meta:
+          $ref: "#/components/schemas/Meta"
+
+    JsonAPIQuestionHttpRequest:
+      type: object
+      required: ["data"]
+      properties:
+        data:
+          type: array
+          items:
+            title: Question
+            type: object
+            required: ["id", "type"]
+            properties:
+              id:
+                type: string
+                format: "uuid"
+              type:
+                type: string
+                format: "question"
+              attributes:
+                type: object
+                properties:
+                  text:
+                    type: string
+                    example: ""
+                  label:
+                    type: string
+                    example: ""
+                  details:
+                    type: string
+                    example: ""
+                  starts_at:
+                    type: string
+                    format: "date-time"
+                  ends_at:
+                    type: string
+                    format: "date-time"
+                  options:
+                    type: array
+                    items:
+                      type: object
+                      minItems: 2
+                      properties:
+                        text:
+                          type: string
+                          example: ""
+                        position:
+                          type: integer
+                          example: 1
+
+    JsonAPIOptionsCollectionHttpResponse:
+      type: object
+      required: ["data"]
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+            minItems: 2
+            required: ["data"]
+            properties:
+              id:
+                type: string
+                format: "uuid"
+              text:
+                type: string
+              position:
+                type: integer
+                example: 1
+              created_at:
+                type: string
+                format: "date-time"
+              last_updated_at:
+                type: string
+                format: "date-time"
+        meta:
+          $ref: "#/components/schemas/Meta"
+
+    JsonAPIOptionsCollectionHttpRequest:
+      type: object
+      required: ["data"]
+      properties:
+        data:
+          type: array
+          items:
+            title: Option
+            type: object
+            required: ["type"]
+            properties:
+              type:
+                type: string
+                format: "options"
+              attributes:
+                type: array
+                items:
+                  type: object
+                  minItems: 2
+                  properties:
+                    id:
+                      type: string
+                      format: "uuid"
+                    text:
+                      type: string
+                      example: ""
+                    position:
+                      type: integer
+                      example: 1
+
+    Meta:
+      type: object
+      properties:
+        copyright:
+          description: 'An application-specific error code, expressed as a string value.'
+          type: string
+          example: "Copyright 2018-2020 Poco RESTful API"
+        jsonapi:
+          type: string
+          example: "1.0"
+        type:
+          type: array
+          items:
+            type: string
+            example: "en-US"
+
+    Error:
+      type: object
+      properties:
+        code:
+          description: 'An application-specific error code, expressed as a string value.'
+          type: string
+        description:
+          description: 'A short, human-readable summary of the problem. It **SHOULD NOT** change from occurrence to occurrence of the problem, except for purposes of localization.'
+          type: string
+        source:
+          type: object
+          properties:
+            pointer:
+              description: 'A JSON Pointer to the associated entity in the request document [e.g. "/data" for a primary data object, or "/data/attributes/title" for a specific attribute].'
+              type: string
+        type:
+          description: ""
+          type: string
+
+    ErrorsCollection:
+      type: object
+      required: [ "errors" ]
+      properties:
+        errors:
+          type: array
+          items:
+            $ref: "#/components/schemas/Error"
+          uniqueItems: true
+      additionalProperties: false
+
+externalDocs:
+  description: "Find out more about Poco C++ Libraries"
+  url: "https://pocoproject.org"

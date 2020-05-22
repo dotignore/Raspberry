@@ -1,0 +1,145 @@
+language: cpp
+
+env:
+  global:
+    # It sets the Application Environment
+    - POCO_WEBSERVICE_ENVIRONMENT=build
+    # It makes Docker Hub public repository information available
+    - DOCKERHUB_USERNAME=edsonsoares
+    - DOCKERHUB_REPOSITORY=poco_restful_webservice
+    # Do not prompt for user input when using any SDK methods.
+    - CLOUDSDK_CORE_DISABLE_PROMPTS=1
+    - GCLOUD_INSTANCE_NAME=poco_restful_webservice
+
+os: linux
+
+dist: trusty
+sudo: enabled
+
+cache:
+  directories:
+    # We cache the SDK so we don't have to download it again on subsequent builds.
+    - $HOME/google-cloud-sdk
+
+services:
+  - mysql
+  - docker
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+
+    packages:
+      - libmysqlclient-dev
+      - gcc-snapshot
+      - gcc-6
+      - g++-6
+      - gcovr
+
+notifications:
+    email:
+      on_success: never  # default: change
+      on_failure: always # default: always
+
+before_install:
+  # It sets GCC 6 as the default version.
+  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 60 --slave /usr/bin/g++ g++ /usr/bin/g++-6
+
+  # It makes GCloud SDK available
+  - if [ ! -d "$HOME/google-cloud-sdk/bin" ]; then
+      rm -rf $HOME/google-cloud-sdk;
+      curl https://sdk.cloud.google.com | bash > /dev/null;
+    fi
+
+  - source $HOME/google-cloud-sdk/path.bash.inc
+  - gcloud --quiet components update
+  - gcloud version
+
+install:
+  # It makes available CMake 3.7.2
+  - cd $HOME
+  - wget https://cmake.org/files/v3.7/cmake-3.7.2.tar.gz
+  - tar -xf cmake-3.7.2.tar.gz
+  - cd cmake-3.7.2
+  - ./configure
+  - make && sudo make install
+
+  # It makes available Google Test
+  - sudo sudo apt-get install libgtest-dev
+  - cd /usr/src/gtest
+  - sudo cmake .
+  - sudo make
+  - sudo cp *.a /usr/lib
+
+  # It makes available Poco 1.8.1
+  # - cd $HOME
+  # - wget https://pocoproject.org/releases/poco-1.8.1/poco-1.8.1-all.tar.gz
+  # - tar -xf poco-1.8.1-all.tar.gz
+  # - cd poco-1.8.1-all
+  # - ./configure --no-tests --no-samples --everything --omit=MongoDB,Data/ODBC,Data/SQLite,PDF,CppParser,Crypto,NetSSL_OpenSSL,CppUnit,PageCompiler
+  # - make && sudo make install
+
+  - cd $HOME
+  - git clone https://github.com/edson-a-soares/poco.git  /tmp/poco
+  - cd /tmp/poco
+  - ./configure --no-tests --no-samples --everything --omit=MongoDB,SQL/ODBC,SQL/SQLite,PDF,CppParser,Crypto,NetSSL_OpenSSL,CppUnit,PageCompiler
+  - make && sudo make install
+
+before_script:
+  # =============================================================
+  # It makes available a MySQL User with proper privileges to
+  # perform database related tests.
+  # =============================================================
+  - mysql -e "CREATE USER 'ci_environment'@'localhost' IDENTIFIED BY 'abc12345'; GRANT ALL ON *.* TO 'ci_environment'@'localhost'";
+
+  # =============================================================
+  # It removes standard Ant Jsch package for using the local one.
+  # If both are kept Ant gets a bit confused and the build fails.
+  # =============================================================
+  - if [ -e "/usr/share/ant/lib/ant-jsch.jar" ]; then
+      sudo rm "/usr/share/ant/lib/ant-jsch.jar"; fi
+
+  # =============================================================
+  # The following Ant Tasks:
+  #  1. Create the database
+  #  2. Create DBDeploy and Application tables as well as load
+  #  sample data.
+  # =============================================================
+  - cd $TRAVIS_BUILD_DIR
+  - ant -propertyfile ci.properties create_schema
+  - ant -propertyfile ci.properties init_schema
+
+  # It makes local libs path available in the PATH environmental variable.
+  - export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
+
+script:
+  # It creates a separated CMake build directory for building the application.
+  - cd $HOME && sudo mkdir cmake-build && cd cmake-build
+  # It enables all parts of the application for building.
+  - sudo cmake $TRAVIS_BUILD_DIR -DCMAKE_BUILD_TYPE=Debug -DENABLE_TESTS=yes -DENABLE_STANDALONE_SERVICE=yes
+  # It compiles the application and run the tests.
+  - sudo cmake --build . --target all -- -j 2
+  - cd $TRAVIS_BUILD_DIR/bin && ./tests --gtest_filter=* --gtest_color=yes
+  - cd $TRAVIS_BUILD_DIR && sudo gcovr -r .
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
+before_deploy:
+  - cd $TRAVIS_BUILD_DIR
+  - bash $TRAVIS_BUILD_DIR/scripts/shell/push-docker-image.sh
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: bash $TRAVIS_BUILD_DIR/scripts/shell/deploy.sh
+  on:
+    branch: master
+
+after_script:
+  # =============================================================
+  # The following Ant Task destroys database and all sample data.
+  # =============================================================
+  - cd $TRAVIS_BUILD_DIR
+  - ant -propertyfile ci.properties drop_schema

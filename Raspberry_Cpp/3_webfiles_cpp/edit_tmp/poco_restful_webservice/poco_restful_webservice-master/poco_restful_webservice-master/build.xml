@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Poco RESTful WebService" basedir=".">
+
+    <property name="test" value="test"/>
+    <property name="build" value="build"/>
+    <property file="${basedir}/build.properties"/>
+    <property name="libraries" value="${basedir}/lib"/>
+    <property name="db_directory" value="${basedir}/database"/>
+
+    <available property="ant-jsch.present" file="${ant.home}/lib/ant-jsch.jar" />
+    <fail if="ant-jsch.present" message="Please remove ${ant.home}/lib/ant-jsch.jar." />
+
+    <path id="libraries">
+        <fileset dir="${libraries}">
+            <include name="**/*.jar"/>
+        </fileset>
+    </path>
+
+    <!-- taskdef name="scp" classname="org.apache.tools.ant.taskdefs.optional.ssh.Scp" classpathref="libraries" /-->
+    <!-- taskdef name="sshexec" classname="org.apache.tools.ant.taskdefs.optional.ssh.SSHExec" classpathref="libraries" /-->
+
+    <!-- Import database related tasks -->
+    <import file="${db_directory}/targets.xml" as="nested"/>
+
+</project>
