@@ -38,6 +38,4 @@ namespace httpserver {
     	response.body  =  html.str();
     }
 
-
-
 } /* namespace httpserver */
