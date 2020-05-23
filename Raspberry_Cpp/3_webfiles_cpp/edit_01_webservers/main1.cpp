@@ -126,7 +126,7 @@ protected:
         if (!_helpRequested)
         {
             unsigned short port = static_cast<unsigned short>(
-                config().getInt("HTTPTimeServer.port", 9980));
+                config().getInt("HTTPTimeServer.port", 8080));
             std::string format(config().getString(
                 "HTTPTimeServer.format",
                 DateTimeFormat::SORTABLE_FORMAT));
