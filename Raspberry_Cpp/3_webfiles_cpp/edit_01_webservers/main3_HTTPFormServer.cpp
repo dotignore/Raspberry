@@ -133,23 +133,30 @@ public:
              "<title>POCO Form Server Sample</title>\n"
              "</head>\n"
              "<body>\n"
-             "<h1>POCO Form Server Sample</h1>\n"
+             "<h1>POCO Form Server Sample</h1>\n\n"
+
+             "<!--  -------------- GET Form -------------- -->\n"
              "<h2>GET Form</h2>\n"
              "<form method=\"GET\" action=\"/form\">\n"
              "<input type=\"text\" name=\"text\" size=\"31\">\n"
              "<input type=\"submit\" value=\"GET\">\n"
-             "</form>\n"
+             "</form>\n\n"
+
+             "<!--  -------------- POST Form -------------- -->\n"
              "<h2>POST Form</h2>\n"
              "<form method=\"POST\" action=\"/form\">\n"
              "<input type=\"text\" name=\"text\" size=\"31\">\n"
              "<input type=\"submit\" value=\"POST\">\n"
-             "</form>\n"
+             "</form>\n\n"
+
+             "<!--  -------------- File Upload Form -------------- -->\n"
              "<h2>File Upload</h2>\n"
              "<form method=\"POST\" action=\"/form\" enctype=\"multipart/form-data\">\n"
              "<input type=\"file\" name=\"file\" size=\"31\"> \n"
              "<input type=\"submit\" value=\"Upload\">\n"
-             "</form>\n";
+             "</form>\n\n";
 
+        ostr << "<!--  -------------- Request Form Ansver-------------- -->\n";
         ostr << "<h2>Request</h2><p>\n";
         ostr << "Method: " << request.getMethod() << "<br>\n";
         ostr << "URI: " << request.getURI() << "<br>\n";
@@ -161,6 +168,7 @@ public:
         }
         ostr << "</p>";
 
+        // -------------- GET/POST Ansver --------------
         if (!form.empty())
         {
             ostr << "<h2>Form</h2><p>\n";
@@ -173,6 +181,7 @@ public:
             ostr << "</p>";
         }
 
+        // -------------- File Upload Ansver --------------
         if (!partHandler.name().empty())
         {
             ostr << "<h2>Upload</h2><p>\n";
