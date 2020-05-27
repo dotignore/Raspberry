@@ -1,0 +1,32 @@
+/usr/local/include/Poco
+
+AbstractCache.h
+	Remove.notify(this, it->first);
+	it->second = SharedPtr<TValue>(new TValue(val));
+
+AccessExpireStrategy.h
+	if (!it->second->first.isElapsed(this->_expireTime)) // don't extend if already expired
+
+ClassLoader.h
+	_pair.first  = _it->first;
+	_pair.second = _it->second.pManifest;
+
+DynamicFactory.h
+	delete p.second
+
+ExpireStrategy.h
+	stat.first->second = it;
+
+this
+HashMap.h
+	Key   first;
+	Value second;
+
+HashTable.h
+	return it->second;
+
+ordered_map.h
+	 return key_value.second;
+
+ordered_hash.h
+	return it->second;
