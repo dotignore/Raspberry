@@ -1,21 +1,4 @@
-﻿```
-██╗  ██╗███████╗██╗     ██╗      ██████╗     ██╗████████╗███████╗    
-██║  ██║██╔════╝██║     ██║     ██╔═══██╗    ██║╚══██╔══╝██╔════╝    
-███████║█████╗  ██║     ██║     ██║   ██║    ██║   ██║   ███████╗    
-██╔══██║██╔══╝  ██║     ██║     ██║   ██║    ██║   ██║   ╚════██║    
-██║  ██║███████╗███████╗███████╗╚██████╔╝    ██║   ██║   ███████║    
-╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝     ╚═╝   ╚═╝   ╚══════╝    
-                                                                     
-███╗   ███╗██╗   ██╗    ██╗  ██╗ ██████╗ ██████╗ ██████╗ ██╗   ██╗   
-████╗ ████║╚██╗ ██╔╝    ██║  ██║██╔═══██╗██╔══██╗██╔══██╗╚██╗ ██╔╝   
-██╔████╔██║ ╚████╔╝     ███████║██║   ██║██████╔╝██████╔╝ ╚████╔╝    
-██║╚██╔╝██║  ╚██╔╝      ██╔══██║██║   ██║██╔══██╗██╔══██╗  ╚██╔╝     
-██║ ╚═╝ ██║   ██║       ██║  ██║╚██████╔╝██████╔╝██████╔╝   ██║      
-╚═╝     ╚═╝   ╚═╝       ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═════╝    ╚═╝      
-                                                                     
-```
-
-# How run Poco Web server run on Raspberry Pi
+﻿# How run Poco Web server run on Raspberry Pi
 
 #### Feature:
 :white_check_mark:	QT Creator
@@ -37,18 +20,4 @@ https://github.com/dotignore/Raspberry/tree/master/Raspberry_Cpp/3_webfiles_cpp/
 
 https://github.com/dotignore/Raspberry/tree/master/Raspberry_Cpp/3_webfiles_cpp/edit_06_Win_CLion_RPi
 
-# How Flash firmware to Sonoff-Tasmota ESP8266
 
-```
-  _____ ____  ____
- | ____/ ___||  _ \ ___  __ _ ___ _   _
- |  _| \___ \| |_) / _ \/ _` / __| | | |
- | |___ ___) |  __/  __/ (_| \__ \ |_| |
- |_____|____/|_|   \___|\__,_|___/\__, |
-                                  |___/
-```
-https://github.com/dotignore/Raspberry/tree/master/sonoff
-
-# Vintage Nokia/Mobira 720 (NMT-450 is a standard) x90
- 
-https://github.com/dotignore/Raspberry/tree/master/Nokia_nmt_450
