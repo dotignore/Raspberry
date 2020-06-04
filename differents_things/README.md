@@ -1,52 +1,49 @@
 ```
---Ќ  --Ќ-------Ќ--Ќ     --Ќ      ------Ќ     --Ќ--------Ќ-------Ќ
---І  --І--у====---І     --І     --у===--Ќ    --ІL==--у==---у====-
--------І-----Ќ  --І     --І     --І   --І    --І   --І   -------Ќ
---у==--І--у==-  --І     --І     --І   --І    --І   --І   L====--І
---І  --І-------Ќ-------Ќ-------ЌL------у-    --І   --І   -------І
-L=-  L=-L======-L======-L======- L=====-     L=-   L=-   L======-
+ллЛ  ллЛлллллллЛллЛ     ллЛ      ллллллЛ     ллЛллллллллЛлллллллЛ
+ллК  ллКллЩЭЭЭЭМллК     ллК     ллЩЭЭЭллЛ    ллКШЭЭллЩЭЭМллЩЭЭЭЭМ
+лллллллКлллллЛ  ллК     ллК     ллК   ллК    ллК   ллК   лллллллЛ
+ллЩЭЭллКллЩЭЭМ  ллК     ллК     ллК   ллК    ллК   ллК   ШЭЭЭЭллК
+ллК  ллКлллллллЛлллллллЛлллллллЛШллллллЩМ    ллК   ллК   лллллллК
+ШЭМ  ШЭМШЭЭЭЭЭЭМШЭЭЭЭЭЭМШЭЭЭЭЭЭМ ШЭЭЭЭЭМ     ШЭМ   ШЭМ   ШЭЭЭЭЭЭМ
 
----Ќ   ---Ќ--Ќ   --Ќ    --Ќ  --Ќ ------Ќ ------Ќ ------Ќ --Ќ   --Ќ
-----Ќ ----ІL--Ќ --у-    --І  --І--у===--Ќ--у==--Ќ--у==--ЌL--Ќ --у-
---у----у--І L----у-     -------І--І   --І------у-------у- L----у-
---ІL--у---І  L--у-      --у==--І--І   --І--у==--Ќ--у==--Ќ  L--у-
---І L=- --І   --І       --І  --ІL------у-------у-------у-   --І
-L=-     L=-   L=-       L=-  L=- L=====- L=====- L=====-    L=-                                                                 
+лллЛ   лллЛллЛ   ллЛ    ллЛ  ллЛ ллллллЛ ллллллЛ ллллллЛ ллЛ   ллЛ
+ллллЛ ллллКШллЛ ллЩМ    ллК  ллКллЩЭЭЭллЛллЩЭЭллЛллЩЭЭллЛШллЛ ллЩМ
+ллЩллллЩллК ШллллЩМ     лллллллКллК   ллКллллллЩМллллллЩМ ШллллЩМ
+ллКШллЩМллК  ШллЩМ      ллЩЭЭллКллК   ллКллЩЭЭллЛллЩЭЭллЛ  ШллЩМ
+ллК ШЭМ ллК   ллК       ллК  ллКШллллллЩМллллллЩМллллллЩМ   ллК
+ШЭМ     ШЭМ   ШЭМ       ШЭМ  ШЭМ ШЭЭЭЭЭМ ШЭЭЭЭЭМ ШЭЭЭЭЭМ    ШЭМ
+
 ```
-
-https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46
-
 
 
 # Led Stairs
 
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/pic2_.jpg" alt="drawing" style="width:300px;"/>
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/pic1.jpg" alt="drawing" style="width:300px;"/>
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/plata.jpg" alt="drawing" style="width:300px;"/>
 
-
+https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/08_stairs
 
 # How Flash firmware to Sonoff-Tasmota ESP8266
 
-```
-  _____ ____  ____
- | ____/ ___||  _ \ ___  __ _ ___ _   _
- |  _| \___ \| |_) / _ \/ _` / __| | | |
- | |___ ___) |  __/  __/ (_| \__ \ |_| |
- |_____|____/|_|   \___|\__,_|___/\__, |
-                                  |___/
-```
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/01_sonoff/pic12.jpg" alt="drawing" style="width:300px;"/>
-
-
-
-
-
-
-
 
 https://github.com/dotignore/Raspberry/tree/master/sonoff
 
-# Webdesign
-
 # Nix Clock
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/18_nix/IMG_0024.JPG" alt="drawing" style="width:300px;"/>
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/18_nix/05.png" alt="drawing" style="width:300px;"/>
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/18_nix/IMG_0027.JPG" alt="drawing" style="width:300px;"/>
+
+<img src="
+" alt="drawing" style="width:300px;"/>
+
+
+
+https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/18_nix
+
+# My Webdesign
 
 # Soldering
 
