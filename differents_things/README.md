@@ -32,6 +32,9 @@ L=-     L=-   L=-       L=-  L=- L=====- L=====- L=====-    L=-
                                   |___/
 ```
 ![alt text](https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/01_sonoff/pic12.jpg)
+
+![alt text](https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/01_sonoff/pic12.jpg?raw=true)
+
 https://github.com/dotignore/Raspberry/tree/master/sonoff
 
 # Webdesign
