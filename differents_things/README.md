@@ -24,6 +24,11 @@
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/plata.jpg" alt="drawing" style="width:200px;"/>
 
+vvv
+![drawing](https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/plata.jpg =100x20)
+vvv
+![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
+
 https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/08_stairs
 
 # How Flash firmware to Sonoff-Tasmota ESP8266
