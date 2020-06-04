@@ -35,6 +35,8 @@ https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46
 ```
 ![alt text](https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/01_sonoff/pic12.jpg)
 
+<img src=”https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/01_sonoff/pic12.jpg” width=”100">
+
 - [x] Finish my changes
 - [ ] Push my commits to GitHub
 - [ ] Open a pull request
