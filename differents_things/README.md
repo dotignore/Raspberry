@@ -17,27 +17,22 @@
 
 
 
-- `![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png)`  
-  - Copy `<img>` in browser DevTools. Replace `![](url)` to `<img>`. Add width(and height) attr.
-  - `<img src="https://camo.githubusercontent.com/..." data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" />`
-  - <img src="https://camo.githubusercontent.com/331400aee821efda2e36ee9b3bc8bce93b975109/68747470733a2f2f6779617a6f2e636f6d2f65623563353734316236613961313663363932313730613431613439633835382e706e67" alt="" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" />
+<img src="
 
+https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/plata.jpg
 
+" alt="" data-canonical-src="" width="300" />
+
+<img src="
+" alt="" data-canonical-src="" width="300" />
 
 
 
 # Led Stairs
 
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/pic2_.jpg" alt="drawing" style="width:300px;"/>
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/pic1.jpg" alt="drawing" style="width:300px;"/>
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/plata.jpg" alt="drawing" style="width:300px;"/>
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/plata.jpg" alt="drawing" style="width:200px;"/>
-
-vvv
-![drawing](https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/plata.jpg =100x20)
-vvv
-![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/pic2_.jpg" alt="" data-canonical-src="" width="300" />
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/pic1.jpg" alt="" data-canonical-src="" width="300" />
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/plata.jpg" alt="" data-canonical-src="" width="300" />
 
 https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/08_stairs
 
@@ -53,7 +48,8 @@ https://github.com/dotignore/Raspberry/tree/master/sonoff
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/18_nix/05.png" alt="drawing" style="width:300px;"/>
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/18_nix/IMG_0027.JPG" alt="drawing" style="width:300px;"/>
 
-<img src=" " alt="drawing" style="width:300px;"/>
+<img src="
+" alt="drawing" style="width:300px;"/>
 
 
 
