@@ -16,12 +16,7 @@
 ```
 
 
-
-<img src="
-https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/plata.jpg
-" alt="" data-canonical-src="" width="300" />
-
-
+https://jbt.github.io/markdown-editor/
 
 
 <img src="
@@ -43,13 +38,11 @@ https://github.com/dotignore/Raspberry/tree/master/sonoff
 
 # Nix Clock
 
-
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/18_nix/05.png" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/18_nix/IMG_0027.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/18_nix/IMG_0024.JPG" alt="" data-canonical-src="" width="300" />
 
 https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/18_nix
 
 # My work by Webdesign
-
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/goldrink_b.jpg" alt="" data-canonical-src="" width="255" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/instrument-profi_b.jpg" alt="" data-canonical-src="" width="323" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/delfin_02_b.jpg" alt="" data-canonical-src="" width="300" />
 
@@ -61,7 +54,7 @@ https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/10
 
 https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/17_soldering
 
-# Samsung TAB3 8inch 
+# Repair TuouchScreen on Samsung TAB3 8inch 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/14_Samsung_TAB3_8inch/IMG_2618.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/14_Samsung_TAB3_8inch/IMG_2637.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/14_Samsung_TAB3_8inch/IMG_2620.JPG" alt="" data-canonical-src="" width="300" />
 
 https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/14_Samsung_TAB3_8inch
@@ -71,16 +64,15 @@ https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/14
 
 https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/06_Arduino
 
-# Electritions
+# My job by Electritions
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electritions/01.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electritions/10.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electritions/13.JPG" alt="" data-canonical-src="" height="290" />
 
 https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/05_electritions
 
-# Cisco
+# Cisco 2811
 
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/02_cisco/EMaWmTfWsAASDTI.jpg" alt="" data-canonical-src="" width="300" />
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/02_cisco/DSC04747.JPG" alt="" data-canonical-src="" width="300" />
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/02_cisco/EMaWmTfWsAASDTI.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/02_cisco/DSC04747.JPG" alt="" data-canonical-src="" width="300" />
 
 https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/02_cisco
 
@@ -91,7 +83,7 @@ https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/02
 https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/19_cnc
 
 
-# Hitachi
+# Fix Hitachi DH26PC
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/04_hitachi/DH26PC_01.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/04_hitachi/DH26PC_02.JPG" alt="" data-canonical-src="" width="300" />
 
