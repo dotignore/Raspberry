@@ -35,7 +35,8 @@ https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46
 ```
 ![alt text](https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/01_sonoff/pic12.jpg)
 
-![alt text](https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/01_sonoff/pic12.jpg?raw=true)
+![alt text](https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/01_sonoff/pic12.jpg :height: 100px :width: 200 px)
+![Alt text](relative/path/to/img.jpg?raw=true "Title")
 
 https://github.com/dotignore/Raspberry/tree/master/sonoff
 
