@@ -22,6 +22,8 @@
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/pic1.jpg" alt="drawing" style="width:300px;"/>
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/plata.jpg" alt="drawing" style="width:300px;"/>
 
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/plata.jpg" alt="drawing" style="width:200px;"/>
+
 https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/08_stairs
 
 # How Flash firmware to Sonoff-Tasmota ESP8266
