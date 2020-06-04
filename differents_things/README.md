@@ -1,17 +1,17 @@
 ```
-ллЛ  ллЛлллллллЛллЛ     ллЛ      ллллллЛ     ллЛллллллллЛлллллллЛ
-ллК  ллКллЩЭЭЭЭМллК     ллК     ллЩЭЭЭллЛ    ллКШЭЭллЩЭЭМллЩЭЭЭЭМ
-лллллллКлллллЛ  ллК     ллК     ллК   ллК    ллК   ллК   лллллллЛ
-ллЩЭЭллКллЩЭЭМ  ллК     ллК     ллК   ллК    ллК   ллК   ШЭЭЭЭллК
-ллК  ллКлллллллЛлллллллЛлллллллЛШллллллЩМ    ллК   ллК   лллллллК
-ШЭМ  ШЭМШЭЭЭЭЭЭМШЭЭЭЭЭЭМШЭЭЭЭЭЭМ ШЭЭЭЭЭМ     ШЭМ   ШЭМ   ШЭЭЭЭЭЭМ
+ІІ+  ІІ+ІІІІІІІ+ІІ+     ІІ+      ІІІІІІ+     ІІ+ІІІІІІІІ+ІІІІІІІ+
+ІІІ  ІІІІІ+----+ІІІ     ІІІ     ІІ+---ІІ+    ІІІ+--ІІ+--+ІІ+----+
+ІІІІІІІІІІІІІ+  ІІІ     ІІІ     ІІІ   ІІІ    ІІІ   ІІІ   ІІІІІІІ+
+ІІ+--ІІІІІ+--+  ІІІ     ІІІ     ІІІ   ІІІ    ІІІ   ІІІ   +----ІІІ
+ІІІ  ІІІІІІІІІІ+ІІІІІІІ+ІІІІІІІ++ІІІІІІ++    ІІІ   ІІІ   ІІІІІІІІ
++-+  +-++------++------++------+ +-----+     +-+   +-+   +------+
 
-лллЛ   лллЛллЛ   ллЛ    ллЛ  ллЛ ллллллЛ ллллллЛ ллллллЛ ллЛ   ллЛ
-ллллЛ ллллКШллЛ ллЩМ    ллК  ллКллЩЭЭЭллЛллЩЭЭллЛллЩЭЭллЛШллЛ ллЩМ
-ллЩллллЩллК ШллллЩМ     лллллллКллК   ллКллллллЩМллллллЩМ ШллллЩМ
-ллКШллЩМллК  ШллЩМ      ллЩЭЭллКллК   ллКллЩЭЭллЛллЩЭЭллЛ  ШллЩМ
-ллК ШЭМ ллК   ллК       ллК  ллКШллллллЩМллллллЩМллллллЩМ   ллК
-ШЭМ     ШЭМ   ШЭМ       ШЭМ  ШЭМ ШЭЭЭЭЭМ ШЭЭЭЭЭМ ШЭЭЭЭЭМ    ШЭМ
+ІІІ+   ІІІ+ІІ+   ІІ+    ІІ+  ІІ+ ІІІІІІ+ ІІІІІІ+ ІІІІІІ+ ІІ+   ІІ+
+ІІІІ+ ІІІІІ+ІІ+ ІІ++    ІІІ  ІІІІІ+---ІІ+ІІ+--ІІ+ІІ+--ІІ++ІІ+ ІІ++
+ІІ+ІІІІ+ІІІ +ІІІІ++     ІІІІІІІІІІІ   ІІІІІІІІІ++ІІІІІІ++ +ІІІІ++
+ІІІ+ІІ++ІІІ  +ІІ++      ІІ+--ІІІІІІ   ІІІІІ+--ІІ+ІІ+--ІІ+  +ІІ++
+ІІІ +-+ ІІІ   ІІІ       ІІІ  ІІІ+ІІІІІІ++ІІІІІІ++ІІІІІІ++   ІІІ
++-+     +-+   +-+       +-+  +-+ +-----+ +-----+ +-----+    +-+
 
 ```
 
@@ -24,10 +24,10 @@ https://jbt.github.io/markdown-editor/
 
 
 
-# Led Light for 
-Stairshttps://github.com/dotignore/Raspberry/tree/master/differents_things/projects/08_stairs
+# Led Light for Stairs
+https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/08_stairs
 
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/plata.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/pic1.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/pic2_.jpg" alt="" data-canonical-src="" width="300" />
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/pic1.jpg" alt="" data-canonical-src="" width="210" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/plata.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/pic2_.jpg" alt="" data-canonical-src="" width="300" />
 
 
 
