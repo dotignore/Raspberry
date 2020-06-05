@@ -1,16 +1,16 @@
 ```
-¦¦+  ¦¦+¦¦¦¦¦¦¦+¦¦+     ¦¦+      ¦¦¦¦¦¦+     ¦¦+¦¦¦¦¦¦¦¦+¦¦¦¦¦¦¦+
-¦¦¦  ¦¦¦¦¦+----+¦¦¦     ¦¦¦     ¦¦+---¦¦+    ¦¦¦+--¦¦+--+¦¦+----+
-¦¦¦¦¦¦¦¦¦¦¦¦¦+  ¦¦¦     ¦¦¦     ¦¦¦   ¦¦¦    ¦¦¦   ¦¦¦   ¦¦¦¦¦¦¦+
-¦¦+--¦¦¦¦¦+--+  ¦¦¦     ¦¦¦     ¦¦¦   ¦¦¦    ¦¦¦   ¦¦¦   +----¦¦¦
-¦¦¦  ¦¦¦¦¦¦¦¦¦¦+¦¦¦¦¦¦¦+¦¦¦¦¦¦¦++¦¦¦¦¦¦++    ¦¦¦   ¦¦¦   ¦¦¦¦¦¦¦¦
+??+  ??+???????+??+     ??+      ??????+     ??+????????+???????+
+???  ?????+----+???     ???     ??+---??+    ???+--??+--+??+----+
+?????????????+  ???     ???     ???   ???    ???   ???   ???????+
+??+--?????+--+  ???     ???     ???   ???    ???   ???   +----???
+???  ??????????+???????+???????++??????++    ???   ???   ????????
 +-+  +-++------++------++------+ +-----+     +-+   +-+   +------+
 
-¦¦¦+   ¦¦¦+¦¦+   ¦¦+    ¦¦+  ¦¦+ ¦¦¦¦¦¦+ ¦¦¦¦¦¦+ ¦¦¦¦¦¦+ ¦¦+   ¦¦+
-¦¦¦¦+ ¦¦¦¦¦+¦¦+ ¦¦++    ¦¦¦  ¦¦¦¦¦+---¦¦+¦¦+--¦¦+¦¦+--¦¦++¦¦+ ¦¦++
-¦¦+¦¦¦¦+¦¦¦ +¦¦¦¦++     ¦¦¦¦¦¦¦¦¦¦¦   ¦¦¦¦¦¦¦¦¦++¦¦¦¦¦¦++ +¦¦¦¦++
-¦¦¦+¦¦++¦¦¦  +¦¦++      ¦¦+--¦¦¦¦¦¦   ¦¦¦¦¦+--¦¦+¦¦+--¦¦+  +¦¦++
-¦¦¦ +-+ ¦¦¦   ¦¦¦       ¦¦¦  ¦¦¦+¦¦¦¦¦¦++¦¦¦¦¦¦++¦¦¦¦¦¦++   ¦¦¦
+???+   ???+??+   ??+    ??+  ??+ ??????+ ??????+ ??????+ ??+   ??+
+????+ ?????+??+ ??++    ???  ?????+---??+??+--??+??+--??++??+ ??++
+??+????+??? +????++     ???????????   ?????????++??????++ +????++
+???+??++???  +??++      ??+--??????   ?????+--??+??+--??+  +??++
+??? +-+ ???   ???       ???  ???+??????++??????++??????++   ???
 +-+     +-+   +-+       +-+  +-+ +-----+ +-----+ +-----+    +-+
 
 ```
@@ -104,16 +104,55 @@ https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/04
 
 
 # HHO cell
+https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/07_HHO_cell
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/07_HHO_cell/IMG_0368.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/07_HHO_cell/IMG_0021.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/07_HHO_cell/IMG_0003.jpg
+" alt="" data-canonical-src="" width="300" />
+
+
+
+
+
+
 
 # SDR
+https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/09_SDR
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/Capture.JPG" alt="" data-canonical-src="" width="300" />
+
+
 
 # Mazda
+https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/11_mazda
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/11_mazda/acad_04.png" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/11_mazda/acad_03.png" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/11_mazda/acad_02.png" alt="" data-canonical-src="" width="300" />
+
+
+
+
+
+
 
 # MAC G3 modding
+https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/13_MAC_G3
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/13_MAC_G3/15.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/13_MAC_G3/11.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/13_MAC_G3/13.JPG" alt="" data-canonical-src="" width="300" />
+
+
 
 # Auto JBL GT5-12
+https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/15_Auto_JBL%20GT5-12
 
-# Auto Blaupunkt San Franc
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/15_Auto_JBL%20GT5-12/IMG_2559.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/15_Auto_JBL%20GT5-12/IMG_2562.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/15_Auto_JBL%20GT5-12/IMG_2604.JPG" alt="" data-canonical-src="" width="300" />
+
 
 # Auto Blaupunkt San Francosco 310
+https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/16_Auto_Blaupunkt_San_Francosco_310
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/16_Auto_Blaupunkt_San_Francosco_310/BP_m.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/16_Auto_Blaupunkt_San_Francosco_310/DSC02738.JPG" alt="" data-canonical-src="" width="250" />
+
+
+
+
 
