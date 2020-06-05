@@ -150,7 +150,7 @@ https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/15
 # Auto Blaupunkt San Francosco 310
 https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/16_Auto_Blaupunkt_San_Francosco_310
 
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/16_Auto_Blaupunkt_San_Francosco_310/BP_m.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/16_Auto_Blaupunkt_San_Francosco_310/DSC02738.JPG" alt="" data-canonical-src="" width="250" />
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/16_Auto_Blaupunkt_San_Francosco_310/BP_m.jpg" alt="" data-canonical-src="" width="300" />
 
 
 
