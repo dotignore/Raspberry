@@ -42,6 +42,13 @@ https://jbt.github.io/markdown-editor/
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
 
+[<h1 id="custom-id"># Fix power in SUB buffer Blaupunkt ODsb 8000A </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/18_nix)
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/20_Blaupunkt_ODsb_8000A/IMG_3812.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/20_Blaupunkt_ODsb_8000A/DSC03268.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/20_Blaupunkt_ODsb_8000A/DSC03275.JPG" alt="" data-canonical-src="" width="300" />
+
+<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
+
 [<h1 id="custom-id"># Nix Clock</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/18_nix)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/18_nix/05.png" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/18_nix/IMG_0027.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/18_nix/IMG_0024.JPG" alt="" data-canonical-src="" width="300" />
@@ -52,7 +59,7 @@ https://jbt.github.io/markdown-editor/
 
 [<h1 id="custom-id"># My work by Webdesign</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/10_webdesign)
 
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/goldrink_b.jpg" alt="" data-canonical-src="" width="255" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/instrument-profi_b.jpg" alt="" data-canonical-src="" width="323" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/delfin_02_b.jpg" alt="" data-canonical-src="" width="300" />
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/0.jpg" alt="" data-canonical-src="" width="350" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/instrument-profi_b.jpg" alt="" data-canonical-src="" width="323" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/delfin_02_b.jpg" alt="" data-canonical-src="" width="300" />
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
@@ -116,9 +123,10 @@ https://jbt.github.io/markdown-editor/
 
 
 
-[<h1 id="custom-id"># SDR</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/09_SDR)
+[<h1 id="custom-id"># SDR KEELOQ? with XTEA Microcontroller-Based
+Code Hopping Encoder AN1266</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/09_SDR)
 
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/Capture.JPG" alt="" data-canonical-src="" width="300" />
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/DSC05884.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/Capture.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/D-Um9QMXsAAYT0o.jpg" alt="" data-canonical-src="" width="300" />
 
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
