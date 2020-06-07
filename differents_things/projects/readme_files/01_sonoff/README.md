@@ -1,19 +1,10 @@
 
-https://jbt.github.io/markdown-editor/
-
-<img src="
-" alt="" data-canonical-src="" width="700" />
-
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
 [<h1 id="custom-id"># How Flash firmware to Sonoff-Tasmota ESP8266</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/01_sonoff)
 
 [<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
 
 ```
-UpGrade firmware to tasmota version to Sonoff-Tasmota ESP8266
+UpGrade firmware Sonoff version to Tasmota ESP8266
 
 Oridgin source https://github.com/arendst/Tasmota/wiki
 
