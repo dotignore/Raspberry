@@ -127,8 +127,7 @@ Unlock_big2
 
 # 14
 
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/%D1%86%D1%83%D1%86%D1%83%D1%86%D1%83%D1%86%D1%83.PNG
-" alt="" data-canonical-src="" width="700" />
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/%D1%86%D1%83%D1%86%D1%83%D1%86%D1%83%D1%86%D1%83.PNG" alt="" data-canonical-src="" width="700" />
 
 
 [<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
