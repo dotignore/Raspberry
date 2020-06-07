@@ -16,149 +16,140 @@
 ```
 
 
-https://jbt.github.io/markdown-editor/
-
-<img src="
-" alt="" data-canonical-src="" width="300" />
-
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-
-
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-[<h1 id="custom-id">#Led Light for Stairs</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/08_stairs)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/pic1.jpg" alt="" data-canonical-src="" width="210" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/plata.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/pic2_.jpg" alt="" data-canonical-src="" width="300" />
-
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
-[<h1 id="custom-id"># How Flash firmware to Sonoff-Tasmota ESP8266</h1>](https://github.com/dotignore/Raspberry/tree/master/sonoff)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/01_sonoff/pic12.jpg" alt="" data-canonical-src="" width="300" />
-
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
-
 [<h1 id="custom-id"># Decoding KEELOQ with XTEA Microcontroller-Based
-Code Hopping Encoder </br> with help SDR (Soft Dorect Radio)</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/09_SDR)
+Code Hopping Encoder </br> with help SDR (Soft Direct Radio)</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/09_SDR)
 
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/DSC05884.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/Capture.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/D-Um9QMXsAAYT0o.jpg" alt="" data-canonical-src="" width="300" />
+[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/)
+
+```
+I give car alarm Sheriff and make decoding signal with help SDR (Soft Direct Radio)
+- How shows SHERIFF on pictures 01, 02, 03, 04, 05, 06
+- it device transmissions signal on 433.920 Mhz (pictures 07)
+- SDR its HW/SW device. More informations about this device you can read on WIKI
+   https://en.wikipedia.org/wiki/Software-defined_radio
+- I record the signals from Sheriff to audio files.wav
+- Used for decoding program Universal Radio Hacker (pictures 11)
+- How shows signal you can see on (12 pictures)
+```
+
+# 01
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/DSC05884.JPG" alt="" data-canonical-src="" width="700" />
+
+# 02
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/DSC05885.JPG" alt="" data-canonical-src="" width="700" />
+
+# 03
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/DSC05886.JPG" alt="" data-canonical-src="" width="700" />
+
+# 04
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/DSC05887.JPG" alt="" data-canonical-src="" width="700" />
+
+# 05
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/DSC05888.JPG" alt="" data-canonical-src="" width="700" />
+
+# 06
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/DSC05889.JPG" alt="" data-canonical-src="" width="700" />
+
+# 07
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/%D1%8B%D0%B2%D1%8B%D0%B2%D1%8B%D0%B2.PNG" alt="" data-canonical-src="" width="200" />
+
+# 08
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/Capture.JPG" alt="" data-canonical-src="" width="700" />
+
+# 09
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/Capture1.JPG" alt="" data-canonical-src="" width="700" />
+
+
+# 10 EEOL_2009AUG06_CTRLD_AN_01.pdf
+
+https://github.com/dotignore/Raspberry/blob/master/differents_things/projects/09_SDR/EEOL_2009AUG06_CTRLD_AN_01.pdf
+
+# 11
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/DFFDDFDF.PNG" alt="" data-canonical-src="" width="700" />
+
+
+# 12
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/D-Um9QMXsAAYT0o.jpg" alt="" data-canonical-src="" width="700" />
+
+
+```
+####################
+Lock_Big
+####################
+
+synhronizations
+10101010101010101010101 [Pause: 10728 samples]
+
+pause
+1001101001101001101101101001101101101101001001001001001001101101001001001001101
+0011010010010011010010010011010011011010010011011010011011011010010010011011011
+0100100110110110110110110100110110110110 [Pause: 609 samples]
+9a69b69b6d24926d249a69269269b49b4db4936d26db6d36d8 [Pause: 609 samples]
+db6d36926d26db4d24db49b69269b49b4db4936d26db6d36d0 [Pause: 1001 samples]
+####################
+Unlock_big
+####################
+
+1101001101101101001101101001101101101001101101001101101001001101001101001001101
+1011010011011010010010010011010011011010010011011010011011011010010010011011011
+010010011011011011011011011010011011010 [Pause: 914 samples]
+d36d369b69b4da4d349b69b49269b49b4db4936d26db6da6d0 [Pause: 914 samples]
+d36d369b69b4da4d349b69b49269b49b4db4936d26db6da6d0
+####################
+CH2
+####################
+
+1001101001101001101101101001101001101001001001001001101101101001101101101001001
+1011010011011010010010010011010011011010010011011010011011011010010010011011011
+0100100110110110110110100110110100110100 [Pause: 1740 samples]
+9a69b69a69249b69b69369b49269b49b4db4936d26db69b4d0 [Pause: 1740 samples]
+9a69b69a69249b69b69369b49269b49b4db4936d26db69b4d0
+
+####################
+Lock_Big2
+####################
+
+100110100100100110100110110100110100100100110110110110100100110110100110100100
+100100110100110100100100100110100110110100100110110100110110110100100100110110
+11010010011011011011011011011010011011010 [Pause: 1015 samples]
+9a49a6d34936da4da6924d349269b49b4db4936d26db6da6d0 [Pause: 1015 samples]
+db6d36926d26db4d24db49b69269b49b4db4936d26db6d36d0
+
+####################
+Unlock_big2
+####################
+
+100110100100100110100110110100110100100100110110110110100100110110100110100100
+100100110100110100100100100110100110110100100110110100110110110100100100110110
+11010010011011011011011011011010011011010 [Pause: 1018 samples]
+9a49a6d34936da4da6924d349269b49b4db4936d26db6da6d0 [Pause: 1018 samples]
+9a49a6d34936da4da6924d349269b49b4db4936d26db6da6d0
+```
+
+# 13
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/Untitled-1.jpg" alt="" data-canonical-src="" width="700" />
+
+# 14
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/%D1%86%D1%83%D1%86%D1%83%D1%86%D1%83%D1%86%D1%83.PNG
+" alt="" data-canonical-src="" width="700" />
+
+
+[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/)
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
-[<h1 id="custom-id"># Fix power in SUB buffer Blaupunkt ODsb 8000A </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/18_nix)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/20_Blaupunkt_ODsb_8000A/IMG_3812.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/20_Blaupunkt_ODsb_8000A/DSC03268.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/20_Blaupunkt_ODsb_8000A/DSC03275.JPG" alt="" data-canonical-src="" width="300" />
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
-[<h1 id="custom-id"># Nix Clock</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/18_nix)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/18_nix/05.png" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/18_nix/IMG_0027.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/18_nix/IMG_0024.JPG" alt="" data-canonical-src="" width="300" />
-
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
-[<h1 id="custom-id"># My work by Webdesign</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/10_webdesign)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/0.jpg" alt="" data-canonical-src="" width="350" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/instrument-profi_b.jpg" alt="" data-canonical-src="" width="323" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/delfin_02_b.jpg" alt="" data-canonical-src="" width="300" />
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
-[<h1 id="custom-id"># Soldering</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/17_soldering)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/17_soldering/flex_cabel_01.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/17_soldering/flex_cabel_02.JPG" alt="" data-canonical-src="" width="300" />
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-[<h1 id="custom-id"># Repair TuouchScreen on Samsung TAB3 8inch </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/14_Samsung_TAB3_8inch)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/14_Samsung_TAB3_8inch/IMG_2618.JPG" alt="" data-canonical-src="" width="200" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/14_Samsung_TAB3_8inch/IMG_2637.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/14_Samsung_TAB3_8inch/IMG_2620.JPG" alt="" data-canonical-src="" width="300" />
-
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-[<h1 id="custom-id"># Arduino</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/06_Arduino)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/06_Arduino/684763.png" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/06_Arduino/IMG_0004.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/06_Arduino/IMG_0003.JPG" alt="" data-canonical-src="" width="300" />
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-[<h1 id="custom-id"># My job by Electritions</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/05_electritions)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electritions/01.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electritions/10.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electritions/13.JPG" alt="" data-canonical-src="" height="290" />
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
-
-[<h1 id="custom-id"># Cisco 2811</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/02_cisco)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/02_cisco/EMaWmTfWsAASDTI.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/02_cisco/DSC04748.jpg" alt="" data-canonical-src="" width="300" />
-
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
-[<h1 id="custom-id"># CNC</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/19_cnc)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/19_cnc/01.jpg" alt="" data-canonical-src="" width="270" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/19_cnc/06_1.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/19_cnc/051.png" alt="" data-canonical-src="" width="300" />
-
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
-[<h1 id="custom-id"># Fix and change parts in hammer drill Hitachi DH26PC</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/04_hitachi)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/04_hitachi/DH26PC_01.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/04_hitachi/DH26PC_02.JPG" alt="" data-canonical-src="" width="300" />
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
-[<h1 id="custom-id"># HHO cell</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/07_HHO_cell)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/07_HHO_cell/IMG_0368.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/07_HHO_cell/IMG_0021.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/07_HHO_cell/IMG_0003.jpg
-" alt="" data-canonical-src="" width="300" />
-
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
-[<h1 id="custom-id"># Mazda</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/11_mazda)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/11_mazda/acad_04.png" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/11_mazda/acad_03.png" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/11_mazda/acad_02.png" alt="" data-canonical-src="" width="300" />
-
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
-[<h1 id="custom-id"># MAC G3 modding</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/13_MAC_G3)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/13_MAC_G3/15.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/13_MAC_G3/11.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/13_MAC_G3/13.JPG" alt="" data-canonical-src="" width="300" />
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
-[<h1 id="custom-id"># Auto JBL GT5-12</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/15_Auto_JBL%20GT5-12)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/15_Auto_JBL%20GT5-12/IMG_2559.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/15_Auto_JBL%20GT5-12/IMG_2562.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/15_Auto_JBL%20GT5-12/IMG_2604.JPG" alt="" data-canonical-src="" width="300" />
-
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-[<h1 id="custom-id"># Auto Blaupunkt San Francosco 310</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/16_Auto_Blaupunkt_San_Francosco_310)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/16_Auto_Blaupunkt_San_Francosco_310/BP_m.jpg" alt="" data-canonical-src="" width="300" />
-
 
 
 
