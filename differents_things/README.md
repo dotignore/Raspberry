@@ -69,7 +69,7 @@ Code Hopping Encoder </br> with help SDR (Soft Dorect Radio)</h1>](https://githu
 
 [<h1 id="custom-id"># My work by Webdesign</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/10_webdesign)
 
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/0.jpg" alt="" data-canonical-src="" width="350" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/instrument-profi_b.jpg" alt="" data-canonical-src="" width="323" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/delfin_02_b.jpg" alt="" data-canonical-src="" width="300" />
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/0.jpg" alt="" data-canonical-src="" width="330" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/instrument-profi_b.jpg" alt="" data-canonical-src="" width="320" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/delfin_02_b.jpg" alt="" data-canonical-src="" width="290" />
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
@@ -158,8 +158,3 @@ Code Hopping Encoder </br> with help SDR (Soft Dorect Radio)</h1>](https://githu
 [<h1 id="custom-id"># Auto Blaupunkt San Francosco 310</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/16_Auto_Blaupunkt_San_Francosco_310)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/16_Auto_Blaupunkt_San_Francosco_310/BP_m.jpg" alt="" data-canonical-src="" width="300" />
-
-
-
-
-
