@@ -5,7 +5,7 @@
 
 
 
-[<h1 id="custom-id"># CNC Driver </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/14_Samsung_TAB3_8inch)
+[<h1 id="custom-id"># CNC Driver </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/19_cnc)
 
 [<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
 
@@ -25,8 +25,7 @@ http://www.cncmasterkit.ru/viewtopic.php?f=3&t=659&view=print
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/19_cnc/01.jpg" alt="" data-canonical-src="" width="700" />
 
 # 02
-<img src="
-https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/19_cnc/1322331190_shema.jpg" alt="" data-canonical-src="" width="700" />
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/19_cnc/1322331190_shema.jpg" alt="" data-canonical-src="" width="700" />
 
 # 03
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/19_cnc/IMG_0004.JPG" alt="" data-canonical-src="" width="700" />
