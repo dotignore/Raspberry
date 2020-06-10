@@ -69,7 +69,7 @@ Code Hopping Encoder </br> with help SDR (Soft Dorect Radio)</h1>](https://githu
 
 [<h1 id="custom-id"># My work by Webdesign</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/10_webdesign)
 
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/0.jpg" alt="" data-canonical-src="" width="370" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/instrument-profi_b.jpg" alt="" data-canonical-src="" width="350" />
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/0.jpg" alt="" data-canonical-src="" width="390" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/instrument-profi_b.jpg" alt="" data-canonical-src="" width="390" />
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
