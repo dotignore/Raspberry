@@ -7,7 +7,10 @@
 
 
 ```
-Board stm32f4discovery 
+My project Led Light for Stairs I create PCB in Eagle CAD
+And create program C++ to control LED lights
+
+Board stm32f4discovery - https://www.st.com/en/evaluation-tools/stm32f4discovery.html
 
 Transistor TO-220  
 our need any MOSFET with power opening Drain Carrent 5-10א Drain-to-Source Voltage 3v 
@@ -35,7 +38,7 @@ two key SWT-6x6x7 לל https://www.chinadaier.com/kfc-06-h-tact-switch/
 You can use ATX power supplay +12ג +5ג
 ```
 
-#stm32f4discovery #c++
+#stm32f4discovery #c++ #PCB #LED
 
 
 # 01
@@ -222,11 +225,3 @@ int main(void){
 [<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
-
-
-
-
-
-
