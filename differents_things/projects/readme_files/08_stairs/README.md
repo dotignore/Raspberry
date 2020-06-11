@@ -17,7 +17,6 @@ cep603al is work
 IRFZ44 isnt work
 
 resistor need 0,125wat or 0,5wat 
-100ом столько же сколько ступенек будет 16 или 17
 
 resistor 100oHm 2 pieces, 220kOhm 2 pieces, 330oHm 2 pieces
 
@@ -28,7 +27,7 @@ diode HER or UF on 3 amper 1 pieces any UF4004 на 1 amper 1 pieces
 
 sensor IR from Arduino 2 pieces (5v power) Arduino HC-SR501
 
-terminals 5мм
+terminals 5mm
 https://www.tme.eu/en/details/dg301-5.0-2p12/pcb-terminal-blocks/degson-electronics/dg301-5-0-02p-12-00a-h/
 
 two key SWT-6x6x7 мм https://www.chinadaier.com/kfc-06-h-tact-switch/
@@ -223,3 +222,11 @@ int main(void){
 [<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
+
+
+
+
+
+
+
