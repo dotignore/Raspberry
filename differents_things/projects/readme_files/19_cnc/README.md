@@ -1,4 +1,3 @@
-
 [<h1 id="custom-id"># My replica controllers stepper motor NEMA23 </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/19_cnc)
 
 [<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
@@ -11,16 +10,21 @@ I have two choice variant.
  - second variant myself made PCB to controller motor
 When I myself made this PCB I take new knowlage and this task was to much interesting for me.
 
-I made PCB for controls motors, I use technoligi LUT
+I bought to stores IMRAD components for PCB
+https://imrad.com.ua/
+Picture #1
+-------
 
-I use technology to create PCB - DIRECT TO PCB INKJET PRINTING
+I made PCB for controls motors, I use technoligi PTDTP - (Print Toner Directly To a PCB)
+Picture #04 #05 #06 #07 #08 #09
+-------
+
+I use technology to create PCB - Print Toner Directly To a PCB
 More info this https://hackaday.com/2016/09/12/take-your-pcbs-from-good-to-great-toner-transfer/
 
-I went to stores IMRAD for bought items
-https://imrad.com.ua/
-
 And use softvare Autodesk Inventor for create 3D-model.
-Picture 12 13 14 15
+Picture #12 #13 #14 #15
+-------
 
 /---------------------------------------------\
 | Its my replica controller for stepper motor |
@@ -113,11 +117,3 @@ http://robozone.su/cnc-home/28-interfejjsnaja-plata-s-optorazvjazkojj.html
 [<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
-
-
-
-
-
-
