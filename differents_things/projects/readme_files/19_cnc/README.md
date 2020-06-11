@@ -61,7 +61,7 @@ origin site CNC driver PCB
 https://www.cncmasterkit.ru/viewtopic.php?f=3&t=159
 
 origin site LPT converter
-http://robozone.su/cnc-home/28-interfejjsnaja-plata-s-optorazvjazkojj.html
+http://robozone.su/cnc-home/56-interfejsnaya-plata-s-optorazvyazkoj-porta-lpt.html
 ```
 
 # 01
