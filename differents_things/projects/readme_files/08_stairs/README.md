@@ -1,30 +1,13 @@
-<img src="
-
-" alt="" data-canonical-src="" width="700" />
-
-
-
-
-<img src="
-
-" alt="" data-canonical-src="" width="700" />
-
-
-
-
-[<h1 id="custom-id"># Fix connectors in this Auto Blaupunkt San Francosco 310 </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/08_stairs)
+[<h1 id="custom-id"># My project Led Light for Stairs </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/08_stairs)
 
 [<h1 id="custom-id"> -- Back -- </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
 
 
-
-
-
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/video.gif" alt="" data-canonical-src="" width="400" />
 
 
 ```
 Board stm32f4discovery 
-for board need cabel USB <-> microUSB
 
 Transistor TO-220  
 our need any MOSFET with power opening Drain Carrent 5-10א Drain-to-Source Voltage 3v 
@@ -53,34 +36,23 @@ two key SWT-6x6x7 לל https://www.chinadaier.com/kfc-06-h-tact-switch/
 You can use ATX power supplay +12ג +5ג
 ```
 
-#stm32f4discovery #c++ # 
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/video.gif" alt="" data-canonical-src="" width="400" />
+#stm32f4discovery #c++
 
 
 # 01
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/pic1.jpg" alt="" data-canonical-src="" width="700" />
 
-# 01
+# 02
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/bGfVNYIzlRg.jpg" alt="" data-canonical-src="" width="700" />
 
-# 01
+# 03
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/plata.jpg" alt="" data-canonical-src="" width="700" />
 
-
-# 01
+# 04
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/cl_G4GawQ-A.jpg" alt="" data-canonical-src="" width="700" />
 
-
-# 01
+# 05
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/pic2_.jpg" alt="" data-canonical-src="" width="700" />
-
-
-# 01
-https://github.com/dotignore/Raspberry/blob/master/differents_things/projects/08_stairs/video.mp4
-
-
-
 
 
 ```
@@ -251,11 +223,3 @@ int main(void){
 [<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
-
-
-
-
-
-
