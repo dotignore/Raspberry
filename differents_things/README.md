@@ -34,7 +34,7 @@
 
 
 [<h1 id="custom-id"># Decoding KEELOQ with XTEA Microcontroller-Based
-Code Hopping Encoder </br> with help SDR (Soft Dorect Radio)</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/09_SDR)
+Code Hopping Encoder with help SDR (Soft Dorect Radio)</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/09_SDR)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/DSC05884.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/Capture.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/D-Um9QMXsAAYT0o.jpg" alt="" data-canonical-src="" width="300" />
 
