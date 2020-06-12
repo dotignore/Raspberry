@@ -4,13 +4,13 @@
 [<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
 
 ```
-My work 
+Its my work design 
 
 ```
 
 #WebDesign #Photishop
 
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/0.jpg" alt="" data-canonical-src="" width="800" />
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/0.jpg" alt="" data-canonical-src="" width="850" />
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/instrument-profi_b.jpg" alt="" data-canonical-src="" width="375" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/nm_00_b.jpg" alt="" data-canonical-src="" width="450" /> 
 
