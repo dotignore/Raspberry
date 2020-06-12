@@ -1,5 +1,15 @@
-[<h1 id="custom-id"># Replica Arduino S3v3 Revision 2 <br>  --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/06_Arduino)
-                              
+```
+ █████╗ ██████╗ ██████╗ ██╗   ██╗██╗███╗   ██╗ ██████╗     ██╗   ██╗███╗   ██╗ ██████╗ 
+██╔══██╗██╔══██╗██╔══██╗██║   ██║██║████╗  ██║██╔═══██╗    ██║   ██║████╗  ██║██╔═══██╗
+███████║██████╔╝██║  ██║██║   ██║██║██╔██╗ ██║██║   ██║    ██║   ██║██╔██╗ ██║██║   ██║
+██╔══██║██╔══██╗██║  ██║██║   ██║██║██║╚██╗██║██║   ██║    ██║   ██║██║╚██╗██║██║   ██║
+██║  ██║██║  ██║██████╔╝╚██████╔╝██║██║ ╚████║╚██████╔╝    ╚██████╔╝██║ ╚████║╚██████╔╝
+╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝      ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ 
+                                                    
+```
+
+My replica Replica Arduino S3v3 Revision 2
+
 ```
 
 My replica Arduino S3v3 Revision 2
@@ -31,9 +41,7 @@ More info this https://www.arduino.cc/en/Main/ArduinoBoardSerialSingleSided3
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/06_Arduino/IMG_0003.JPG" alt ="" data-canonical-src="" width="700" />
 
-
-
-
+[<h1 id="custom-id"># --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/06_Arduino)
 
 [<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
 
