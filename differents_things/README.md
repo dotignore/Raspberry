@@ -85,15 +85,19 @@ sjldn;sldnf;ldsnfl;sdknf;lsdnkm'fglskmn'sfldgm'sfld
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
-[<h1 id="custom-id"># Arduino</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/15_Auto_JBL%20GT5-12)
+
+[<h1 id="custom-id"># Arduino</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/06_Arduino)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/06_Arduino/684763.png" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/06_Arduino/IMG_0004.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/06_Arduino/IMG_0003.JPG" alt="" data-canonical-src="" width="300" />
 
+
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
 
 [<h1 id="custom-id"># My job by Electritions</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/05_electrician)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electrician/01.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electrician/10.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electrician/13.JPG" alt="" data-canonical-src="" height="290" />
+
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
