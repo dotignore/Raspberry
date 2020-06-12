@@ -3,14 +3,18 @@
 [<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
 
 ```
-Replica Arduino S3v3 Revision 2
+
+My replica Arduino S3v3 Revision 2
+
 I use technology DIRECT TO PCB INKJET PRINTING
 More info this https://hackaday.com/2016/09/12/take-your-pcbs-from-good-to-great-toner-transfer/
+
+Projects Arduino Single-Sided Serial Board (version 3)
+More info this https://www.arduino.cc/en/Main/ArduinoBoardSerialSingleSided3
 
 ```
 
 #Arduino #replica #soldering
-
 
 
 # 01
