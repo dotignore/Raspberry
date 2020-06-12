@@ -1,4 +1,4 @@
-[<h1 id="custom-id"># Fix connectors in this Auto Blaupunkt San Francosco 310 </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/16_Auto_Blaupunkt_San_Francosco_310)
+[<h1 id="custom-id"># Fix connectors in this Auto Blaupunkt San Francosco 310 <br>  --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/16_Auto_Blaupunkt_San_Francosco_310)
 
 [<h1 id="custom-id"> -- Back -- </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
 
