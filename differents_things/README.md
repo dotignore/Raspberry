@@ -81,7 +81,7 @@ Code Hopping Encoder with help SDR (Soft Dorect Radio)</h1>](https://github.com/
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
 
-[<h1 id="custom-id"># Little story about My job Electritions</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/05_electrician)
+[<h1 id="custom-id"># Little story about My job Electrician</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/05_electrician)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electrician/01.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electrician/10.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electrician/13.JPG" alt="" data-canonical-src="" height="290" />
 
