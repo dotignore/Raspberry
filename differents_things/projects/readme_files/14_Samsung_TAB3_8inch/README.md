@@ -1,4 +1,14 @@
-[<h1 id="custom-id"># Repair TuouchScreen on Samsung TAB3 8inch <br>  --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/14_Samsung_TAB3_8inch)
+```
+██████╗ ███████╗██████╗  █████╗ ██╗██████╗ 
+██╔══██╗██╔════╝██╔══██╗██╔══██╗██║██╔══██╗
+██████╔╝█████╗  ██████╔╝███████║██║██████╔╝
+██╔══██╗██╔══╝  ██╔═══╝ ██╔══██║██║██╔══██╗
+██║  ██║███████╗██║     ██║  ██║██║██║  ██║
+╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝
+```
+
+TuouchScreen Repair on Samsung TAB3 8inch
+
 
 ```
 
@@ -40,6 +50,7 @@ Spent near one hour on this work separate
 # 09
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/14_Samsung_TAB3_8inch/DSC02452.JPG" alt="" data-canonical-src="" width="700" />
 
+[<h1 id="custom-id">#  --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/14_Samsung_TAB3_8inch)
 
 [<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
 
