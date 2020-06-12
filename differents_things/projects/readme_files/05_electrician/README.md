@@ -5,7 +5,7 @@ Electrician, Network Installation Architect, Reconstruction, etc
 Architectural draftsman and designer on Autocad, 
 engineering plans for projects developing for create electricians plan 
 
-I used REI - rules of electrical installation (\xd0\x9f\xd0\xa3\xd0\x95 \x2d \xd0\x9f\xd1\x80\xd0\xb0\xd0\xb2\xd0\xb8\xd0\xbb\xd0\xb0 \xd1\x83\xd0\xbb\xd0\xb0\xd1\x88\xd1\x82\xd1\x83\xd0\xb2\xd0\xb0\xd0\xbd\xd0\xbd\xd1\x8f \xd0\xb5\xd0\xbb\xd0\xb5\xd0\xba\xd1\x82\xd1\x80\xd0\xbe\xd1\x83\xd1\x81\xd1\x82\xd0\xb0\xd0\xbd\xd0\xbe\xd0\xb2\xd0\xbe\xd0\xba)
+I used REI - rules of electrical installation (ÐÐ£Ð - ÐÑÐ°Ð²Ð¸Ð»Ð° ÑÐ»Ð°ÑÑÑÐ²Ð°Ð½Ð½Ñ ÐµÐ»ÐµÐºÑÑÐ¾ÑÑÑÐ°Ð½Ð¾Ð²Ð¾Ðº)
 
 I used Electrical installation guide According to IEC international standards “Schneider Electric S.A.” - 2016
 etc
