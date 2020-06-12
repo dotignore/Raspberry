@@ -65,13 +65,6 @@ Code Hopping Encoder with help SDR (Soft Dorect Radio)</h1>](https://github.com/
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
 
-[<h1 id="custom-id"># Soldering</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/17_soldering)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/17_soldering/flex_cabel_01.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/17_soldering/flex_cabel_02.JPG" alt="" data-canonical-src="" width="300" />
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
 [<h1 id="custom-id"># Repair TuouchScreen on Samsung TAB3 8inch </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/14_Samsung_TAB3_8inch)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/14_Samsung_TAB3_8inch/IMG_2618.JPG" alt="" data-canonical-src="" width="200" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/14_Samsung_TAB3_8inch/IMG_2637.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/14_Samsung_TAB3_8inch/IMG_2620.JPG" alt="" data-canonical-src="" width="300" />
@@ -80,7 +73,7 @@ Code Hopping Encoder with help SDR (Soft Dorect Radio)</h1>](https://github.com/
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
 
-[<h1 id="custom-id"># Arduino</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/06_Arduino)
+[<h1 id="custom-id"># Arduino Single-Sided Serial Board (version 2) </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/06_Arduino)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/06_Arduino/684763.png" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/06_Arduino/IMG_0004.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/06_Arduino/IMG_0003.JPG" alt="" data-canonical-src="" width="300" />
 
@@ -88,7 +81,7 @@ Code Hopping Encoder with help SDR (Soft Dorect Radio)</h1>](https://github.com/
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
 
-[<h1 id="custom-id"># My job by Electritions</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/05_electrician)
+[<h1 id="custom-id"># Little story about My job Electritions</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/05_electrician)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electrician/01.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electrician/10.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electrician/13.JPG" alt="" data-canonical-src="" height="290" />
 
@@ -96,16 +89,7 @@ Code Hopping Encoder with help SDR (Soft Dorect Radio)</h1>](https://github.com/
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
 
-
-[<h1 id="custom-id"># Cisco 2811</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/02_cisco)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/02_cisco/EMaWmTfWsAASDTI.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/02_cisco/DSC04748.jpg" alt="" data-canonical-src="" width="300" />
-
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-
-[<h1 id="custom-id"># CNC</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/19_cnc)
+[<h1 id="custom-id"># CNC controller </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/19_cnc)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/19_cnc/01.jpg" alt="" data-canonical-src="" width="270" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/19_cnc/06_1.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/19_cnc/051.png" alt="" data-canonical-src="" width="300" />
 
@@ -153,6 +137,21 @@ Code Hopping Encoder with help SDR (Soft Dorect Radio)</h1>](https://github.com/
 [<h1 id="custom-id"># Fin my Auto Blaupunkt San Francosco 310</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/16_Auto_Blaupunkt_San_Francosco_310)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/16_Auto_Blaupunkt_San_Francosco_310/BP_m.jpg" alt="" data-canonical-src="" width="300" />
+
+
+<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
+[<h1 id="custom-id"># Soldering</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/17_soldering)
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/17_soldering/flex_cabel_01.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/17_soldering/flex_cabel_02.JPG" alt="" data-canonical-src="" width="300" />
+
+<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
+
+
+[<h1 id="custom-id"># Cisco 2811</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/02_cisco)
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/02_cisco/EMaWmTfWsAASDTI.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/02_cisco/DSC04748.jpg" alt="" data-canonical-src="" width="300" />
 
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
