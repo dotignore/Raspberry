@@ -28,8 +28,12 @@ Oridgin source https://github.com/arendst/Tasmota/wiki
 ```
 
 if you dont understanding something you can watch the video 
-How To Change Firmware on Sonoff Devices for use in Home Automation Projects.mp4
-Sonoff Basic Configuration Flashing with Tasmota Firmware.mp4
+
+How To Change Firmware on Sonoff Devices for use in Home Automation 
+Projects.mp4
+
+Sonoff Basic Configuration Flashing with Tasmota 
+Firmware.mp4
 
 https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/01_sonoff
 
