@@ -1,6 +1,5 @@
 [<h1 id="custom-id"># Replica Arduino S3v3 Revision 2 <br>  --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/06_Arduino)
-
-
+                              
 ```
 
 My replica Arduino S3v3 Revision 2

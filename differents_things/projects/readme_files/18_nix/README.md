@@ -1,7 +1,5 @@
 [<h1 id="custom-id"># Watch on the NIX tube IN12-B <br> --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/18_nix)
 
-[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
-
 ```
 Watch on the NIX tube IN 12-B
 and I create PCB on "Eagle PCB CAD" schematic capture user.

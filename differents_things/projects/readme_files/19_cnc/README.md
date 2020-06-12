@@ -1,7 +1,5 @@
 [<h1 id="custom-id"># My replica controllers stepper motor NEMA23 <br> --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/19_cnc)
 
-[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
-
 ```
 This project contains computer + LPT converter signal to STEP/DIR comand + driver controller bi-polar stepper motor.
 

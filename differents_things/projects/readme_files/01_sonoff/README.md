@@ -1,8 +1,6 @@
 
 [<h1 id="custom-id"># How Flash firmware to Sonoff-Tasmota ESP8266 <br>  --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/01_sonoff)
 
-[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
-
 ```
 UpGrade firmware Sonoff version to Tasmota ESP8266
 

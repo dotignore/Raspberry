@@ -1,7 +1,5 @@
 [<h1 id="custom-id"># My job by Electritions <br> --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/05_electrician)
 
-[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
-
 ```
 Electrician, Network Installation Architect, Reconstruction, etc
 Architectural draftsman and designer on Autocad, 

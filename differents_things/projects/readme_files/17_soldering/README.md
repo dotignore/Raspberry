@@ -1,7 +1,5 @@
 [<h1 id="custom-id"># Different thinghs <br> --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/17_soldering)
 
-[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
-
 ```
 Nothing interesting
 ```

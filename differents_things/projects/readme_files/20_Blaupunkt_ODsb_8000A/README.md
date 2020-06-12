@@ -1,7 +1,5 @@
 [<h1 id="custom-id"># Fix power circuit in SUB buffer Blaupunkt ODsb 8000A <br> --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/20_Blaupunkt_ODsb_8000A)
 
-[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
-
 ```
 Find and change two transistors STP60NF06 TO-220
 ```
