@@ -1,9 +1,9 @@
 [<h1 id="custom-id"># Decoding KEELOQ with XTEA Microcontroller-Based Code Hopping Encoder with help SDR (Soft Direct Radio) <br>  --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/09_SDR)
 
 ```
-I give car alarm Sheriff and make decoding signal with help SDR (Soft Direct Radio)
-- How shows SHERIFF on pictures 01, 02, 03, 04, 05, 06
-- it device transmissions signal on 433.920 Mhz (pictures 07)
+I give KEY car alarm Sheriff and make record signal after that makes decoding signal with help SDR (Soft Direct Radio)
+- How shows KEY car alarm SHERIFF you can see on pictures 01, 02, 03, 04, 05, 06
+- it device make transmissions signal on 433.920 Mhz (pictures 07)
 - SDR its HW/SW device. More informations about this device you can read on WIKI
    https://en.wikipedia.org/wiki/Software-defined_radio
 - I record the signals from Sheriff to audio files.wav
@@ -12,35 +12,35 @@ I give car alarm Sheriff and make decoding signal with help SDR (Soft Direct Rad
 ```
 #SDR #Sheriff #bit #Decoding #KEELOQ #Frequency #DataSheet
 
-# 01
+# 01 KEY car alarm SHERIF
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/DSC05884.JPG" alt="" data-canonical-src="" width="700" />
 
-# 02
+# 02 KEY car alarm SHERIF
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/DSC05885.JPG" alt="" data-canonical-src="" width="700" />
 
-# 03
+# 03 KEY car alarm SHERIF
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/DSC05886.JPG" alt="" data-canonical-src="" width="700" />
 
-# 04
+# 04 KEY car alarm SHERIF
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/DSC05887.JPG" alt="" data-canonical-src="" width="700" />
 
-# 05
+# 05 KEY car alarm SHERIF
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/DSC05888.JPG" alt="" data-canonical-src="" width="700" />
 
-# 06
+# 06 KEY car alarm SHERIF
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/DSC05889.JPG" alt="" data-canonical-src="" width="700" />
 
-# 07
+# 07 KEY car alarm SHERIF
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/%D1%8B%D0%B2%D1%8B%D0%B2%D1%8B%D0%B2.PNG" alt="" data-canonical-src="" width="200" />
 
-# 08
+# 08 SDR (Soft Direct Radio)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/Capture.JPG" alt="" data-canonical-src="" width="700" />
 
@@ -53,7 +53,7 @@ I give car alarm Sheriff and make decoding signal with help SDR (Soft Direct Rad
 
 https://github.com/dotignore/Raspberry/blob/master/differents_things/projects/09_SDR/EEOL_2009AUG06_CTRLD_AN_01.pdf
 
-# 11
+# 11program Universal Radio Hacker
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/DFFDDFDF.PNG" alt="" data-canonical-src="" width="700" />
 
@@ -117,11 +117,11 @@ Unlock_big2
 9a49a6d34936da4da6924d349269b49b4db4936d26db6da6d0
 ```
 
-# 13
+# 13 How looks like capture signal
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/Untitled-1.jpg" alt="" data-canonical-src="" width="700" />
 
-# 14
+# 14 Hex Signal
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/09_SDR/%D1%86%D1%83%D1%86%D1%83%D1%86%D1%83%D1%86%D1%83.PNG" alt="" data-canonical-src="" width="700" />
 
