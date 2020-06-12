@@ -36,7 +36,7 @@ resistor 100oHm 2 pieces, 220kOhm 2 pieces, 330oHm 2 pieces
 capasitor ceramist 0,1uF 2 pieces
 capasitor electorate 2200uF 25v 2 pieces
 
-diode HER or UF on 3 amper 1 pieces any UF4004 םא 1 amper 1 pieces
+diode HER or UF on 3 amper 1 pieces any UF4004 on 1 amper 1 pieces
 
 sensor IR from Arduino 2 pieces (5v power) 
 Arduino HC-SR501
@@ -45,10 +45,10 @@ https://lastminuteengineers.com/pir-sensor-arduino-tutorial/
 terminals 5mm
 https://www.tme.eu/en/details/dg301-5.0-2p12/pcb-terminal-blocks/degson-electronics/dg301-5-0-02p-12-00a-h/
 
-two key SWT-6x6x7 לל 
+two key SWT-6x6x7 mm 
 https://www.chinadaier.com/kfc-06-h-tact-switch/
 
-You can use ATX power supplay +12ג +5ג
+You can use ATX power supplay +12v +5v
 ```
 
 #stm32f4discovery #c++ #PCB #LED

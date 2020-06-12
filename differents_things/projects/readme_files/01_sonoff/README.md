@@ -25,12 +25,13 @@ Oridgin source https://github.com/arendst/Tasmota/wiki
 11 your wifi must support TYPE:B (G N dont support)	(pic 05)
 12 after that connections go to web page x.x.x.240 in brouser
 
+```
+
 if you dont understanding something you can watch the video 
 How To Change Firmware on Sonoff Devices for use in Home Automation Projects.mp4
 Sonoff Basic Configuration Flashing with Tasmota Firmware.mp4
-https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/01_sonoff
 
-```
+https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/01_sonoff
 
 #ESP8266 #Sonoff #Tasmota #putty #flash #Sonoff #RS232
 
