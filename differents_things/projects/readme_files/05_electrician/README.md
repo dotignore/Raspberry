@@ -5,7 +5,7 @@ Electrician, Network Installation Architect, Reconstruction, etc
 Architectural draftsman and designer on Autocad, 
 engineering plans for projects developing for create electricians plan 
 
-I used REI - rules of electrical installation (ÐÐ£Ð - ÐÑÐ°Ð²Ð¸Ð»Ð° ÑÐ»Ð°ÑÑÑÐ²Ð°Ð½Ð½Ñ ÐµÐ»ÐµÐºÑÑÐ¾ÑÑÑÐ°Ð½Ð¾Ð²Ð¾Ðº)
+I used REI - rules of electrical installation (ПУЕ - Правила улаштування електроустановок)
 
 I used Electrical installation guide According to IEC international standards “Schneider Electric S.A.” - 2016
 etc
