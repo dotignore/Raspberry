@@ -12,8 +12,6 @@ My replica Replica Arduino S3v3 Revision 2
 
 ```
 
-My replica Arduino S3v3 Revision 2
-
 I use technology DIRECT TO PCB INKJET PRINTING
 More info this https://hackaday.com/2016/09/12/take-your-pcbs-from-good-to-great-toner-transfer/
 
