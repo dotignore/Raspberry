@@ -6,11 +6,22 @@
 
 
 ```
-My project Led Light for Stairs I create PCB in Eagle CAD
-And create program C++ to control LED lights
+My project Led Light for Stairs 
 
-Board stm32f4discovery - https://www.st.com/en/evaluation-tools/stm32f4discovery.html
+I create PCB on "Eagle PCB CAD" schematic capture user.
 
+about Eagle PCB CAD you can read this
+https://www.autodesk.com/products/eagle/overview
+
+And create program in Coocox IDE on C++ to control LED lights 
+
+Board stm32f4discovery
+https://www.st.com/en/evaluation-tools/stm32f4discovery.html
+
+```
+# Components
+
+```
 Transistor TO-220  
 our need any MOSFET with power opening Drain Carrent 5-10à Drain-to-Source Voltage 3v 
 cep603al, 40N03P, 50n06, 140N03, IRL2505 ,75N3LLH6, irlml2402, irlml2502 
