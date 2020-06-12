@@ -15,7 +15,6 @@
 
 ```
 
-
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
 
@@ -58,13 +57,8 @@ Code Hopping Encoder with help SDR (Soft Dorect Radio)</h1>](https://github.com/
 
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-sjldn;sldnf;ldsnfl;sdknf;lsdnkm'fglskmn'sfldgm'sfld
-sjldn;sldnf;ldsnfl;sdknf;lsdnkm'fglskmn'sfldgm'sfld
-sjldn;sldnf;ldsnfl;sdknf;lsdnkm'fglskmn'sfldgm'sfld
-sjldn;sldnf;ldsnfl;sdknf;lsdnkm'fglskmn'sfldgm'sfld
-sjldn;sldnf;ldsnfl;sdknf;lsdnkm'fglskmn'sfldgm'sfld
 
-[<h1 id="custom-id"># My work by Webdesign</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/10_webdesign)
+[<h1 id="custom-id"># My work is WEBdesign</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/10_webdesign)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/0.jpg" alt="" data-canonical-src="" width="390" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/instrument-profi_b.jpg" alt="" data-canonical-src="" width="390" />
 
