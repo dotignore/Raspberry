@@ -7,11 +7,11 @@
 ╚══════╝╚═╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝    ╚═╝  ╚═╝╚══════╝╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   
 ```
 
-# My job by Electritions <br>
+# My job by electrician <br>
 
 
 ```
-Electrician, Network Installation Architect, Reconstruction, etc
+I worked  Electrition Network Installation Architect, Reconstructi, etc 4 years 9 months
 Architectural draftsman and designer on Autocad, 
 engineering plans for projects developing for create electricians plan 
 
@@ -19,6 +19,14 @@ I used REI - rules of electrical installation (ПУЕ - Правила улаш�
 
 I used Electrical installation guide According to IEC international standards “Schneider Electric S.A.” - 2016
 etc
+
+
+
+Self-employed electrical engineer (03.2013 – 10.2017) - 4 yrs 9 mons
+Electrician, Network Installation Architect, Reconstruction, etc
+Architectural draftsman and designer, engineering plans for projects developing
+
+
 
 ```
 
