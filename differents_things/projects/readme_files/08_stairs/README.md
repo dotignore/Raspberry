@@ -21,8 +21,6 @@
 ╚═╝      ╚═════╝ ╚═╝  ╚═╝    ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝             
 ```         
 
-[<h1 id="custom-id"># --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/08_stairs)
-
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/video.gif" alt="" data-canonical-src="" width="400" />
 
 ```
@@ -254,6 +252,7 @@ int main(void){
 
 ```
 
+[<h1 id="custom-id"># --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/08_stairs)
 
 [<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
 
