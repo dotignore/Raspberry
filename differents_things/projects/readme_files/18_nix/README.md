@@ -1,18 +1,21 @@
 [<h1 id="custom-id"># Watch on the NIX tube IN12-B <br> --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/18_nix)
 
 ```
-Watch on the NIX tube IN 12-B
+
+Its Watch on the tube NIX IN 12-B
 and I create PCB on "Eagle PCB CAD" schematic capture user.
 
 about Eagle PCB CAD you can read this
 https://www.autodesk.com/products/eagle/overview
 
 I took origin scheme from it this https://radiokot.ru/lab/controller/28/
+and recompilations scheme 
+
 ```
 
 #NIX #PCB # #Autodesk #DataSheet #NIX #Eagle
 
-# 01
+# 01 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/18_nix/IMG_0001.JPG" alt="" data-canonical-src="" width="700" />
 
 # 02
