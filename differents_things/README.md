@@ -128,8 +128,7 @@ sjldn;sldnf;ldsnfl;sdknf;lsdnkm'fglskmn'sfldgm'sfld
 
 [<h1 id="custom-id"># HHO cell</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/07_HHO_cell)
 
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/07_HHO_cell/IMG_0368.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/07_HHO_cell/IMG_0021.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/07_HHO_cell/IMG_0003.jpg
-" alt="" data-canonical-src="" width="300" />
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/07_HHO_cell/IMG_0368.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/07_HHO_cell/IMG_0021.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/07_HHO_cell/IMG_0003.jpg" alt="" data-canonical-src="" width="300" />
 
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
