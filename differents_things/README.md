@@ -89,6 +89,16 @@ Code Hopping Encoder with help SDR (Soft Dorect Radio)</h1>](https://github.com/
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
 
+
+[<h1 id="custom-id"># Its my work of: coordination, drawing plans, finding executor, etc </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/22_Cottage)
+
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/22_Cottage/video01.gif" alt="" data-canonical-src="" width="450" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/22_Cottage/19.JPG" alt="" data-canonical-src="" width="400" />
+
+
+<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
+
+
 [<h1 id="custom-id"># CNC controller </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/19_cnc)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/19_cnc/01.jpg" alt="" data-canonical-src="" width="270" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/19_cnc/06_1.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/19_cnc/051.png" alt="" data-canonical-src="" width="300" />
@@ -164,10 +174,3 @@ Code Hopping Encoder with help SDR (Soft Dorect Radio)</h1>](https://github.com/
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
-
-[<h1 id="custom-id"># Its my work of: coordination, drawing plans, finding executor, etc </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/02_cisco)
-
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/22_Cottage/video01.gif" alt="" data-canonical-src="" width="400" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/22_Cottage/19.JPG" alt="" data-canonical-src="" width="400" />
-
-
-<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
