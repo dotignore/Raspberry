@@ -165,9 +165,9 @@ Code Hopping Encoder with help SDR (Soft Dorect Radio)</h1>](https://github.com/
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
 
-[<h1 id="custom-id"># Cisco 2811</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/02_cisco)
+[<h1 id="custom-id"># My work in this projects was drawing/architectural plans, visualization, finding specialists ect </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/22_Cottage)
 
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/02_cisco/EMaWmTfWsAASDTI.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/21_Generator/01.JPG" alt="" data-canonical-src="" width="300" />
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/22_Cottage/video01.gif" alt="" data-canonical-src="" width="450" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/22_Cottage/19.JPG" alt="" data-canonical-src="" width="300" />
 
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
