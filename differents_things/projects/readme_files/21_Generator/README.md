@@ -60,7 +60,7 @@ Fix and Repair my car alternator (Cargo HC 111988) / (Bosch 0 123 515014) / (VW 
 # 11
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/21_Generator/10.jpg" alt="" data-canonical-src="" width="700" />
 
-# 12 Its resault wery Nice)
+# 12 Its resault very Nice)
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/21_Generator/11.jpg" alt="" data-canonical-src="" width="700" />
 
 # 13
