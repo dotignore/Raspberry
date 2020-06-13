@@ -167,7 +167,7 @@ Code Hopping Encoder with help SDR (Soft Dorect Radio)</h1>](https://github.com/
 
 [<h1 id="custom-id"># Fix and Repair alternator in my car </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/21_Generator)
 
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/21_Generator/01.JPG" alt="" data-canonical-src="" width="400" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/21_Generator/11.jpg" alt="" data-canonical-src="" width="450" />
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/21_Generator/01.JPG" alt="" data-canonical-src="" width="390" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/21_Generator/11.jpg" alt="" data-canonical-src="" width="450" />
 
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
