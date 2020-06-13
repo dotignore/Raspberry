@@ -1,5 +1,20 @@
 
-
+```
+███████╗██╗██╗  ██╗                                                ███╗   ███╗██╗   ██╗
+██╔════╝██║╚██╗██╔╝                                                ████╗ ████║╚██╗ ██╔╝
+█████╗  ██║ ╚███╔╝                                                 ██╔████╔██║ ╚████╔╝ 
+██╔══╝  ██║ ██╔██╗                                                 ██║╚██╔╝██║  ╚██╔╝  
+██║     ██║██╔╝ ██╗                                                ██║ ╚═╝ ██║   ██║   
+╚═╝     ╚═╝╚═╝  ╚═╝                                                ╚═╝     ╚═╝   ╚═╝   
+                                                                                       
+ █████╗ ██╗     ████████╗███████╗██████╗ ███╗   ██╗ █████╗ ████████╗ ██████╗ ██████╗   
+██╔══██╗██║     ╚══██╔══╝██╔════╝██╔══██╗████╗  ██║██╔══██╗╚══██╔══╝██╔═══██╗██╔══██╗  
+███████║██║        ██║   █████╗  ██████╔╝██╔██╗ ██║███████║   ██║   ██║   ██║██████╔╝  
+██╔══██║██║        ██║   ██╔══╝  ██╔══██╗██║╚██╗██║██╔══██║   ██║   ██║   ██║██╔══██╗  
+██║  ██║███████╗   ██║   ███████╗██║  ██║██║ ╚████║██║  ██║   ██║   ╚██████╔╝██║  ██║  
+╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝  
+                                                                                       
+```
 
 
 
@@ -24,7 +39,7 @@ Fix and Repair my car alternator (Cargo HC 111988) / (Bosch 0 123 515014) / (VW 
 # 04
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/21_Generator/03.jpg" alt="" data-canonical-src="" width="700" />
 
-# 05 I went to shop "?????? ?????? ????????? ???????????" GPS 50.489353, 30.482086 http://starter-sto.com.ua/ and bought parts
+# 05 I went to shop "Магнит Ремонт стартеров генераторов" GPS 50.489353, 30.482086 http://starter-sto.com.ua/ and bought parts
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/21_Generator/04.jpg" alt="" data-canonical-src="" width="700" />
 
 # 06
@@ -45,7 +60,7 @@ Fix and Repair my car alternator (Cargo HC 111988) / (Bosch 0 123 515014) / (VW 
 # 11
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/21_Generator/10.jpg" alt="" data-canonical-src="" width="700" />
 
-# 12 Its resault wery Nice)
+# 12 Its resault very Nice)
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/21_Generator/11.jpg" alt="" data-canonical-src="" width="700" />
 
 # 13
