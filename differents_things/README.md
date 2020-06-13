@@ -58,7 +58,7 @@ Code Hopping Encoder with help SDR (Soft Dorect Radio)</h1>](https://github.com/
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
-[<h1 id="custom-id"># My work is WEBdesign</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/10_webdesign)
+[<h1 id="custom-id"># My work is WEBdesign </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/10_webdesign)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/0.jpg" alt="" data-canonical-src="" width="390" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/10_webdesign/instrument-profi_b.jpg" alt="" data-canonical-src="" width="390" />
 
@@ -81,7 +81,7 @@ Code Hopping Encoder with help SDR (Soft Dorect Radio)</h1>](https://github.com/
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
 
-[<h1 id="custom-id"># Little story about My job Electrician</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/05_electrician)
+[<h1 id="custom-id"># Little story about My job Electrician </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/05_electrician)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electrician/01.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electrician/10.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/05_electrician/13.JPG" alt="" data-canonical-src="" height="290" />
 
@@ -91,7 +91,7 @@ Code Hopping Encoder with help SDR (Soft Dorect Radio)</h1>](https://github.com/
 
 [<h1 id="custom-id"># My work in this projects was drawing/architectural plans, visualization, finding specialists ect </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/22_Cottage)
 
-<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/22_Cottage/video01.gif" alt="" data-canonical-src="" width="450" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/22_Cottage/19.JPG" alt="" data-canonical-src="" width="300" />
+<img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/22_Cottage/video01.gif" alt="" data-canonical-src="" width="450" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/22_Cottage/19.JPG" alt="" data-canonical-src="" width="350" />
 
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
@@ -149,7 +149,7 @@ Code Hopping Encoder with help SDR (Soft Dorect Radio)</h1>](https://github.com/
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
-[<h1 id="custom-id"># Soldering</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/17_soldering)
+[<h1 id="custom-id"># Soldering </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/17_soldering)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/17_soldering/flex_cabel_01.JPG" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/17_soldering/flex_cabel_02.JPG" alt="" data-canonical-src="" width="300" />
 
@@ -157,7 +157,7 @@ Code Hopping Encoder with help SDR (Soft Dorect Radio)</h1>](https://github.com/
 
 
 
-[<h1 id="custom-id"># Cisco 2811</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/02_cisco)
+[<h1 id="custom-id"># Cisco 2811 </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/02_cisco)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/02_cisco/EMaWmTfWsAASDTI.jpg" alt="" data-canonical-src="" width="300" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/02_cisco/DSC04748.jpg" alt="" data-canonical-src="" width="300" />
 
