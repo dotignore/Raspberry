@@ -51,7 +51,7 @@ In this my work consist of:
 # 12 Its my work visualizations in Rhinoceros
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/22_Cottage/12.png" alt="" data-canonical-src="" width="700" />
 
-# 13 Its my work visualizations in Rhinoceros
+# 13 its usability stairs (up and lenghts)
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/22_Cottage/stairs.jpg" alt="" data-canonical-src="" width="700" />
 
 # 14 Its my work visualizations in Rhinoceros
