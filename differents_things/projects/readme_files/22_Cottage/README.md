@@ -1,3 +1,12 @@
+```
+██╗  ██╗ ██████╗ ██╗   ██╗███████╗███████╗
+██║  ██║██╔═══██╗██║   ██║██╔════╝██╔════╝
+███████║██║   ██║██║   ██║███████╗█████╗  
+██╔══██║██║   ██║██║   ██║╚════██║██╔══╝  
+██║  ██║╚██████╔╝╚██████╔╝███████║███████╗
+╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝╚══════╝
+                                          
+```
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/22_Cottage/video02.gif" alt="" data-canonical-src="" width="700" />
 
@@ -6,10 +15,10 @@ In this my work consist of:
  - oversight and overall coordination of the design activities of the architectural and engineering firms
  - drawing plans on digital variants in Autocad
  - finding technician-designer for workload constructions 
- - Visualization building in Rhinoceros https://www.rhino3d.com/
- - 
-
+ - Visualization building in Rhinoceros 3d https://www.rhino3d.com/
 ```
+
+#Autocad #Rhinoceros #Visualization #coordination #design
 
 # 01 Its plane took me owner this cottage
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/22_Cottage/01.JPG" alt="" data-canonical-src="" width="700" />
