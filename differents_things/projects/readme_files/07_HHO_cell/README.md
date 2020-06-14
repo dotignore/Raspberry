@@ -1,8 +1,8 @@
+# HHO cell
+
 ```
-
 I made hho cell for create hydrogen
-Use Stainless Steel materials for plate and plexiglass
-
+Use Stainless materials for plate and plexiglass
 ```
 
 #Atocad #StainlessSteel #plexiglass #HHO
@@ -47,7 +47,7 @@ https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/p
 # 13
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/07_HHO_cell/IMG_0004.jpg" alt="" data-canonical-src="" width="700" />
 
-[<h1 id="custom-id"># HHO cell <br>  --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/07_HHO_cell)
+[<h1 id="custom-id">--> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/07_HHO_cell)
 
 [<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/README.md)
 
