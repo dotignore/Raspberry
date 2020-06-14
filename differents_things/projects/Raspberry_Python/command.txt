@@ -1,3 +1,0 @@
-python app.py
-
-http://10.10.1.70:7100/api/switch/on/testlocation1/switch1

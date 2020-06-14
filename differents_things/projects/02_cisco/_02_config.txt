@@ -1,7 +1,0 @@
-#show running-config
-#show startup-config
-#copy running-config startup-config
-#copy startup-config running-config
-#copy run flash:
-
-#copy tftp sup-bootdisk:
