@@ -36,10 +36,6 @@ https://www.harmanaudio.com/jbl/GT5-12_.html
 # 06
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/15_Auto_JBL%20GT5-12/IMG_2606.JPG" alt="" data-canonical-src="" width="700" />
 
-
-
-
-
-[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
+[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/README.md)
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->

@@ -58,6 +58,6 @@ Find and change two transistors STP60NF06 TO-220
 
 [<h1 id="custom-id"># --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/20_Blaupunkt_ODsb_8000A)
 
-[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
+[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/README.md)
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->

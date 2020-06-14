@@ -71,7 +71,7 @@ https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/01
 
 [<h1 id="custom-id"># --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/01_sonoff)
 
-[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
+[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/README.md)
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 

@@ -52,6 +52,6 @@ Spent near one hour on this work separate
 
 [<h1 id="custom-id">#  --> full source </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/14_Samsung_TAB3_8inch)
 
-[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
+[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/README.md)
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->

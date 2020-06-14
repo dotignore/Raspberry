@@ -29,6 +29,6 @@ Its my car radio. This car radio has problem with connectors.
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/16_Auto_Blaupunkt_San_Francosco_310/DSC02690.JPG" alt="" data-canonical-src="" width="700" />
 
 
-[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
+[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/README.md)
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->

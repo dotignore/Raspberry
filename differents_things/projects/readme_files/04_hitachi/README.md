@@ -12,6 +12,6 @@ Fix Hammer Dril Hitachi DH26PC
 # 02
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/04_hitachi/DH26PC_02.JPG" alt="" data-canonical-src="" width="700" />
 
-[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
+[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/README.md)
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->

@@ -23,8 +23,6 @@ We takes size and after that I drow plan and he go to fitter for create detail
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/11_mazda/acad_02.png" alt="" data-canonical-src="" width="700" />
 
 
-
-
-[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/)
+[<h1 id="custom-id"> -- Back --</h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/README.md)
 
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
