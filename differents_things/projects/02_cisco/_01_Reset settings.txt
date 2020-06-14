@@ -1,0 +1,32 @@
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+	// Reset settings
+
+	1) first step
+R1#configure terminal (conf term)
+R1(config)#config-register 0x2142	ignore settings 
+R1(config)#exit
+
+after reload
+--- System Configuration Dialog ---
+configurrate and save files to flash
+
+	2) second step go to
+
+R1#configure terminal
+R1(config)#config-register 0x2102	default
+R1(config)#exit
+
+and dont erase configurate
+
+well done
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+#show running-config
+#show startup-config
+#copy running-config startup-config
+#copy startup-config running-config
+#copy run flash:
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

@@ -1,0 +1,42 @@
+{
+  "SwitchModule": {
+    "Modules": [
+      {
+        "Name": "DemoDeviceModule1",
+        "ModuleType": "Demo",
+        "Address": "192.168.1.107",
+        "Port": 2000,
+        "Relays": [
+          {
+            "Number": 1,
+            "Location": "TestLocation1",
+            "Position": "Switch1"
+          },
+          {
+            "Number": 2,
+            "Location": "TestLocation2",
+            "Position": "Switch1"
+          }
+        ]
+      },
+      {
+        "Name": "RLY8RelayModule1",
+        "ModuleType": "RLY8",
+        "Address": "192.168.1.107",
+        "Port": 2000,
+        "Relays": [
+          {
+            "Number": 1,
+            "Location": "Hall",
+            "Position": "MainLight"
+          },
+          {
+            "Number": 2,
+            "Location": "Bathroom",
+            "Position": "MainLight"
+          }
+        ]
+      }
+    ]
+  }
+}
