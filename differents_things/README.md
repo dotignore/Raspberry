@@ -18,7 +18,7 @@
 <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
 
 
-[<h1 id="custom-id">### My project Led Light for Stairs </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/08_stairs/README.md)
+[<h1 id="custom-id"># My project Led Light for Stairs </h1>](https://github.com/dotignore/Raspberry/tree/master/differents_things/projects/readme_files/08_stairs/README.md)
 
 <img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/video.gif" alt="" data-canonical-src="" width="400" /><img src="https://raw.githubusercontent.com/dotignore/Raspberry/master/differents_things/projects/08_stairs/pic2_.jpg" alt="" data-canonical-src="" width="300" />
 
