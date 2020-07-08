@@ -1,133 +1,112 @@
 #include <iostream>
-#include <string.h> //Required to use string compare
+#include <string.h>
 
 using namespace std;
 
-class AddBook{
+class phonebook{
+    public:
+       phonebook()
+          {
+            count=0;
+          }
 
-public:
-    AddBook()
-      {
-         count=0;
-      }
+       void newrecord();           	// new record
+       void search();              	// search by name
+       void showall();             	// show all
+       void displayentry(int i);    	// print on screen info
 
-   void AddEntry();
-   void DispAll();
-   void DispEntry(int i); // Displays one entry
-   void SearchLast();
+       int menu();
 
-   int Menu();
+       struct EntryStruct
+       {
+          char name[15];         	// lenghts name
+          char phonen[13];       	// lenghts phone number +38 012 1234567 (13)
+       };
 
-   struct EntryStruct
-   {
-      char FirstName[15];
-      char LastName[15];
-      char Birthday[15];
-      char PhoneNum[15];
-      char Email[15];
-   };
+       EntryStruct entries[20]; 	// number of records in db
+       int count;
+    };
 
-   EntryStruct entries[100];
-   int count;
-};
-
-
-void AddBook::AddEntry()
+void phonebook::newrecord()         	// new record
 {
+   cout << "enter name... ";
+   cin >> entries[count].name;
 
-   cout << "Enter First Name: ";
-   cin >> entries[count].FirstName;
-
-   cout << "Enter Last Name: ";
-   cin >> entries[count].LastName;
-
-   cout << "Enter Date of Birth: ";
-   cin >> entries[count].Birthday;
-
-    cout << "Enter Phone Number: ";
-   cin >> entries[count].PhoneNum;
-
-   cout << "Enter Email: ";
-   cin >> entries[count].Email;
+   cout << "enter phone... ";
+   cin >> entries[count].phonen;
 
    ++count;
 }
 
-
-void AddBook::DispEntry(int i)
+void phonebook::displayentry(int i) 	// print on screen info
 {
-   cout << "First name : " << entries[i].FirstName << endl;
-   cout << "Last name : " << entries[i].LastName << endl;
-   cout << "Date of birth : " << entries[i].Birthday << endl;
-   cout << "Phone number : " << entries[i].PhoneNum << endl;
-   cout << "Email: " << entries[i].Email << endl;
+   //cout << " - - - - - " << endl;
+   cout << "record = " << entries[i].name << " - " << entries[i].phonen << endl;
 }
 
-void AddBook::DispAll()
+void phonebook::showall()           	// show all
 {
-   cout << "Number of entries : " << count << endl;
-
-   for(int i = 0;i < count;++i)
-      DispEntry(i);
+   cout << "number of entries = " << count << endl; // total record in memory
+   for(int i = 0; i < count; ++i)
+      displayentry(i);
 }
 
-void AddBook::SearchLast()
+void phonebook::search()            	// search by name
 {
-   char lastname[32];
-   cout << "Enter last name : ";
-   cin >> lastname;
+   char name[32];
+   cout << "enter name... ";
+   cin >> name;
 
    for(int i = 0;i < count;++i)
    {
-      if(strcmp(lastname, entries[i].LastName) == 0)
+      if(strcmp(name, entries[i].name) == 0)
       {
-         cout << "Found ";
-         DispEntry(i);
+         cout << "result " << endl;
+         displayentry(i);
          cout << endl;
       }
    }
 }
 
-AddBook AddressBook;
+phonebook phonebook;
 
-int Menu()
+int menu()
 {
    int num;
-   bool BoolQuit = false;
+   bool boolquit = false;
 
-   while(BoolQuit == false)
+   while(boolquit == false)
    {
-
-      cout << "Address Book Menu" << endl;
-      cout << "(1) Add A New Contact" << endl;
-      cout << "(2) Search By Last Name" << endl;
-      cout << "(3) Show Complete List" << endl;
-      cout << "(4) Exit And Save" << endl;
+      cout << "=-=-=-=-= phone book =-=-=-=-=" << endl;
+      cout << "(1) enter new contact" << endl;
+      cout << "(2) search by nane" << endl;
+      cout << "(3) watch all records" << endl;
+      cout << "(4) exit" << endl;
+      cout << "=-=-=-=-= phone book =-=-=-=-=" << endl;
       cout << endl;
+      cout << "please make choose = ";
 
-        cout << "Please enter your selection (1-4) and press enter: ";
       cin >> num;
       cout << endl;
 
-      if (num == 1)
-         AddressBook.AddEntry();
+      if (num == 1)             	// compar number enter (num)
+         phonebook.newrecord();
       else if (num == 2)
-         AddressBook.SearchLast();
+         phonebook.search();
       else if (num == 3)
-         AddressBook.DispAll();
+         phonebook.showall();
       else if (num == 4)
-         BoolQuit = true;
+         boolquit = true;
       else
-         cout << "Please enter a number (1-4) and press enter: " << endl;
-
+         cout << "please make choose = ";
       cout << endl;
    }
-
    return 0;
 }
 
 int main (){
-   Menu();
+
+   menu();
 
    return 0;
 }
