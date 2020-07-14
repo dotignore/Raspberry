@@ -13,17 +13,17 @@ class phonebook{
        void newrecord();           	// new record
        void search();              	// search by name
        void showall();             	// show all
-       void displayentry(int i);    	// print on screen info
+       void displayentry(int i);    // print on screen info
 
        int menu();
 
-       struct EntryStruct
+       struct entrystruct
        {
           char name[15];         	// lenghts name
           char phonen[13];       	// lenghts phone number +38 012 1234567 (13)
        };
 
-       EntryStruct entries[20]; 	// number of records in db
+       entrystruct entries[20]; 	// number of records in db
        int count;
     };
 
