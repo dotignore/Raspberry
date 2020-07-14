@@ -1,1 +1,0 @@
-https://developer.blackberry.com/native/documentation/dev/integrating_cpp_qml/
