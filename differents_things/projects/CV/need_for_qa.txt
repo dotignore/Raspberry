@@ -1,0 +1,70 @@
+Following delivery objectives and tasks, delivery process;
+— Quality assurance:
+— Planning & estimations;
+— Requirements review;
+— Test design, execution;
+— Reporting, bug-tracking;
+— Tracking test coverage;
+— Preparing test cases for test automation/
+— At least 3 years of experience as a Manual Test Engineer
+— Strong knowledge of software testing methods and approaches
+— Strong understanding of web and web-related technologies
+— Good understanding of DB architecture and SQL
+— Experience with API testing
+— Good troubleshooting and problem-solving skills
+— Intermediate level of English is must
+2+ years of testing (preferably web applications and at least 2 different projects);
+Firm understanding of QA methodologies;
+Experience in test document creation (test cases, check-lists);
+Understanding of various browsers capabilities and limitations;
+Working knowledge of SQL;
+Excellent communication skills, analytical and troubleshooting abilities;
+Intermediate level of spoken English;
+Experience with at least 1 task tracking tool (preferable TFS or Jira);
+Understanding of Agile methodology.
+2+ years of Manual QA/Testing experience
+Understanding of web applications: HTML, JavaScript, cookies/sessions, browser differences, web servers, REST APIs
+Basic SQL knowledge
+Experience in data analysis to identify potential anomalies and breaking points in the product
+Deep experience with QA methodologies, understanding of Agile, Kanban software development process, SDLC and QA role in it
+Experience with TestRail or similar tool
+Intermediate level of English
+Your responsibilities:
+— 3+ years of professional experience as Test engineer;
+— In-depth knowledge and experience with software testing and automated test techniques with a strong focus on quality throughout the entire software development cycle;
+— Strong experience with API and UI testing best practices and tools;
+— Experience with RESTful API web service execution and validation using tools such as Postman or SOAP;
+— Experience with API Contract verification using tools such as Swagger;
+— Advanced knowledge of the different testing phases and approaches, including functional, regression, integration, and end-to-end;
+— Experience with Git;
+— Understanding of agile-based SDLCs (Scrum/Kanban);
+— Ability to test the product on multiple application layers;
+— Upper-intermediate level of English
+
+— 1,5+ year of experience in manual testing of web applications;
+— Strong knowledge and understanding of software testing concepts and practices, understanding of test design techniques;
+— Strong experience in functional and regression testing (test design techniques);
+— Experience in test documentation creating and maintaining (test cases, checklists, bug reports);
+— Experience in working with browser developer tools;
+— Good understanding of client-server architecture;
+— Experience in testing of REST APIs (Postman, Swagger);
+— Experience in testing of mobile applications;
+— Experience in working with mobile logging tools (adb, Android Studio, Xcode, Burp Suite);
+— Experience with mobile sniffers (BurpSuite, Charles);
+— Experience in performance testing (Apache JMeter);
+— Experience in working with Jira and Confluence;
+— Basic knowledge of SQL;
+— Experience in working with Git;
+— Good communication, investigation skills and proactivity;
+— Solid technical English.
+
+
+Skills to shine:
+— 3+ years experience in QA;
+— Agile experience, preferably Scrum;
+— Strong software testing experience and a good awareness of concepts (e.g. risk-based testing);
+— Functional testing experience (e.g. regression, integration, UAT, smoke etc.);
+— Experience producing key test assets (requirements gathering, minor test plans, test reports, test cases);
+— Experience in technical testing (e.g. reading logs, SQL, XML, using fiddler, etc.);
+— Willingness to improve yourself and learn programming and test automation;
+— Upper-intermediate spoken and written English;
