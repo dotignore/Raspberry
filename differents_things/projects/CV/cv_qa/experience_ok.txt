@@ -1,0 +1,39 @@
+﻿=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Components, integration, system integration, system testing.
+
+=========  test
++ Testing of Commerce Applications for payment POS-terminals.
++ In a test terminal, I used simulate payment actions without making real, if actual payments terminal I create issue in DB. 
++ If this terminal needs install to point of sale I testing works it device on work payment and comunications.
++ Front-end testing: User Intreface menu in POS-terminals, checking the printed receipt, testing work payments (NFC, magnet stripe and EMV), communications (GSM/DHCP) ... etc.
++ Back-end testing: our external developer send to bank fixes for our server I test this fixes after that, if something wrong work I switch termital to debug mode and download logs with help RS232 port and finding erorrs if I cant findin errors then send this data to out developers ... etc.
++ Creation/Update documentation for end-users how using POS-terminals to they works.
++ Using alredy ready manual test cases in my job for functional menu and regression test
++ Troubleshooting configuration issues.
+
+========= work
++ Ability to work independently with very little direction/supervision
++ Analytical, self-organizing skills, troubleshooting, responsible, honest, sociable
+
++ Component, integration new equipment in system, system testing.
+
++ Testing tools: OTRS this system work on side our developers server
++ Knowledge of HTTP/FTP/Shell/SHH/RDP/HTML/CSS ... etc
++ Customer support. Direct communication with customers. Customer problem solving.
+
+
+=========
+
+Practical knowledge of Test documentation: Test Plan, Test Suite and Test Case, Bug Reports
+Understanding of bug lifecycle, attributes of describing and principles of bug-report
+
+
++ writing or updating instructions for users 
++ As a QA Engineer actively provided second-tier technical support and troubleshooting for software and hardware installation, configuration and network connectivity
+
+создавать дружескую обстановку внутри коллектива
+
+=========
+
+// website testing, 1C software testing, create design UI website, website promotion, network installation, company server installation on Windows 2003 Server + Firewall, RDP, HTTP, FTP services, client computers’ installation software. Management of a small team: 2 developers team supervision (1C developer and PHP developer), tasks creation, tasks implementation supervision, Web Hosting
