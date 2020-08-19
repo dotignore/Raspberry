@@ -1,0 +1,25 @@
+Operating Systems:
+MS Windows Server (RDP, FTP, HTTP, HTTPS, POP3, SMTP, Terminal Server etc) Putty
+Linux: MC Midnight Commander, VNC, terminal, .sh scripts etc
+FreeBSD: (kernel configuration, SSH, proxy, firewall, DNS) etc
+Macintosh/Hackintosh/MS DOS
+
+Hardware: 
+USB to RS-232, VeriFone, Raspberry Pi, recovered DATA, Multimetr, Soldering, ECU (Electronic Control Unit), Fix, RAID, 
+
+LAN
+Programming Languages: 
+HTML, C++ (compil/debag code), QTCtaretor, CLion, Visual Studio/VSCode, CMakeLists.txt, JSON
+
+Banking Skills: 
+POS Master POS terminal, OpenWay Way4, Testing, Visa, MasterCard, AMEX, Inpass, EMV, “LFS” system this is EDMS - electronic document management system
+
+Experience Software: 
+Eagle PCB CAD schematic capture user.
+VMware, Parallels Desktop Inventor, Web design/UI (User Interface), Adobe Photoshop, Adobe Illustrator, FinalCut, Rhinoceros 3D modeling, MS Office, etc
+
+Installation: 
+network/telephone (UTP/FTP cable, low electric 220V/380V)
+
+Other skills: 
+SDR (software defined radio), DMR radio, Soldering, Multimetr, Oscilloscope, UpGrade/DowdGrade firmware on Android device, OpenWRT, AutoCAD, REI - rules of electrical installation Ukraine, Electrical installation guide According to IEC international standards “Schneider Electric S.A.”
