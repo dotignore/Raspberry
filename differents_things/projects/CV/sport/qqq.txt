@@ -1,0 +1,21 @@
+﻿1 usability
+2 none secur
+3 color
+4 процедура умножения работает корректно
+5 ввод 4,2 неработает
+6 ввод символов вместе цифрой дает ошибку
+7 -1 ошибка
+
+8 port state service
+80/tcp open http	http://qa-test.sport.ua/ - open
+443/tcp open https	сайт не работает по 443 порту (Your connection is not private 403 Forbidden nginx/1.10.3 (Ubuntu) )
+сайт работает на nginx
+
+9 не оптимизироввано под мобильную версию
+
+
+
+
+calc.php
+.html
+.hide

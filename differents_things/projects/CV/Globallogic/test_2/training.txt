@@ -1,0 +1,39 @@
+ssh root@x.x.x.x -p xxxxx
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+ping google.com
+traceroute 8.8.8.8
+ifponfig
+netstat -tulpn
+
+? route -n
+iptables
+arp
+
+
+nmap
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+ls -l
+mkdir / rmdir / touch / rm / (nano/vi/vim) / cp / mv / cat / chmod
+tail -f /
+
+df -h / du -h
+mount / umount 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+apt-get install 
+sudo nano /etc/apt/sources.list
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ps
+grep
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ln ???????????? ??? ???????? ?????????? 
+
+
+
+
