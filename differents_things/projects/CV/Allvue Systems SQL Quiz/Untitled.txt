@@ -1,0 +1,41 @@
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+How many vehicle models per manufacturer? 
+
+
+
+Per Vehicle Type? 
+
+
+
+How many cars does each owner possess? 
+
+
+
+How many total miles are logged to each owner?
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+test_db
+
+Owners
+Manufacturer
+VehicleType
+Models
+Vehicles
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+SELECT
+    *
+FROM
+    sales.customers;
+
+select * FROM Owners;
+
+
+Ok
+select @@version as 'sql server version'
