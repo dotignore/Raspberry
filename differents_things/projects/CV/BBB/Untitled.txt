@@ -1,0 +1,20 @@
+TestRail
+JMeter
+Confluence
+Xray
+Agile/SCRUM
+
+
++Jira
++Postman S	wagger, Selenium, TestComplete, QTP, SilkTest
++API		REST API SOAP
++DevTools
++SQL
+JSON - XML
+SDLC/STLC
+Docker, gRPC, Kafka, Confluence
+
+
+https://www.quality-assurance-group.com/category/shpargalky/
+
+
