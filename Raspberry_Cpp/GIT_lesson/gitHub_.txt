@@ -1,0 +1,178 @@
+git config --global user.name "User Name"
+git config --global user.email "User@Name.com"
+
+git init
+// Initialized empty Git repository in /Users/ignore/Documents/GitHub/Automation QA/.git/
+
+ls -la
+// .git
+
+git status
+// On branch master
+
+git add *
+git add --all
+
+git commit -m "first commit"
+// [master (root-commit) 829f747] first commit
+
+git log
+// 3 commit
+git log -1
+git log -1 -p
+
+git checkout -- README.txt
+git restore README.txt
+// restore file
+
+Edit file README.txt
+git diff --staged
+
+# cat .gitignore
+#GNORE_FOLDER/
+#*.log
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	Create on WebSite
+git clone https://github.com/dotignore/Automation_QA.git
+// Cloning into 'Automation-QA'...
+// warning: You appear to have cloned an empty repository.
+
+git add *
+git commit -m "first commit"
+git push origin
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+git init myapp
+cd .\myapp\
+git status
+git branch
+echo "Ver1" > index.html
+ls
+git status
+git add .
+git commit -m "Version1.0"
+git branch
+git log
+
+echo "Ver2" > index.html
+git add .
+git commit -m "Version2.0"
+git log
+
+echo "Ver3" > index.html
+git add .
+git commit -m "Version3.0"
+git log
+
+git branch fix_error
+git branch
+git checkout fix_error
+git branch
+git checkout master
+
+git branch -d fix_error
+
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
+git checkout -b denis_fixerror
+
+echo "Ver4" > index.html
+git add .
+git commit -m "Version4.0"
+git log
+git branch
+
+cat index.html
+git checkout master
+cat index.html
+
+git branch 
+git merge denis_fixerror
+git log 
+cat index.html
+git branch -d denis_fixerror
+git log
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+git branch 
+git checkput -b test
+echo "ddd" > index.html
+git add
+git commit -m "Version xxx"
+git branch
+git checkout master
+git branch -d test
+git branch -D test
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+git branch
+git checkout -b add_lick
+git branch
+echo "ver4.1" >> index.html
+git add .
+git commit -m "Vesion4.1"
+git log
+
+echo "Ver5" index.html
+git add *
+git commit -m "Version5.0"
+git status
+git log
+git checkout master
+git merge add_link
+
+git log
+git branch -d add_link
+git branch
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+cat index.html
+git checkout 60542d05da998983ccee6db0497c1b846e6dff8c
+git log
+git checkout master
+git log 
+cat index.html
+echo "Versiooooon5.0" > index.html
+git commit --amend
+	Работа с VI видос 12
+git reset --hard HEAD~2
+cat index.html
+git reset --soft HEAD~3
+git log
+
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = 
+
+git clone https://github.com/dotignore/MASTER_BRANCH.git
+git clone git@github.com:dot-ignore/MASTER_BRANCH.git
+git branch
+git checkout -b denis_jira2335
+git branch
+	add our files to protect
+	edit files other1
+	edit files other2
+git status
+git add .
+git status
+git commit -m "Added Lessons and made few changes"
+git branch
+git push origin
+	denis_jira2335	не существует
+git push --set-upstream origin denis_jira2335		добавили denis_jira2335
+
+	\\ Веб сторінка з pull request дивись відос
+
+git branch
+git branch -d denis_jira2335
+git branch
+
+git push origin --delete denis_jira2335
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = 
+
+Automation QA

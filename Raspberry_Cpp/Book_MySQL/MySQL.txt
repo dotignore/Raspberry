@@ -1,0 +1,70 @@
+@ -1,69 +0,0 @@
+AND - перечисление
+BETWEEN (AND) - перечисление конкретных значений
+BETWEEN (WHERE price BETWEEN 1000 AND 2000) - вилка значений
+NOT BETWEEN (AND) - исключение
+IN (1, 2, 5) - перечисление конкретных значений 
+AVG - Среднее значение
+
+ORDER BY - сортировка по полю
+DESC - сортировка в обратном порядке
+ORDER BY (DESC) LIMIT 5 - вывод 5 значений
+LIMIT - ограничение вывода
+
+SELECT COUNT(id_order) - подсчёт значений в колонке
+AS (SELECT COUNT(id_order) AS total) - псевдоним переименовывания
+MIN MAX (SELECT MIN MAX FROM) - 
+COUNT(DISTINCT) (SELECT COUNT(DISTINCT) FROM) - сумма уникальных значений
+COUNT - сумма  
+HAVING (SELECT qq FROM qq HAVING id > 2) - какая то сортировка больше 2
+UNION - объединение 2 запросов
+WHERE count < 5 - больше меньше
+NULL - (WHERE url IS NOT NULL) - вывод пустых значений
+MID - (SELECT MID(surname,1,1)) - вывод Первых букв из колонки
+REPLACE - ((name, 'Pentium 4', 'P IV')) - замена значения
+DISTINCT - (COUNT(DISTINCT id_product)) - количество одинаковых значений 
+GROUP_CONCAT - перечисление через запятую 1,2,3,4,5,6
+SEPARATOR '-' - перечисление через дефис
+SUM - сумма
+WITH ROLLUP - подбить сумму в колонке
+IFNULL - (IFNULL(phone,'отсутствует')) - если NULL то заменить на слово отсутствует
+
+LIKE 'Celeron%' - вывод первых значений
+RLIKE 'Pentium|Celeron' 	RLIKE 'GHZ$'
+RLIKE '^[-0-9a-z_\\.]+@[-0-9a-z_\\.]+\\.[a-z]{2,6}$'; 	ivanov@email.ru
+
+MATCH (WHERE MATCH (name, description) AGAINST ('256MB');) - два совпадения
+WHERE MATCH (name, description) AGAINST ('Процессор +Pentium' IN BOOLEAN MODE); - 2 значения обязательны
+WHERE MATCH (name, description) AGAINST ('Celeron Pentium' IN BOOLEAN MODE); - перечисление
+
+=-=-=-=-=-=-=-=-= JOIN =-=-=-=-=-=-=-=-=-=-=-=-=
+SELECT catalogs.name, COUNT(id_product)FROM catalogs LEFT JOIN products USING(id_catalog) 
+GROUP BY products.id_catalog;
+
+SELECT catalogs.name, COUNT(id_product)FROM catalogs LEFT JOIN products ON catalogs.id_catalog = products.id_catalog
+GROUP BY products.id_catalog;
++-------------------------------------+-------------------+
+| name                                | COUNT(id_product) |
++-------------------------------------+-------------------+
+| Переферия                           |                 0 |
+| Процессоры                          |                 9 |
+| Материнские платы                   |                 6 |
+| Видеоадаптеры                       |                 4 |
+| Жёсткие диски                       |                 5 |
+| Оперативная память                  |                 6 |
++-------------------------------------+-------------------+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+SELECTorders.id_order, users.surname, orders.ordertime, products.nameFROMusers, orders, productsWHEREorders.id_user = users.id_user AND orders.id_product = products.id_product;
++----------+------------------+---------------------+------------------------+
+| id_order | surname          | ordertime           | name                   |
++----------+------------------+---------------------+------------------------+
+|        1 | Симдянов         | 2005-01-04 10:39:38 | Intel Pentium 4 3.0GHz |
+|        2 | Корнеев          | 2005-02-10 09:40:29 | Gigabyte GA-8I848P-RS  |
+|        3 | Иванов           | 2005-02-18 13:41:05 | Maxtor 6Y120P0         |
+|        4 | Симдянов         | 2005-03-10 18:20:00 | Maxtor 6Y120P0         |
+|        5 | Симдянов         | 2005-03-17 19:15:36 | Maxtor 6Y120P0         |
++----------+------------------+---------------------+------------------------+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+
