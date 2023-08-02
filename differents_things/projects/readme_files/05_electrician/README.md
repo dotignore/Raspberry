@@ -11,20 +11,17 @@
 
 
 ```
-I worked  Electrition Network Installation Architect, Reconstructi, etc 4 years 9 months
-Architectural draftsman and designer on Autocad, 
-engineering plans for projects developing for create electricians plan 
+I worked as an Electrician, Network Installation Architect, Reconstruction, etc.,
+for 4 years and 9 months. I was an Architectural draftsman and designer using AutoCAD,
+developing engineering plans for projects, including electricians' plans.
 
-I used REI - rules of electrical installation (ПУЕ - Правила улаштування електроустановок)
+I used REI - Rules of Electrical Installation (ПУЕ - Правила улаштування електроустановок).
 
-I used Electrical installation guide According to IEC international standards “Schneider Electric S.A.” - 2016
-etc
+I used the Electrical Installation Guide according to IEC international standards by "Schneider Electric S.A." - 2016, etc.
 
-
-
-Self-employed electrical engineer (03.2013 – 10.2017) - 4 yrs 9 mons
-Electrician, Network Installation Architect, Reconstruction, etc
-Architectural draftsman and designer, engineering plans for projects developing
+I was a self-employed electrical engineer from March 2013 to October 2017, for a total of
+4 years and 9 months. I worked as an Electrician, Network Installation Architect,
+Reconstruction, etc. I also performed architectural drafting and design, creating engineering plans for projects.
 
 
 
