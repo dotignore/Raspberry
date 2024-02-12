@@ -1,0 +1,124 @@
+База MySQL тіки під рукою була
+
+
+
+CREATE TABLE Publisher (
+    Id INT PRIMARY KEY,
+    Name VARCHAR(255),
+    State VARCHAR(255),
+    Site VARCHAR(255)
+);
+
+CREATE TABLE Site (
+    Id INT PRIMARY KEY,
+    Name VARCHAR(255),
+    State VARCHAR(255),
+    Publisher_id INT,
+    FOREIGN KEY (Publisher_id) REFERENCES Publisher(Id)
+);
+
+CREATE TABLE Stats (
+    Site_Id INT,
+    Publisher_Id INT,
+    Requests INT,
+    Impressions INT,
+    Date DATE,
+    FOREIGN KEY (Site_Id) REFERENCES Site(Id),
+    FOREIGN KEY (Publisher_Id) REFERENCES Publisher(Id)
+);
+
+-- Publisher table
+INSERT INTO Publisher (Id, Name, State, Site)
+VALUES 
+    (1, 'Penguin Random House', 'New York', 'www.penguinrandomhouse.com'),
+    (2, 'HarperCollins', 'New York', 'www.harpercollins.com'),
+    (3, 'Simon & Schuster', 'New York', 'www.simonandschuster.com'),
+    (4, 'Hachette Book Group', 'New York', 'www.hachettebookgroup.com'),
+    (5, 'Macmillan Publishers', 'New York', 'us.macmillan.com');
+
+-- Site table
+INSERT INTO Site (Id, Name, State, Publisher_id)
+VALUES 
+    (1, 'Penguin Random House Books', 'New York', 1),
+    (2, 'HarperCollins Publishers', 'New York', 2),
+    (3, 'Simon & Schuster Books', 'New York', 3),
+    (4, 'Hachette Book Group Books', 'New York', 4),
+    (5, 'Macmillan Publishers Books', 'New York', 5);
+
+-- Stats table
+INSERT INTO Stats (Site_Id, Publisher_Id, Requests, Impressions, Date)
+VALUES 
+    (1, 1, 500, 400, '2023-04-01'),
+    (1, 1, 700, 600, '2023-04-02'),
+    (2, 2, 1000, 800, '2023-04-01'),
+    (2, 2, 1200, 1000, '2023-04-02'),
+    (3, 3, 800, 700, '2023-04-01'),
+    (3, 3, 1000, 900, '2023-04-02'),
+    (4, 4, 600, 500, '2023-04-01'),
+    (4, 4, 800, 700, '2023-04-02'),
+    (5, 5, 900, 800, '2023-04-01'),
+    (5, 5, 1100, 1000, '2023-04-02');
+
+
+
+
+1 To transfer site records from Publishers to Site and update Site.State based on Publisher.State:
+
+SELECT Id, Name, 
+       CASE WHEN Publisher.State = 1 THEN 1 ELSE 0 END AS State, 
+       Publisher.Id AS Publisher_id
+FROM Publisher
+
+2 To display the sum of requests and impressions for active sites along with the publisher name:
+
+SELECT Publisher.Name, Site.Name, SUM(Stats.Requests) as TotalRequests, SUM(Stats.Impressions) as TotalImpressions
+FROM Publisher
+JOIN Site ON Publisher.Id = Site.Publisher_id
+JOIN Stats ON Site.Id = Stats.Site_Id
+WHERE Stats.Date = '2023-04-02' -- only show data for a specific date, remove this line to show all data
+GROUP BY Publisher.Name, Site.Name;
+
+3 To output the line with the maximum Fillrate:
+
+SELECT s.Name, CONCAT('(', p.Name, ')') AS Publisher, Requests, Impressions, 
+       CASE 
+           WHEN Impressions = 0 THEN 0 
+           ELSE CAST(Requests AS FLOAT)/Impressions 
+       END AS Fillrate
+FROM Site s
+INNER JOIN Publisher p ON s.Publisher_id = p.Id
+INNER JOIN Stats st ON s.Id = st.Site_Id
+WHERE Date = '2023-04-02'
+ORDER BY Fillrate DESC
+LIMIT 1
+
+4 To add a new site for a specific publisher:
+
+SELECT 'New Site', 1, Id FROM Publisher WHERE Name = 'Penguin Random House'
+
+
+5 To add statistics to the Stats table for a specific site:
+
+INSERT INTO Stats (Site_Id, Publisher_Id, Requests, Impressions, Date)
+VALUES (1, 1, 800, 700, '2023-04-03');
+
+6 To select a list of all sites of a specific publisher whose names do not overlap with the sites of other publishers:
+
+SELECT s.Name, CONCAT('(', p.Name, ')') AS Publisher
+FROM Site s
+INNER JOIN Publisher p ON s.Publisher_id = p.Id
+WHERE s.Name NOT IN (
+    SELECT Name FROM Site WHERE Publisher_id <> p.Id
+)
+AND p.Name = 'Penguin Random House'
+
+7 To display the number of requests and impressions only for new sites:
+
+SELECT s.Name AS Site, p.Name AS Publisher, SUM(Requests) AS TotalRequests, SUM(Impressions) AS TotalImpressions
+FROM Site s
+INNER JOIN Publisher p ON s.Publisher_id = p.Id
+INNER JOIN Stats ON s.Id = Stats.Site_Id
+WHERE s.Id NOT IN (
+    SELECT Site_Id FROM Stats WHERE Site_Id <> Stats.Site_Id
+)
+GROUP BY s.Name, p.Name;
