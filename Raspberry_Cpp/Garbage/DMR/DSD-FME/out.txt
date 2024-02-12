@@ -1,0 +1,43 @@
+Audio In Device: audio_449000000Hz_23-53-05_01-02-2024.wav
+23:58:15 Sync: +DMR MS/DM MODE/MONO | CACH/Burst FEC ERR
+23:58:15 Sync: +DMR MS/DM MODE/MONO | CSBK
+ Preamble CSBK - Group Data - Source: 1 - Target: 239077 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | CSBK
+ Preamble CSBK - Group Data - Source: 1 - Target: 239077 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | CSBK
+ Preamble CSBK - Group Data - Source: 1 - Target: 239077 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | CSBK
+ Preamble CSBK - Group Data - Source: 1 - Target: 239077 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | CSBK
+ Preamble CSBK - Group Data - Source: 1 - Target: 239077 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | CSBK
+ Preamble CSBK - Group Data - Source: 1 - Target: 239077 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | CSBK
+ Preamble CSBK - Group Data - Source: 1 - Target: 239077 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | CSBK
+ Preamble CSBK - Group Data - Source: 1 - Target: 239077 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | CSBK
+ Preamble CSBK - Group Data - Source: 1 - Target: 239077 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | CSBK
+ Preamble CSBK - Group Data - Source: 1 - Target: 239077 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | CSBK
+ Preamble CSBK - Group Data - Source: 1 - Target: 239077 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | CSBK
+ Preamble CSBK - Group Data - Source: 1 - Target: 239077 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | CSBK
+ Preamble CSBK - Group Data - Source: 1 - Target: 239077 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | CSBK
+ Preamble CSBK - Group Data - Source: 1 - Target: 239077 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | CSBK
+ Preamble CSBK - Group Data - Source: 1 - Target: 239077 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | DATA 
+ Slot 1 Data Header - Group - Unconfirmed Delivery - Source: 1 Target: 239077 
+  SAP 04 [IP Based] - FMF 1 - BLOCKS 05 - PAD 00 - FSN 0
+23:58:15 Sync: +DMR MS/DM MODE/MONO | R12U 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | R12U 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | R12U 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | R12U 
+23:58:15 Sync: +DMR MS/DM MODE/MONO | R12U 
+Sync: no sync
+
+
